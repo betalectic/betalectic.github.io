@@ -27,6 +27,12 @@ p {
 } */
 /* You can override the default Infima variables here. */
 
+@media (min-width: 1536px) {
+  .container {
+    max-width: var(--ifm-container-width-xl);
+  }
+}
+
 @media (min-width: 1440px) {
   .container {
     max-width: var(--ifm-container-width-xl);
