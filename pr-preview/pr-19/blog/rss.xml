@@ -51,7 +51,6 @@
 <p>The blog supports tags as well!</p>
 <p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
             <category>Facebook</category>
-            <category>Hello</category>
             <category>Docusaurus</category>
         </item>
         <item>
