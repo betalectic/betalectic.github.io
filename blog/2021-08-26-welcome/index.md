@@ -5,7 +5,7 @@ authors: [slorber, yangshun]
 tags: [facebook, hello, docusaurus]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+A user story describes product features from the end user’s perspective. Product managers and designers write these brief stories to convey why users need or want certain functionality
 
 Here are a few tips you might find useful.
 

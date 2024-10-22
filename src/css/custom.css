@@ -93,8 +93,8 @@ a:visited {
 
 /* Change hover link color */
 a:hover {
-  color: #32d8b4;
-  text-decoration: none;
+  color: #020202;
+  text-decoration: underline;
 }
 
 /* Dark mode link colors */
