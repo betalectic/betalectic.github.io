@@ -12,8 +12,8 @@
         <id>https://betalectic.github.io/pr-preview/pr-19/blog/user-story</id>
         <link href="https://betalectic.github.io/pr-preview/pr-19/blog/user-story"/>
         <updated>2021-08-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
+        <summary type="html"><![CDATA[A user story describes product features from the end user’s perspective. Product managers and designers write these brief stories to convey why users need or want certain functionality]]></summary>
+        <content type="html"><![CDATA[<p>A user story describes product features from the end user’s perspective. Product managers and designers write these brief stories to convey why users need or want certain functionality</p>
 <p>Here are a few tips you might find useful.</p>
 <p>For software devs, it's easy to focus on what you're making and forget who you're building software for. While the Agile methodology stresses the importance of feature requirements, the end user should be top of mind throughout the entire software development process. Thankfully, you can frame these requirements in a short, simple description. We call these templates a user story.</p>
 <p><strong>Creating user</strong> stories helps devs understand the problems they’re solving for users and how to make their tasks easier. With simple, non-technical language, you can establish the value behind a piece of software. Not only will this help teams understand what they're making, but also why it matters.</p>
