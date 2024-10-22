@@ -2,7 +2,7 @@
 slug: user-story
 title: User Story Post
 authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+tags: [facebook, docusaurus]
 ---
 
 A user story describes product features from the end user’s perspective. Product managers and designers write these brief stories to convey why users need or want certain functionality

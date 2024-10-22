@@ -14,7 +14,6 @@ import BlogPostItemContent from "@theme/BlogPostItem/Content";
 import BlogPostItemFooter from "@theme/BlogPostItem/Footer";
 import type { Props } from "@theme/BlogPostItem";
 import { FadeIn } from "@site/src/components/studio/components/FadeIn";
-import { Border } from "@site/src/components/studio/components/Border";
 
 // apply a bottom margin in list view
 function useContainerClassName() {
