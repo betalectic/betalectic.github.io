@@ -75,7 +75,7 @@ export function Logo({
         src={require("@site/static/img/favicon_betalectic.png").default}
         className="w-12 h-12"
       />
-      <h3 className="my-auto text-black dark:text-white">Betalectic</h3>
+      <h3 className="items-center text-black dark:text-white">Betalectic</h3>
     </div>
   );
 }

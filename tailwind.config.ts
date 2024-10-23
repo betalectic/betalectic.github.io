@@ -4,7 +4,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.html", "./src/**/*.js", "./src/**/*.tsx"],
-  corePlugins: { preflight: false },
+  corePlugins: { preflight: false, container: false },
   // important: "#tailwind_preflight",
   darkMode: ["class", '[data-theme="dark"]'],
   theme: {
