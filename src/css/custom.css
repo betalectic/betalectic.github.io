@@ -62,6 +62,10 @@ p {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 h1,
@@ -94,7 +98,7 @@ a:visited {
 /* Change hover link color */
 a:hover {
   color: #020202;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Dark mode link colors */
@@ -109,7 +113,7 @@ a:hover {
 }
 
 [data-theme="dark"] a:hover {
-  color: #32d8b4;
+  color: #f0f0f0;
   text-decoration: none;
 }
 
