@@ -80,7 +80,6 @@ export const socialMediaProfiles = [
     icon: LinkedinIcon,
   },
   { title: "X", href: "https://x.com/betalectic/", icon: XIcon },
-  { title: "GitHub", href: "https://github.com", icon: GitHubIcon },
   { title: "Email", href: "mailto:contact@betalectic.com", icon: DribbbleIcon },
 ];
 
