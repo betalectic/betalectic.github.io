@@ -184,9 +184,9 @@ export default function Contact() {
                   <div className="lg:ml-auto flex justify-center lg:justify-start">
                     <iframe
                       src="https://tally.so/embed/nPB6RB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg dark:filter dark:invert dark:brightness-90"
+                      className=" dark:filter dark:invert dark:brightness-90"
+                      width="500"
                       height="818"
-                      style={{ maxWidth: "500px" }}
                     >
                       Loading..
                     </iframe>
