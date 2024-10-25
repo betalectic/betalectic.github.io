@@ -181,11 +181,12 @@ export default function Contact() {
                   {/* <ContactForm /> */}
                   <ContactDetails />
                   {/* Tally Form */}
-                  <div className="ml-auto">
+                  <div className="lg:ml-auto flex justify-center lg:justify-start">
                     <iframe
                       src="https://tally.so/embed/nPB6RB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                      width="500"
+                      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg dark:filter dark:invert dark:brightness-90"
                       height="818"
+                      style={{ maxWidth: "500px" }}
                     >
                       Loading..
                     </iframe>
