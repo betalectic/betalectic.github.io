@@ -178,8 +178,19 @@ export default function Contact() {
               </PageIntro>
               <Container className="mt-24 sm:mt-32 lg:mt-40">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
-                  <ContactForm />
+                  {/* <ContactForm /> */}
                   <ContactDetails />
+                  {/* Tally Form */}
+                  <div className="lg:ml-auto flex justify-center lg:justify-start">
+                    <iframe
+                      src="https://tally.so/embed/nPB6RB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                      className=" dark:filter dark:invert dark:brightness-90"
+                      width="500"
+                      height="818"
+                    >
+                      Loading..
+                    </iframe>
+                  </div>
                 </div>
               </Container>
             </div>
