@@ -24,26 +24,33 @@ export default function About() {
       <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
         <SectionIntro
           eyebrow="Our culture"
-          title="Balance your passion with your passion for life."
+          title="Your Partner in Transformative Technology and Long-Term Growth"
           invert
         >
           <p>
-            We are a group of like-minded people who share the same core values.
+          Partnering with businesses to deliver tailored technology solutions that address unique challenges, drive growth, and ensure sustainable success over the long term.
           </p>
         </SectionIntro>
         <Container className="mt-16">
           <GridList>
-            <GridListItem className="list-none" title="Loyalty" invert>
-              Our team has been with us since the beginning because none of them
-              are allowed to have LinkedIn profiles.
+            <GridListItem className="list-none" title="Client-Centric Approach" invert>
+            At Betalectic, we’re not just about delivering code; we’re about delivering results. We take the time to understand each client’s unique challenges, working as an extension of their team to craft solutions that truly address their business needs. By immersing ourselves in our clients’ goals, we ensure that each web app, mobile solution, or API we create drives tangible results, meeting the demands of today while setting them up for tomorrow.
             </GridListItem>
-            <GridListItem className="list-none" title="Trust" invert>
-              We don’t care when our team works just as long as they are working
-              every waking second.
+            <GridListItem className="list-none" title="Outcome-Focused Services" invert>
+            Our services go beyond technology—we deliver results. Every solution we develop is designed with a focus on driving business outcomes, whether it’s increasing user engagement, enhancing operational efficiency, or elevating customer satisfaction. We define success by the value our work adds to our clients’ businesses and their bottom line, not by technical completion alone.
             </GridListItem>
-            <GridListItem className="list-none" title="Compassion" invert>
-              You never know what someone is going through at home and we make
-              sure to never find out.
+            <GridListItem className="list-none" title="Empowering Domain Experts with Our Technology Solutions" invert>
+            We recognize that our clients are the domain experts in their fields, and we leverage this knowledge to create technology solutions that fit their unique requirements. By deeply understanding their industry challenges and objectives, we develop tailored products that enhance their operational effectiveness and drive innovation. Our collaborative approach ensures that we align our technical expertise with our clients’ insights, resulting in solutions that not only meet but exceed their expectations.            </GridListItem>
+          </GridList>
+          <GridList>
+            <GridListItem className="list-none" title="Long term Partnership" invert>
+            Our relationship with clients doesn’t end at launch. As a full-cycle partner, we guide our clients from ideation through development, launch, and ongoing support, ensuring each solution adapts to changing needs and continues to provide value. By staying involved at every stage, we help our clients evolve and grow, aligning our efforts with their long-term vision and goals.
+            </GridListItem>
+            <GridListItem className="list-none" title="Empowering Client Success" invert>
+            We measure our success by the success of our clients. Every line of code we write, every feature we develop, and every deployment we execute is aimed at empowering our clients to achieve their strategic objectives. We believe in delivering more than a solution—we deliver a pathway to growth, efficiency, and innovation, helping clients position themselves ahead in their respective markets.
+            </GridListItem>
+            <GridListItem className="list-none" title="Long-Term Impact" invert>
+            Our work is designed to make a lasting impact. Over the years, we’ve enabled clients to not only overcome current challenges but to thrive in a rapidly evolving digital landscape. By building scalable, adaptable solutions, we ensure that our clients can meet future demands and continue achieving sustainable growth well beyond project completion.
             </GridListItem>
           </GridList>
         </Container>
@@ -211,38 +218,18 @@ export default function About() {
             />
             <div className="w-full mx-auto">
               <PageIntro
-                eyebrow="About us"
-                title="Our strength is collaboration"
+                eyebrow=""
+                title="About Betalectic"
               >
                 <p>
-                  We believe that our strength lies in our collaborative
-                  approach, which puts our clients at the center of everything
-                  we do.
+                Eclectic means ‘deriving ideas, style, or taste from a broad and diverse range of sources’
                 </p>
                 <div className="mt-10 max-w-2xl space-y-6 text-base">
                   <p>
-                    Studio was started by three friends who noticed that
-                    developer studios were charging clients double what an
-                    in-house team would cost. Since the beginning, we have been
-                    committed to doing things differently by charging triple
-                    instead.
-                  </p>
-                  <p>
-                    At Studio, we’re more than just colleagues — we’re a family.
-                    This means we pay very little and expect people to work
-                    late. We want our employees to bring their whole selves to
-                    work. In return, we just ask that they keep themselves there
-                    until at least 6:30pm.
+                  In world of open source software, saas and innumerable technology stacks – we figure out what is best for your product (cost wise, development wise, scaling wise) and give you the beta.
                   </p>
                 </div>
               </PageIntro>
-              <Container className="mt-16">
-                <StatList>
-                  <StatListItem value="35" label="Underpaid employees" />
-                  <StatListItem value="52" label="Placated clients" />
-                  <StatListItem value="$25M" label="Invoices billed" />
-                </StatList>
-              </Container>
               <Culture />
 
               <Team />
