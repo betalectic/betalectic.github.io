@@ -49,7 +49,7 @@ export default function About() {
             <GridListItem className="list-none" title="Empowering Client Success" invert>
             We measure our success by the success of our clients. Every line of code we write, every feature we develop, and every deployment we execute is aimed at empowering our clients to achieve their strategic objectives. We believe in delivering more than a solution—we deliver a pathway to growth, efficiency, and innovation, helping clients position themselves ahead in their respective markets.
             </GridListItem>
-            <GridListItem className="list-none" title="Long-Term Impact" invert>
+            <GridListItem className="list-none" title="Lasting Impact" invert>
             Our work is designed to make a lasting impact. Over the years, we’ve enabled clients to not only overcome current challenges but to thrive in a rapidly evolving digital landscape. By building scalable, adaptable solutions, we ensure that our clients can meet future demands and continue achieving sustainable growth well beyond project completion.
             </GridListItem>
           </GridList>
