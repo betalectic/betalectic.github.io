@@ -14,7 +14,6 @@ import { GridPattern } from "../components/studio/components/GridPattern";
 import { List, ListItem } from "../components/studio/components/List";
 import { StylizedImage } from "../components/studio/components/StylizedImage";
 import { TagList, TagListItem } from "../components/studio/components/TagList";
-import { Blockquote } from "../components/studio/components/Blockquote";
 
 export default function About() {
   let shouldReduceMotion = useReducedMotion();
@@ -312,7 +311,7 @@ export default function About() {
           <div className="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first">
             <FadeIn>
               <div
-                className="font-display text-base font-semibold before:text-neutral-300 before:content-['/_'] after:text-neutral-950 after:content-[counter(section,decimal-leading-zero)]"
+                className="font-display text-base font-semibold before:text-neutral-300 after:text-neutral-950 "
                 aria-hidden="true"
               />
               <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-neutral-950 dark:text-neutral-50 sm:text-4xl">
@@ -380,7 +379,7 @@ export default function About() {
     return (
       <Section
         title="Build"
-        image={{ src: require("../images/laptop.jpg").default, shape: 1 }}
+        image={{ src: require("../images/laptop.jpg").default }}
       >
         <div className="space-y-6 text-base text-neutral-600 dark:text-neutral-300">
           <p>
@@ -403,14 +402,6 @@ export default function About() {
             for changes.
           </p>
         </div>
-
-        <Blockquote
-          author={{ name: "Debra Fiscal", role: "CEO of Unseal" }}
-          className="mt-12"
-        >
-          Studio were so regular with their progress updates we almost began to
-          think they were automated!
-        </Blockquote>
       </Section>
     );
   }
@@ -419,7 +410,7 @@ export default function About() {
     return (
       <Section
         title="Deliver"
-        image={{ src: require("../images/meeting.jpg").default, shape: 2 }}
+        image={{ src: require("../images/meeting.jpg").default }}
       >
         <div className="space-y-6 text-base text-neutral-600 dark:text-neutral-300">
           <p>

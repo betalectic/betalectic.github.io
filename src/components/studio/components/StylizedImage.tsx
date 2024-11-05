@@ -30,11 +30,23 @@ export function StylizedImage({ shape = 0, className, ...props }) {
         "relative flex aspect-[719/680] w-full grayscale"
       )}
     >
-      <svg viewBox={`0 0 ${width} ${height}`} fill="none" className="h-full">
+      <svg
+        viewBox={`0 0 ${width} ${height}`}
+        fill="none"
+        className="h-full w-full"
+      >
         <g clipPath={`url(#${id}-clip)`} className="group">
           <g className="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105">
-            <foreignObject width={width} height={height}>
-              <img className="w-full" alt="Betalectic Logo" {...props} />
+            <foreignObject
+              width={width}
+              height={height}
+              className="w-full h-full"
+            >
+              <img
+                className="w-full h-full object-cover"
+                alt="Betalectic Logo"
+                {...props}
+              />
             </foreignObject>
           </g>
           <use
