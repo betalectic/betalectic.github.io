@@ -47,6 +47,14 @@ export function Offices({
           Manikonda, Hyderabad, Telangana - 500089
         </Office>
       </li>
+      <li className="list-none">
+        <Office name="Delaware" invert={invert}>
+          3rd Floor, Mitti’s Building, Near Divyashree Lanco Hills, Chaitanya
+          Enclave
+          <br />
+          Manikonda, Delaware, US - 500089
+        </Office>
+      </li>
     </ul>
   );
 }
