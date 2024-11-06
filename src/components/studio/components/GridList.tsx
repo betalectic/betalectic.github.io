@@ -30,11 +30,13 @@ export function GridListItem({
   children,
   className,
   invert = false,
+  image = require("@site/static/img/favicon_betalectic.png").default,
 }: {
   title: string;
   children: React.ReactNode;
   className?: string;
   invert?: boolean;
+  image?: string;
 }) {
   return (
     <li
@@ -48,6 +50,23 @@ export function GridListItem({
     >
       <FadeIn>
         <Border position="left" className="pl-8" invert={invert}>
+          <div className="flex items-center space-x-2">
+            <img alt="Betalectic logo" src={image} className="w-12 h-12" />
+            <strong
+              className={clsx(
+                "font-semibold",
+                invert ? "text-white" : "text-neutral-950 dark:text-neutral-50"
+              )}
+            >
+              {title}
+            </strong>
+          </div>
+
+          {/* <img
+            alt="Betalectic logo"
+            src={require("@site/static/img/favicon_betalectic.png").default}
+            className="w-12 h-12"
+          />
           <strong
             className={clsx(
               "font-semibold",
@@ -55,8 +74,8 @@ export function GridListItem({
             )}
           >
             {title}.
-          </strong>{" "}
-          {children}
+          </strong> */}
+          <div className="p-2">{children}</div>
         </Border>
       </FadeIn>
     </li>

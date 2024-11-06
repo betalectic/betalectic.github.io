@@ -14,6 +14,7 @@ import { GridPattern } from "../components/studio/components/GridPattern";
 import { List, ListItem } from "../components/studio/components/List";
 import { StylizedImage } from "../components/studio/components/StylizedImage";
 import { TagList, TagListItem } from "../components/studio/components/TagList";
+import { IconCloud } from "../components/magicui/icon-cloud";
 
 export default function About() {
   let shouldReduceMotion = useReducedMotion();
@@ -223,7 +224,7 @@ export default function About() {
                     {group.people.map((person) => (
                       <li
                         key={person.name}
-                        className="rounded-2xl bg-white dark:bg-neutral-900 border-2 hover:bg-neutral-50 dark:hover:bg-neutral-950  hover:cursor-pointer border-neutral-200 dark:border-neutral-700 px-8 py-10"
+                        className="rounded-2xl bg-white dark:bg-neutral-900 border-2 hover:bg-neutral-50 dark:hover:bg-neutral-800  hover:cursor-pointer border-neutral-100 dark:border-neutral-800 px-8 py-10"
                       >
                         <img
                           alt=""
@@ -237,7 +238,7 @@ export default function About() {
                           {person.role}
                         </p>
                         <p
-                          className="text-sm/6 text-justify text-gray-400"
+                          className="text-sm/6 text-gray-400"
                           style={{ whiteSpace: "pre-line" }}
                         >
                           {person.description}
@@ -300,7 +301,7 @@ export default function About() {
       <Container className="group/section [counter-increment:section]">
         <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20">
           <div className="flex justify-center">
-            <FadeIn className="w-[26.75rem] flex-none lg:w-[45rem]">
+            <FadeIn className="w-[23.5rem] flex-none lg:w-[45rem]">
               <StylizedImage
                 {...image}
                 sizes="(min-width: 1024px) 41rem, 31rem"
@@ -521,6 +522,47 @@ export default function About() {
     );
   }
 
+  const slugs = [
+    "typescript",
+    "javascript",
+    "dart",
+    "java",
+    "react",
+    "flutter",
+    "android",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "testinglibrary",
+    "jest",
+    "cypress",
+    "docker",
+    "git",
+    "jira",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "androidstudio",
+    "sonarqube",
+    "figma",
+  ];
+
+  function IconCloudDemo() {
+    return (
+      <div className="relative flex size-full md:w-[800px] max-w-lg items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-20 pt-8 ">
+        <IconCloud iconSlugs={slugs} />
+      </div>
+    );
+  }
+
   return (
     <Layout title="About" description="About Betalectic">
       <MotionConfig
@@ -533,21 +575,27 @@ export default function About() {
               yOffset={-96}
               interactive
             />
-            <div className="w-full mx-auto">
-              <PageIntro eyebrow="" title="About Betalectic">
-                <p>
-                  Eclectic means ‘deriving ideas, style, or taste from a broad
-                  and diverse range of sources’
-                </p>
-                <div className="mt-10 max-w-2xl space-y-6 text-base">
+            <div className="mx-auto">
+              <div className="flex lg:flex-row flex-col-reverse">
+                <PageIntro eyebrow="" title="About Betalectic">
                   <p>
-                    In world of open source software, saas and innumerable
-                    technology stacks – we figure out what is best for your
-                    product (cost wise, development wise, scaling wise) and give
-                    you the beta.
+                    Eclectic means ‘deriving ideas, style, or taste from a broad
+                    and diverse range of sources’
                   </p>
+                  <div className="mt-10 max-w-2xl space-y-6 text-base">
+                    <p>
+                      In world of open source software, saas and innumerable
+                      technology stacks – we figure out what is best for your
+                      product (cost wise, development wise, scaling wise) and
+                      give you the beta.
+                    </p>
+                  </div>
+                </PageIntro>
+
+                <div className="mt-16">
+                  <IconCloudDemo />
                 </div>
-              </PageIntro>
+              </div>
               {/* <Culture /> */}
               <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
                 <Discover />
