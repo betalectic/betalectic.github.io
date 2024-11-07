@@ -93,14 +93,13 @@ a:hover {
   text-decoration: none;
 }
 
-/* 
 .navbar {
   @apply md:shadow-none md:bg-transparent md:absolute md:left-0 md:right-0 md:top-2 md:z-40 md:pt-14;
 }
 
 .navbar__inner {
   @apply max-w-7xl mx-auto md:px-6 lg:px-8;
-} */
+}
 
 .navbar-contact {
   color: #fff !important;

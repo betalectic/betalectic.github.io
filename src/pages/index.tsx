@@ -1,7 +1,5 @@
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
-import { List, ListItem } from "../components/studio/components/List";
-import { StylizedImage } from "../components/studio/components/StylizedImage";
 import { motion, MotionConfig, useReducedMotion } from "framer-motion";
 import { Container } from "../components/studio/components/Container";
 import { FadeIn, FadeInStagger } from "../components/studio/components/FadeIn";
@@ -13,10 +11,8 @@ import {
   GridList,
   GridListItem,
 } from "../components/studio/components/GridList";
-import React, { forwardRef, useRef } from "react";
-
-import { cn } from "../lib/utils";
-import { AnimatedBeam } from "../components/magicui/animated-beam";
+import { OrbitingCircles } from "../components/magicui/orbiting-circles";
+import { ShimmerButton } from "../components/magicui/shimmer-button";
 
 function CaseStudies({ caseStudies }: any) {
   return (
@@ -128,129 +124,65 @@ function Clients() {
   );
 }
 
-function Services() {
-  return (
-    <>
-      <SectionIntro
-        eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p className="text-neutral-700 dark:text-neutral-300">
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
-        </p>
-      </SectionIntro>
-      <Container className="mt-16">
-        <div className="lg:flex lg:items-center lg:justify-end">
-          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-            <FadeIn className="w-[26.75rem] flex-none lg:w-[45rem]">
-              <StylizedImage
-                src={require("../images/laptop.jpg").default}
-                sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
-              />
-            </FadeIn>
-          </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] text-neutral-700 dark:text-neutral-300 lg:pl-4 pl-0 list-none">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
-            </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
-            </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
-            </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
-            </ListItem>
-          </List>
-        </div>
-      </Container>
-    </>
-  );
-}
-
-import { OrbitingCircles } from "../components/magicui/orbiting-circles";
-
 export function OrbitingCirclesDemo() {
+  const isMobile = window.innerWidth < 426 ? true : false;
+  const isTablet = window.innerWidth >= 425 && window.innerWidth <= 768;
+
+  console.log("window.innerWidth", window.innerWidth, isMobile);
+
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
-        Circles
-      </span>
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black"></span>
 
       {/* Inner Circles */}
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        duration={20}
-        delay={20}
-        radius={80}
-      >
-        <Icons.googleDrive />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        duration={20}
-        delay={10}
-        radius={80}
-      >
-        <Icons.gitHub />
-      </OrbitingCircles>
-      {/* <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        duration={20}
-        delay={20}
-        radius={140}
-      >
-        <Icons.gitHub />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        duration={20}
-        delay={10}
-        radius={140}
-      >
-        <Icons.googleDrive />
-      </OrbitingCircles> */}
+      <>
+        <OrbitingCircles
+          className="size-[50px] border-none bg-transparent"
+          duration={20}
+          delay={20}
+          radius={isMobile ? 60 : isTablet ? 70 : 80}
+        >
+          <Icons.googleDrive />
+        </OrbitingCircles>
+        <OrbitingCircles
+          className="size-[50px] border-none bg-transparent"
+          duration={20}
+          delay={10}
+          radius={isMobile ? 60 : isTablet ? 70 : 80}
+        >
+          <Icons.gitHub />
+        </OrbitingCircles>
 
-      {/* Outer Circles (reverse) */}
+        {/* Outer Circles (reverse) */}
 
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={190}
-        duration={20}
-        delay={25}
-        reverse
-      >
-        <Icons.gitHub />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={190}
-        duration={20}
-        delay={19}
-        reverse
-      >
-        <Icons.gitHub />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={190}
-        duration={20}
-        delay={13}
-        reverse
-      >
-        <Icons.googleDrive />
-      </OrbitingCircles>
+        <OrbitingCircles
+          className="size-[50px] border-none bg-transparent"
+          radius={isMobile ? 125 : isTablet ? 140 : 190}
+          duration={20}
+          delay={25}
+          reverse
+        >
+          <Icons.gitHub />
+        </OrbitingCircles>
+        <OrbitingCircles
+          className="size-[50px] border-none bg-transparent"
+          radius={isMobile ? 125 : isTablet ? 140 : 190}
+          duration={20}
+          delay={19}
+          reverse
+        >
+          <Icons.gitHub />
+        </OrbitingCircles>
+        <OrbitingCircles
+          className="size-[50px] border-none bg-transparent"
+          radius={isMobile ? 125 : isTablet ? 140 : 190}
+          duration={20}
+          delay={13}
+          reverse
+        >
+          <Icons.googleDrive />
+        </OrbitingCircles>
+      </>
     </div>
   );
 }
@@ -410,14 +342,18 @@ export default function Home(): JSX.Element {
             />
 
             <main>
-              <Container className="mt-12 sm:mt-20 md:mt-20">
-                <div className="md:flex gap-20">
-                  <FadeIn className="max-w-2xl my-auto ">
-                    <h1 className="font-display text-5xl font-bold tracking-tight text-neutral-950 dark:text-gray-50 [text-wrap:balance] sm:text-7xl">
-                      Betalectic
+              <Container className="mt-12 md:mt-40">
+                <div className="md:flex">
+                  <FadeIn className=" md:w-full m-auto ">
+                    <h1 className="font-display text-4xl md:text-start sm:text-center font-bold tracking-tight text-neutral-950 dark:text-gray-50 [text-wrap:balance] sm:text-5xl">
+                      {/* Your End-to-End Product Development Partner — Crafting,
+                      Building, and Scaling Solutions */}
+                      Unlock Your Idea's Full Potential — Let's Build, Scale,
+                      and Innovate Together
+                      {/* 635bff */}
                     </h1>
 
-                    <p className="mt-6 text-xl text-neutral-600 dark:text-neutral-300">
+                    <p className="mt-6 text-xl md:text-start sm:text-center text-neutral-600 dark:text-neutral-300">
                       We are a digital solutions powerhouse, where innovation
                       meets execution at full speed. At this crossroads of
                       creativity and technology, we don’t just build software we
@@ -425,6 +361,14 @@ export default function Home(): JSX.Element {
                       challenges into seamless, tailored solutions that move
                       fast, scale effortlessly.
                     </p>
+
+                    <Link to="/contact">
+                      <ShimmerButton className="shadow-2xl mx-auto md:mx-0">
+                        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                          Start Your Project Now
+                        </span>
+                      </ShimmerButton>
+                    </Link>
                   </FadeIn>
 
                   <div className="z-50 md:w-full ">
