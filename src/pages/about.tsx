@@ -113,7 +113,7 @@ export default function About() {
           name: "Manasa Madapu",
           role: "Co-Founder & CEO",
           image: {
-            src: require("../images/team/manasa.jpg").default,
+            src: require("../images/team/manasa_ai.jpg").default,
           },
           description:
             "Manasa is the shape shifter. A young entrepreneur with a vision to develop Tech centric solutions for budding enterprises. Dynamic, committed to service excellence and developing qualitative IT products. With a background of  Civil engineering and Masters in Finance Management, Manasa envisions to bring variety of talent  in serving customers from Diverse industries.",
@@ -124,7 +124,7 @@ export default function About() {
           name: "Rajiv Seelam",
           role: "Co-Founder & CTO",
           image: {
-            src: require("../images/team/rajiv.png").default,
+            src: require("../images/team/rajiv_ai.jpg").default,
           },
           description:
             "After graduating from IIT Kharagpur in Bachelors & Masters in Computer Science and Engineering, he worked at Samsung as an Android Developer. His curiosity for web technologies made him join a startup in Delhi as CTO. Later he co-founded Betalectic to start on his own. Rajiv is very passionate about learning new technologies and implementing vivid solutions.",
@@ -334,13 +334,13 @@ export default function About() {
       >
         <div className="space-y-6 text-base text-neutral-600 dark:text-neutral-300">
           <p>
-          At Betalectic, we’re not just about delivering code; {" "}
+            At Betalectic, we’re not just about delivering code;{" "}
             <strong className="font-semibold text-neutral-950 dark:text-neutral-50">
-            we’re about delivering results.
+              we’re about delivering results.
             </strong>{" "}
-            We take the time to understand each client’s unique challenges, working as
-            an extension of their team to craft solutions that truly address their business needs.
-
+            We take the time to understand each client’s unique challenges,
+            working as an extension of their team to craft solutions that truly
+            address their business needs.
           </p>
           <p>
             By immersing ourselves in our clients’ goals, we ensure that each
@@ -348,11 +348,12 @@ export default function About() {
             meeting the demands of today while setting them up for tomorrow.
           </p>
           <p>
-            Every project at Betalectic begins with deep collaboration and strategic
-            planning, ensuring that our solutions are not only technically sound but
-            also aligned with long-term objectives. Through consistent communication
-            and iterative feedback, we empower our clients to remain agile and competitive,
-            adapting to new challenges and seizing opportunities as they emerge. 
+            Every project at Betalectic begins with deep collaboration and
+            strategic planning, ensuring that our solutions are not only
+            technically sound but also aligned with long-term objectives.
+            Through consistent communication and iterative feedback, we empower
+            our clients to remain agile and competitive, adapting to new
+            challenges and seizing opportunities as they emerge.
           </p>
         </div>
       </Section>
@@ -367,20 +368,21 @@ export default function About() {
       >
         <div className="space-y-6 text-base text-neutral-600 dark:text-neutral-300">
           <p>
-            We recognize that our clients are the domain experts in their fields,
-            and we leverage this knowledge to create technology solutions that fit
-            their unique requirements.
+            We recognize that our clients are the domain experts in their
+            fields, and we leverage this knowledge to create technology
+            solutions that fit their unique requirements.
           </p>
           <p>
-          By deeply understanding their industry challenges
-            and objectives, we develop tailored products that enhance their operational
-            effectiveness and drive innovation. Our collaborative approach ensures
-            that we align our technical expertise with our clients’ insights,
-            resulting in solutions that not only meet but exceed their expectations
+            By deeply understanding their industry challenges and objectives, we
+            develop tailored products that enhance their operational
+            effectiveness and drive innovation. Our collaborative approach
+            ensures that we align our technical expertise with our clients’
+            insights, resulting in solutions that not only meet but exceed their
+            expectations
           </p>
           <p>
-            We have been able to successfully launch various products in domains such
-            as BFSI, Oil & Gas, EduTech, Ecommerce etc.
+            We have been able to successfully launch various products in domains
+            such as BFSI, Oil & Gas, EduTech, Ecommerce etc.
           </p>
         </div>
       </Section>
@@ -395,22 +397,23 @@ export default function About() {
       >
         <div className="space-y-6 text-base text-neutral-600 dark:text-neutral-300">
           <p>
-            Our relationship with clients doesn’t end at launch.
-            As a full-cycle partner, we guide our clients from ideation through development, launch, and
-          {" "}
+            Our relationship with clients doesn’t end at launch. As a full-cycle
+            partner, we guide our clients from ideation through development,
+            launch, and{" "}
             <strong className="font-semibold text-neutral-950 dark:text-neutral-50">
-            ongoing support, 
+              ongoing support,
             </strong>
-            ensuring each solution adapts to changing needs and continues to provide
-            value. 
+            ensuring each solution adapts to changing needs and continues to
+            provide value.
           </p>
           <p>
-          By staying involved at every stage, we help our clients evolve and grow,
-          aligning our efforts with their long-term vision and goals.
+            By staying involved at every stage, we help our clients evolve and
+            grow, aligning our efforts with their long-term vision and goals.
           </p>
           <p>
-          Our commitment goes beyond project delivery; we’re dedicated to fostering lasting partnerships that
-            evolve with our clients’ growth and ambitions
+            Our commitment goes beyond project delivery; we’re dedicated to
+            fostering lasting partnerships that evolve with our clients’ growth
+            and ambitions
           </p>
         </div>
 
@@ -419,13 +422,16 @@ export default function About() {
         </h3>
         <List className="mt-8">
           <ListItem title="Dedicated Support">
-          Our team remains accessible post-launch, providing reliable support and updates to keep applications performing optimally.
+            Our team remains accessible post-launch, providing reliable support
+            and updates to keep applications performing optimally.
           </ListItem>
           <ListItem title="Scalable Solutions">
-          Our solutions are built to scale, ensuring they can seamlessly support the business as it grows.
+            Our solutions are built to scale, ensuring they can seamlessly
+            support the business as it grows.
           </ListItem>
           <ListItem title="Continuous Innovation">
-          We stay updated with the latest tech, ensuring clients stay competitive in an ever-evolving digital landscape.
+            We stay updated with the latest tech, ensuring clients stay
+            competitive in an ever-evolving digital landscape.
           </ListItem>
         </List>
       </Section>
@@ -600,18 +606,18 @@ export default function About() {
                       give you the beta.
                     </p>
                     <p>
-                    In a technology landscape filled with open-source options,
-                    SaaS solutions, and a multitude of development frameworks,
-                    we understand the challenge of navigating the right fit for
-                    your unique product. Our company steps in to simplify this journey.
-                    
-                  </p>
-                  <p>
-                  We assess your specific needs and goals to determine the ideal tech
-                    stack—one that aligns with your budget constraints, optimizes development
-                    time, and scales effortlessly as your user base grows.
-                  </p>
-
+                      In a technology landscape filled with open-source options,
+                      SaaS solutions, and a multitude of development frameworks,
+                      we understand the challenge of navigating the right fit
+                      for your unique product. Our company steps in to simplify
+                      this journey.
+                    </p>
+                    <p>
+                      We assess your specific needs and goals to determine the
+                      ideal tech stack—one that aligns with your budget
+                      constraints, optimizes development time, and scales
+                      effortlessly as your user base grows.
+                    </p>
                   </div>
                 </PageIntro>
               </div>
