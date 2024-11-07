@@ -528,83 +528,35 @@ export default function About() {
 
   function IconCloudDemo() {
     return (
-      <div className="relative flex md:w-[800px] max-w-xl items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-20 pt-8 ">
+      <div className="relative flex w-[300px] md:w-[800px] max-w-xl items-center justify-center overflow-hidden rounded-lg bg-background md:px-20 md:mt-24 ">
         <IconCloud iconSlugs={slugs} />
       </div>
     );
   }
 
   return (
-    // <Layout title="About" description="About Betalectic">
-    //   <MotionConfig
-    //     transition={shouldReduceMotion ? { duration: 0 } : undefined}
-    //   >
-    //     <motion.div layout className="relative isolate flex w-full flex-col">
-    //       <motion.div layout className="relative isolate flex w-full flex-col">
-    //         <GridPattern
-    //           className="absolute inset-x-0 -top-24 -z-10 h-[1000px] w-full fill-neutral-50  stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
-    //           yOffset={-96}
-    //           interactive
-    //         />
-    //         <Container className="mt-12 sm:mt-20 md:mt-20">
-    //           <div className="flex lg:flex-row flex-col-reverse">
-    //             <div className="w-[90%]">
-    //               <PageIntro eyebrow="" title="About Betalectic">
-    //                 <p>
-    //                   Eclectic means ‘deriving ideas, style, or taste from a
-    //                   broad and diverse range of sources’
-    //                 </p>
-    //                 <div className="mt-10 space-y-6 text-base">
-    //                   <p>
-    //                     In world of open source software, saas and innumerable
-    //                     technology stacks – we figure out what is best for your
-    //                     product (cost wise, development wise, scaling wise) and
-    //                     give you the beta.
-    //                   </p>
-    //                 </div>
-    //               </PageIntro>
-    //             </div>
-
-    //             <div className="w-1/2">
-    //               <IconCloudDemo />
-    //             </div>
-    //           </div>
-    //           {/* <Culture /> */}
-    //           <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
-    //             <Discover />
-    //             <Build />
-    //             <Deliver />
-    //           </div>
-    //           <Values />
-
-    //           <Team />
-
-    //           <ContactSection />
-    //         </Container>
-    //       </motion.div>
-    //     </motion.div>
-    //   </MotionConfig>
-    // </Layout>
     <Layout title="About" description="About Betalectic">
       <MotionConfig
         transition={shouldReduceMotion ? { duration: 0 } : undefined}
       >
         <motion.div layout className="relative isolate flex w-full flex-col">
           <Container className="mx-auto max-w-7xl px-6 py-12 sm:py-20 lg:py-32">
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
-              <div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24">
+              <div className="flex justify-center order-1 lg:order-2">
+                <IconCloudDemo />
+              </div>
+              <div className="order-2 lg:order-1">
                 <PageIntro eyebrow="" title="About Betalectic">
                   <p>
                     Eclectic means 'deriving ideas, style, or taste from a broad
                     and diverse range of sources'
                   </p>
-                  <div className="mt-8 space-y-6 text-base">  
+                  <div className="mt-8 space-y-6 text-base">
                     <p>
                       In a world of open-source software,
                       SaaS solutions, and a multitude of development frameworks,
-                      we figure out what is best for your
-                      product (cost wise, development wise, scaling wise) and
-                      give you the beta.
+                      we figure out what is best for your product (cost wise,
+                      development wise, scaling wise) and give you the beta.
                     </p>
                     <p>
                       We assess your specific needs and goals to determine the
@@ -615,20 +567,17 @@ export default function About() {
                   </div>
                 </PageIntro>
               </div>
-              <div className="flex justify-center">
-                <IconCloudDemo />
-              </div>
             </div>
-            {/* <Culture /> */}
-            <div className="mt-20 space-y-20 [counter-reset:section] sm:mt-24 sm:space-y-24 lg:mt-32 lg:space-y-32">
-              <Discover />
-              <Build />
-              <Deliver />
-            </div>
-            <Values />
-            <Team />
-            <ContactSection />
           </Container>
+          {/* <Culture /> */}
+          <div className="mt-20 space-y-20 [counter-reset:section] sm:mt-24 sm:space-y-24 lg:mt-32 lg:space-y-32">
+            <Discover />
+            <Build />
+            <Deliver />
+          </div>
+          <Values />
+          <Team />
+          <ContactSection />
         </motion.div>
       </MotionConfig>
     </Layout>
