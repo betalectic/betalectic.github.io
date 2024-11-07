@@ -97,7 +97,7 @@ const config: Config = {
       { property: "og:url", content: "https://betalectic.github.io/" },
       {
         property: "og:image",
-        content: "https://betalectic.github.io/img/betalectic_logo.png",
+        content: "https://betalectic.github.io/img/betalectic_final_logo.png",
       },
       {
         property: "og:description",
@@ -115,21 +115,30 @@ const config: Config = {
       },
       {
         name: "twitter:image",
-        content: "https://betalectic.github.io/img/betalectic_logo.png",
+        content: "https://betalectic.github.io/img/betalectic_final_logo.png",
       },
       { name: "twitter:site", content: "@betalectic" },
     ],
-    image: "img/betalectic_logo.png",
+    image: "img/betalectic_final_logo.png",
     navbar: {
       hideOnScroll: true,
       logo: {
         alt: "My Site Logo",
-        src: "img/betalectic_logo.png",
+        src: "img/betalectic_logo_svg.svg",
         href: "/",
       },
       items: [
-        { to: "/about", label: "About Us", position: "right" },
-        { to: "/contact", label: "Contact", position: "right" },
+        {
+          to: "/about",
+          label: "About us",
+          position: "right",
+        },
+        {
+          to: "/contact",
+          label: "Contact",
+          position: "right",
+          className: "navbar-contact",
+        },
       ],
     },
     footer: {
