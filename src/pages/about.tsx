@@ -328,49 +328,32 @@ export default function About() {
   function Discover() {
     return (
       <Section
-        title="Discover"
+        title="Customer-Centric Approach"
         image={{ src: require("../images/whiteboard.jpg").default }}
       >
         <div className="space-y-6 text-base text-neutral-600 dark:text-neutral-300">
           <p>
-            We work closely with our clients to understand their{" "}
+          At Betalectic, we’re not just about delivering code; {" "}
             <strong className="font-semibold text-neutral-950 dark:text-neutral-50">
-              needs
+            we’re about delivering results.
             </strong>{" "}
-            and goals, embedding ourselves in their every day operations to
-            understand what makes their business tick.
+            We take the time to understand each client’s unique challenges, working as
+            an extension of their team to craft solutions that truly address their business needs.
+
           </p>
           <p>
-            Our team of private investigators shadow the company director’s for
-            several weeks while our account managers focus on going through
-            their trash. Our senior security experts then perform social
-            engineering hacks to gain access to their{" "}
-            <strong className="font-semibold text-neutral-950 dark:text-neutral-50">
-              business
-            </strong>{" "}
-            accounts — handing that information over to our forensic accounting
-            team.
+            By immersing ourselves in our clients’ goals, we ensure that each
+            web app, mobile solution, or API we create drives tangible results,
+            meeting the demands of today while setting them up for tomorrow.
           </p>
           <p>
-            Once the full audit is complete, we report back with a comprehensive{" "}
-            <strong className="font-semibold text-neutral-950 dark:text-neutral-50">
-              plan
-            </strong>{" "}
-            and, more importantly, a budget.
+            Every project at Betalectic begins with deep collaboration and strategic
+            planning, ensuring that our solutions are not only technically sound but
+            also aligned with long-term objectives. Through consistent communication
+            and iterative feedback, we empower our clients to remain agile and competitive,
+            adapting to new challenges and seizing opportunities as they emerge. 
           </p>
         </div>
-
-        <h3 className="mt-12 font-display text-base font-semibold text-neutral-950 dark:text-neutral-50">
-          Included in this phase
-        </h3>
-        <TagList className="mt-4">
-          <TagListItem>In-depth questionnaires</TagListItem>
-          <TagListItem>Feasibility studies</TagListItem>
-          <TagListItem>Blood samples</TagListItem>
-          <TagListItem>Employee surveys</TagListItem>
-          <TagListItem>Proofs-of-concept</TagListItem>
-          <TagListItem>Forensic audit</TagListItem>
-        </TagList>
       </Section>
     );
   }
@@ -378,28 +361,25 @@ export default function About() {
   function Build() {
     return (
       <Section
-        title="Build"
+        title="Empowering Domain Experts with Our Technology Solutions"
         image={{ src: require("../images/laptop.jpg").default }}
       >
         <div className="space-y-6 text-base text-neutral-600 dark:text-neutral-300">
           <p>
-            Based off of the discovery phase, we develop a comprehensive roadmap
-            for each product and start working towards delivery. The roadmap is
-            an intricately tangled mess of technical nonsense designed to drag
-            the project out as long as possible.
+            We recognize that our clients are the domain experts in their fields,
+            and we leverage this knowledge to create technology solutions that fit
+            their unique requirements.
           </p>
           <p>
-            Each client is assigned a key account manager to keep lines of
-            communication open and obscure the actual progress of the project.
-            They act as a buffer between the client’s incessant nagging and the
-            development team who are hard at work scouring open source projects
-            for code to re-purpose.
+          By deeply understanding their industry challenges
+            and objectives, we develop tailored products that enhance their operational
+            effectiveness and drive innovation. Our collaborative approach ensures
+            that we align our technical expertise with our clients’ insights,
+            resulting in solutions that not only meet but exceed their expectations
           </p>
           <p>
-            Our account managers are trained to only reply to client emails
-            after 9pm, several days after the initial email. This reinforces the
-            general aura that we are very busy and dissuades clients from asking
-            for changes.
+            We have been able to successfully launch various products in domains such
+            as BFSI, Oil & Gas, EduTech, Ecommerce etc.
           </p>
         </div>
       </Section>
@@ -409,57 +389,42 @@ export default function About() {
   function Deliver() {
     return (
       <Section
-        title="Deliver"
+        title="Long term Partnership"
         image={{ src: require("../images/meeting.jpg").default }}
       >
         <div className="space-y-6 text-base text-neutral-600 dark:text-neutral-300">
           <p>
-            About halfway through the Build phase, we push each project out by 6
-            weeks due to a change in{" "}
+            Our relationship with clients doesn’t end at launch.
+            As a full-cycle partner, we guide our clients from ideation through development, launch, and
+          {" "}
             <strong className="font-semibold text-neutral-950 dark:text-neutral-50">
-              requirements
+            ongoing support, 
             </strong>
-            . This allows us to increase the budget a final time before launch.
+            ensuring each solution adapts to changing needs and continues to provide
+            value. 
           </p>
           <p>
-            Despite largely using pre-built components, most of the{" "}
-            <strong className="font-semibold text-neutral-950 dark:text-neutral-50">
-              progress
-            </strong>{" "}
-            on each project takes place in the final 24 hours. The development
-            time allocated to each client is actually spent making augmented
-            reality demos that go viral on social media.
+          By staying involved at every stage, we help our clients evolve and grow,
+          aligning our efforts with their long-term vision and goals.
           </p>
           <p>
-            We ensure that the main pages of the site are{" "}
-            <strong className="font-semibold text-neutral-950 dark:text-neutral-50">
-              fully functional
-            </strong>{" "}
-            at launch — the auxiliary pages will, of course, be lorem ipusm
-            shells which get updated as part of our exorbitant{" "}
-            <strong className="font-semibold text-neutral-950 dark:text-neutral-50">
-              maintenance
-            </strong>{" "}
-            retainer.
+          Our commitment goes beyond project delivery; we’re dedicated to fostering lasting partnerships that
+            evolve with our clients’ growth and ambitions
           </p>
         </div>
 
         <h3 className="mt-12 font-display text-base font-semibold text-neutral-950 dark:text-neutral-50">
-          Included in this phase
+          Our Offerings also include:
         </h3>
         <List className="mt-8">
-          <ListItem title="Testing">
-            Our projects always have 100% test coverage, which would be
-            impressive if our tests weren’t as porous as a sieve.
+          <ListItem title="Dedicated Support">
+          Our team remains accessible post-launch, providing reliable support and updates to keep applications performing optimally.
           </ListItem>
-          <ListItem title="Infrastructure">
-            To ensure reliability we only use the best Digital Ocean droplets
-            that $4 a month can buy.
+          <ListItem title="Scalable Solutions">
+          Our solutions are built to scale, ensuring they can seamlessly support the business as it grows.
           </ListItem>
-          <ListItem title="Support">
-            Because we hold the API keys for every critical service your
-            business uses, you can expect a lifetime of support, and invoices,
-            from us.
+          <ListItem title="Continuous Innovation">
+          We stay updated with the latest tech, ensuring clients stay competitive in an ever-evolving digital landscape.
           </ListItem>
         </List>
       </Section>
@@ -541,10 +506,16 @@ export default function About() {
                 </p>
                 <div className="mt-10 max-w-2xl space-y-6 text-base">
                   <p>
-                    In world of open source software, saas and innumerable
-                    technology stacks – we figure out what is best for your
-                    product (cost wise, development wise, scaling wise) and give
-                    you the beta.
+                    In a technology landscape filled with open-source options,
+                    SaaS solutions, and a multitude of development frameworks,
+                    we understand the challenge of navigating the right fit for
+                    your unique product. Our company steps in to simplify this journey.
+                    
+                  </p>
+                  <p>
+                  We assess your specific needs and goals to determine the ideal tech
+                    stack—one that aligns with your budget constraints, optimizes development
+                    time, and scales effortlessly as your user base grows.
                   </p>
                 </div>
               </PageIntro>
