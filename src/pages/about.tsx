@@ -598,19 +598,13 @@ export default function About() {
                     Eclectic means 'deriving ideas, style, or taste from a broad
                     and diverse range of sources'
                   </p>
-                  <div className="mt-8 space-y-6 text-base">
-                    <p>
-                      In world of open source software, saas and innumerable
-                      technology stacks – we figure out what is best for your
-                      product (cost wise, development wise, scaling wise) and
-                      give you the beta.
-                    </p>
+                  <div className="mt-8 space-y-6 text-base">  
                     <p>
                       In a technology landscape filled with open-source options,
                       SaaS solutions, and a multitude of development frameworks,
-                      we understand the challenge of navigating the right fit
-                      for your unique product. Our company steps in to simplify
-                      this journey.
+                      we figure out what is best for your
+                      product (cost wise, development wise, scaling wise) and
+                      give you the beta.
                     </p>
                     <p>
                       We assess your specific needs and goals to determine the
