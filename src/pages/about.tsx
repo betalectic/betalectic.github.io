@@ -234,11 +234,11 @@ export default function About() {
                         <h3 className="mt-6 text-center text-base/7 font-semibold tracking-tight dark:text-white text-black">
                           {person.name}
                         </h3>
-                        <p className="text-sm/6 text-center text-gray-400">
+                        <p className="text-sm/6 text-center text-gray-500 font-extrabold">
                           {person.role}
                         </p>
                         <p
-                          className="text-sm/6 text-gray-400"
+                          className="text-sm/6 text-gray-700 dark:text-gray-300"
                           style={{ whiteSpace: "pre-line" }}
                         >
                           {person.description}
