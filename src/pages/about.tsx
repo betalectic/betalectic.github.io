@@ -600,7 +600,7 @@ export default function About() {
                   </p>
                   <div className="mt-8 space-y-6 text-base">  
                     <p>
-                      In a technology landscape filled with open-source options,
+                      In a world of open-source software,
                       SaaS solutions, and a multitude of development frameworks,
                       we figure out what is best for your
                       product (cost wise, development wise, scaling wise) and
