@@ -12,7 +12,6 @@ import {
   GridListItem,
 } from "../components/studio/components/GridList";
 import { OrbitingCircles } from "../components/magicui/orbiting-circles";
-import { ShimmerButton } from "../components/magicui/shimmer-button";
 
 function CaseStudies({ caseStudies }: any) {
   return (
@@ -73,50 +72,78 @@ function CaseStudies({ caseStudies }: any) {
 }
 
 const clients = [
-  ["Phobia"],
-  ["Family Fund"],
-  ["Unseal"],
-  ["Mail Smirk"],
-  ["Home Work"],
-  ["Green Life"],
-  ["Bright Path"],
-  ["North Adventures"],
+  [
+    "North Adventures",
+    require("../images/clients/principal-india.webp").default,
+  ],
+  ["Phobia", require("../images/clients/cybrilla.png").default],
+  ["Family Fund", require("../images/clients/auction-bazaar.png").default],
+  ["Unseal", require("../images/clients/chick-fil-a.png").default],
+  ["Mail Smirk", require("../images/clients/finezzy.png").default],
+  ["Home Work", require("../images/clients/evoilve.png").default],
+  ["Green Life", require("../images/clients/novo.png").default],
+  ["Bright Path", require("../images/clients/wiredup.png").default],
 ];
 
 function Clients() {
   return (
-    <div className="mt-44 rounded-4xl bg-neutral-950 py-20 sm:mt-44 sm:py-32 lg:mt-56">
+    <div className="mt-24 rounded-4xl bg-white dark:bg-neutral-300 border border-neutral-800 py-20 sm:mt-24 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+          <h2 className="text-center my-auto font-display text-sm font-semibold tracking-wider text-black sm:text-left">
             We’ve worked with hundreds of amazing people
           </h2>
-          <div className="h-px flex-auto bg-neutral-800" />
+          <div className="h-px flex-auto bg-neutral-500" />
         </FadeIn>
         <FadeInStagger faster>
           <ul
             role="list"
             className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 p-0 lg:grid-cols-4"
           >
-            {clients.map(([client]) => (
-              <li key={client} className="list-none">
-                <FadeIn>
-                  <div className="flex">
-                    <img
-                      alt={client}
-                      src={
-                        require("@site/static/img/favicon_betalectic.png")
-                          .default
-                      }
-                      className="w-12 h-12"
-                    />
-                    <p className="my-auto ml-4 text-neutral-50 font-bold">
-                      {client}
-                    </p>
+            {/* <FadeIn>
+              <div className="flex-col text-center mx-auto gap-20">
+                <div className="flex justify-center gap-10">
+                  <div className="">
+                    <WiredupLogo />
                   </div>
-                </FadeIn>
-              </li>
-            ))}
+                  <div className="">
+                    <AuctionBazaarLogo />
+                  </div>
+                  <div className="">
+                    <AuctionBazaarLogo />
+                  </div>
+                  <div className="">
+                    <WiredupLogo />
+                  </div>
+                </div>
+                <div className="flex justify-center gap-10">
+                  <div className="">
+                    <WiredupLogo />
+                  </div>
+                  <div className="">
+                    <AuctionBazaarLogo />
+                  </div>
+                  <div className=""></div>
+                </div>
+              </div>
+            </FadeIn> */}
+            {clients.map(([client, logo]) => {
+              console.log("Client:", client, "Logo:", logo); // Logging client and logo
+
+              return (
+                <li key={client} className="list-none">
+                  <FadeIn>
+                    <div className="flex justify-center items-center">
+                      <img
+                        alt={client}
+                        src={logo}
+                        className="w-28 h-10 object-contain aspect-[7/2]"
+                      />
+                    </div>
+                  </FadeIn>
+                </li>
+              );
+            })}
           </ul>
         </FadeInStagger>
       </Container>
@@ -342,7 +369,7 @@ export default function Home(): JSX.Element {
             />
 
             <main>
-              <Container className="mt-12 md:mt-40">
+              <Container className="mt-12">
                 <div className="md:flex">
                   <FadeIn className=" md:w-full m-auto ">
                     <h1 className="font-display text-4xl md:text-start sm:text-center font-bold tracking-tight text-neutral-950 dark:text-gray-50 [text-wrap:balance] sm:text-5xl">
@@ -362,13 +389,13 @@ export default function Home(): JSX.Element {
                       fast, scale effortlessly.
                     </p>
 
-                    <Link to="/contact">
+                    {/* <Link to="/contact">
                       <ShimmerButton className="shadow-2xl mx-auto md:mx-0">
                         <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                           Start Your Project Now
                         </span>
                       </ShimmerButton>
-                    </Link>
+                    </Link> */}
                   </FadeIn>
 
                   <div className="z-50 md:w-full ">
@@ -377,16 +404,15 @@ export default function Home(): JSX.Element {
                       src={require("@site/static/img/hexagons.png").default}
                     /> */}
                     <OrbitingCirclesDemo />
-                    {/* <AnimatedBeamDemo /> */}
                   </div>
                 </div>
               </Container>
 
-              <div className="mt-64">
+              <div className="mt-34">
                 <Clients />
               </div>
 
-              <div className="mt-16">
+              <div className="mt-32">
                 <SectionIntro
                   eyebrow="Our Services"
                   title="Balancing reliability and innovation"
@@ -464,6 +490,13 @@ export default function Home(): JSX.Element {
                 caseStudies={[
                   {
                     href: "/",
+                    date: "2022-11-01",
+                    title: "Transforming ideas into digital solutions",
+                    description:
+                      "Where innovation meets execution at full speed. we don’t just build software we engineer impact. Our team thrives on turning complex challenges into seamless, tailored solutions that move fast, scale effortlessly.",
+                  },
+                  {
+                    href: "/",
                     date: "2023-11-01",
                     title: "Transforming ideas into digital solutions",
                     description:
@@ -472,13 +505,6 @@ export default function Home(): JSX.Element {
                   {
                     href: "/",
                     date: "2024-11-01",
-                    title: "Transforming ideas into digital solutions",
-                    description:
-                      "Where innovation meets execution at full speed. we don’t just build software we engineer impact. Our team thrives on turning complex challenges into seamless, tailored solutions that move fast, scale effortlessly.",
-                  },
-                  {
-                    href: "/",
-                    date: "2025-11-01",
                     title: "Transforming ideas into digital solutions",
                     description:
                       "Where innovation meets execution at full speed. we don’t just build software we engineer impact. Our team thrives on turning complex challenges into seamless, tailored solutions that move fast, scale effortlessly.",

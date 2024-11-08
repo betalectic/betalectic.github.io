@@ -26,7 +26,7 @@ p {
   font-family: "Inter", sans-serif;
 } */
 /* You can override the default Infima variables here. */
-:root {
+/* :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -38,10 +38,20 @@ p {
   --ifm-heading-font-family: "Mona Sans";
   --ifm-font-family-base: "Mona Sans";
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+} */
+
+:root {
+  --ifm-color-primary: #635bff;
+  --ifm-color-primary-dark: #4238ff;
+  --ifm-color-primary-darker: #3227ff;
+  --ifm-color-primary-darkest: #0c00f2;
+  --ifm-color-primary-light: #847eff;
+  --ifm-color-primary-lighter: #948fff;
+  --ifm-color-primary-lightest: #c6c3ff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
+/* [data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -50,6 +60,16 @@ p {
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
+[data-theme="dark"] {
+  --ifm-color-primary: #8884ff;
+  --ifm-color-primary-dark: #a5a0ff;
+  --ifm-color-primary-darker: #847eff;
+  --ifm-color-primary-darkest: #635bff;
+  --ifm-color-primary-light: #847eff;
+  --ifm-color-primary-lighter: #948fff;
+  --ifm-color-primary-lightest: #c6c3ff;
 }
 
 /* Increase the size of the navbar logo */
@@ -61,35 +81,18 @@ p {
 
 /* Change link color */
 a {
-  color: #020202;
+  font-weight: bold;
   text-decoration: none;
 }
 
 /* Change visited link color */
 a:visited {
-  color: #020202;
+  /* color: var(--ifm-color-primary-light); */
   text-decoration: none;
 }
 
 /* Change hover link color */
 a:hover {
-  color: #32d8b4;
-  text-decoration: none;
-}
-
-/* Dark mode link colors */
-[data-theme="dark"] a {
-  color: #f0f0f0;
-  text-decoration: none;
-}
-
-[data-theme="dark"] a:visited {
-  color: #f0f0f0;
-  text-decoration: none;
-}
-
-[data-theme="dark"] a:hover {
-  color: #32d8b4;
   text-decoration: none;
 }
 

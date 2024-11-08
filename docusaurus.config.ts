@@ -137,7 +137,7 @@ const config: Config = {
           to: "/contact",
           label: "Contact",
           position: "right",
-          className: "navbar-contact",
+          className: "md:navbar-contact",
         },
       ],
     },
