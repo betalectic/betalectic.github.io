@@ -519,7 +519,7 @@ export default function About() {
 
   function IconCloudDemo() {
     return (
-      <div className="relative flex w-[300px] md:w-[800px] max-w-xl items-center justify-center overflow-hidden rounded-lg bg-background md:px-20 md:mt-24 ">
+      <div className="relative flex w-[300px] md:w-[800px] max-w-xl items-center justify-center overflow-hidden rounded-lg bg-background md:px-20  ">
         <IconCloud iconSlugs={slugs} />
       </div>
     );
@@ -531,17 +531,24 @@ export default function About() {
         transition={shouldReduceMotion ? { duration: 0 } : undefined}
       >
         <motion.div layout className="relative isolate flex w-full flex-col">
-          <Container className="mx-auto max-w-7xl px-6 py-12 sm:py-20 lg:py-32">
-            <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24 text-justify">
+          <Container className="mx-auto max-w-7xl px-6  lg:py-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 md:mt-12 gap-10 lg:gap-12">
               <div className="flex justify-center order-1 lg:order-2">
                 <IconCloudDemo />
               </div>
-              <div className="order-2 lg:order-1">
-                <PageIntro eyebrow="" title="About Betalectic">
-                  <p>
+              <div className="order-2 lg:order-1 my-auto">
+                <FadeIn className="md:w-full">
+                  <h1 className="font-display text-4xl my-auto md:text-start sm:text-center font-bold tracking-tight text-neutral-950 dark:text-gray-50 [text-wrap:balance] sm:text-5xl">
+                    {/* Your End-to-End Product Development Partner — Crafting,
+                      Building, and Scaling Solutions */}
+                    About Betalectic
+                    {/* 635bff */}
+                  </h1>
+                  <p className="mt-8">
                     Eclectic means 'deriving ideas, style, or taste from a broad
                     and diverse range of sources'
                   </p>
+
                   <div className="mt-8 space-y-6 text-base">
                     <p>
                       In a world of open-source softwares,
@@ -556,7 +563,7 @@ export default function About() {
                       effortlessly as your user base grows.
                     </p>
                   </div>
-                </PageIntro>
+                </FadeIn>
               </div>
             </div>
           </Container>
@@ -568,7 +575,9 @@ export default function About() {
           </div>
           <Values />
           <Team />
-          <ContactSection />
+          <div className="w-full">
+            <ContactSection />
+          </div>
         </motion.div>
       </MotionConfig>
     </Layout>
