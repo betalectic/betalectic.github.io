@@ -29,7 +29,7 @@ function CaseStudies({ caseStudies }: any) {
       <Container className="my-20">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {caseStudies.map((caseStudy) => (
-            <FadeIn key={caseStudy.href} className="flex">
+            <FadeIn key={caseStudy.date} className="flex">
               <article className="relative flex w-full flex-col rounded-3xl p-6 dark:bg-neutral-900 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 dark:hover:bg-neutral-800 sm:p-8">
                 <h3>
                   <Link href={caseStudy.href}>
@@ -73,16 +73,16 @@ function CaseStudies({ caseStudies }: any) {
 
 const clients = [
   [
-    "North Adventures",
+    "Principal India",
     require("../images/clients/principal-india.webp").default,
   ],
-  ["Phobia", require("../images/clients/cybrilla.png").default],
-  ["Family Fund", require("../images/clients/auction-bazaar.png").default],
-  ["Unseal", require("../images/clients/chick-fil-a.png").default],
-  ["Mail Smirk", require("../images/clients/finezzy.png").default],
-  ["Home Work", require("../images/clients/evoilve.png").default],
-  ["Green Life", require("../images/clients/novo.png").default],
-  ["Bright Path", require("../images/clients/wiredup.png").default],
+  ["Cybrilla", require("../images/clients/cybrilla.png").default],
+  ["Auction Bazaar", require("../images/clients/auction-bazaar.png").default],
+  ["Chick-fil-A", require("../images/clients/chick-fil-a.png").default],
+  ["Finezzy", require("../images/clients/finezzy.png").default],
+  ["Evoilve", require("../images/clients/evoilve.png").default],
+  ["Novo", require("../images/clients/novo.png").default],
+  ["Wiredup", require("../images/clients/wiredup.png").default],
 ];
 
 function Clients() {
@@ -128,8 +128,6 @@ function Clients() {
               </div>
             </FadeIn> */}
             {clients.map(([client, logo]) => {
-              console.log("Client:", client, "Logo:", logo); // Logging client and logo
-
               return (
                 <li key={client} className="list-none">
                   <FadeIn>
@@ -154,8 +152,6 @@ function Clients() {
 export function OrbitingCirclesDemo() {
   const isMobile = window.innerWidth < 426 ? true : false;
   const isTablet = window.innerWidth >= 425 && window.innerWidth <= 768;
-
-  console.log("window.innerWidth", window.innerWidth, isMobile);
 
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
