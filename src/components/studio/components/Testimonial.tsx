@@ -1,17 +1,15 @@
-// import Image, { type ImageProps } from 'next/image'
 import clsx from "clsx";
-
 import { Container } from "./Container";
 import { FadeIn } from "./FadeIn";
 import { GridPattern } from "./GridPattern";
 
 export function Testimonial({
   children,
-  client,
+  client = { logo: "", name: "" },
   className,
 }: {
   children: React.ReactNode;
-  client: { logo: string; name: string };
+  client?: { logo?: string; name?: string }; // Make client optional
   className?: string;
 }) {
   return (
@@ -29,14 +27,20 @@ export function Testimonial({
         <FadeIn>
           <figure className="mx-auto max-w-4xl">
             <blockquote className="relative font-display text-3xl font-medium tracking-tight text-neutral-950 dark:text-neutral-50 sm:text-4xl border-l-0">
-              <p className="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
-                {children}
-              </p>
+              {/* Include quotation marks directly in the children content */}
+              <p>{`“${children}”`}</p>
             </blockquote>
-            <figcaption className="mt-10 flex">
-              <img src={client.logo} alt={client.name} className="w-16 h-16" />
-              <p className="my-auto text-xl font-bold">{client.name}</p>
-            </figcaption>
+            {/* Render figcaption only if client logo and name are provided */}
+            {client.logo && client.name && (
+              <figcaption className="mt-10 flex">
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="w-16 h-16"
+                />
+                <p className="my-auto text-xl font-bold">{client.name}</p>
+              </figcaption>
+            )}
           </figure>
         </FadeIn>
       </Container>

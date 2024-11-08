@@ -120,8 +120,7 @@ export default function Contact() {
           Our offices
         </h2>
         <p className="mt-6 text-base text-neutral-600 dark:text-neutral-400">
-          Prefer doing things in person? We don’t but we have to list our
-          addresses here for legal reasons.
+          Prefer doing things in person? We'd love to meet you.
         </p>
 
         <Offices className="mt-10 grid grid-cols-1 p-0 gap-8 sm:grid-cols-2" />

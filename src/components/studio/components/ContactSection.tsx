@@ -18,7 +18,7 @@ export function ContactSection() {
                 className="bg-white text-black hover:bg-neutral-300"
                 href="/contact"
               >
-                Say Hej
+                Say Hey
               </Button>
             </div>
             <div className="mt-10 border-t border-white/10 pt-10">

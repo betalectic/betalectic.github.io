@@ -40,19 +40,14 @@ export function Offices({
   return (
     <ul role="list" {...props}>
       <li className="list-none">
-        <Office name="Hyderabad" invert={invert}>
-          3rd Floor, Mitti’s Building, Near Divyashree Lanco Hills, Chaitanya
-          Enclave
-          <br />
-          Manikonda, Hyderabad, Telangana - 500089
+        <Office name="India" invert={invert}>
+          3rd Floor, Mitti’s Building, Sai Krupa Enclave, Khajaguda, Hyderabad,
+          Telangana, 500089
         </Office>
       </li>
       <li className="list-none">
-        <Office name="Delaware" invert={invert}>
-          3rd Floor, Mitti’s Building, Near Divyashree Lanco Hills, Chaitanya
-          Enclave
-          <br />
-          Manikonda, Delaware, US - 500089
+        <Office name="USA" invert={invert}>
+          651 N Broad St, Suite 206, Middletown, Delaware, 19709
         </Office>
       </li>
     </ul>
