@@ -127,7 +127,7 @@ export default function About() {
             src: require("../images/team/rajiv_ai.jpg").default,
           },
           description:
-            "After graduating from IIT Kharagpur in Bachelors & Masters in Computer Science and Engineering, he worked at Samsung as an Android Developer. His curiosity for web technologies made him join a startup in Delhi as CTO. Later he co-founded Betalectic to start on his own. Rajiv is very passionate about learning new technologies and implementing vivid solutions.",
+            "Rajiv is a visionary CTO and Head of Technology. With an insatiable curiosity for emerging technologies, he is constantly exploring new approaches to bring vivid, impactful solutions. Under his leadership, the team is inspired and empowered to push boundaries, developing solutions that drive innovation and elevate the company’s capabilities. Rajiv’s commitment to fostering a culture of collaboration and excellence makes him a guiding force, transforming ambitious ideas into impactful, user-centered products.",
           xUrl: "https://x.com/rjv_im",
           linkedinUrl: "https://www.linkedin.com/in/rajivseelam/",
         },
