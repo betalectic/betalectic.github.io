@@ -380,8 +380,8 @@ export default function Home(): JSX.Element {
                     <h1 className="font-display text-5xl font-medium md:text-start sm:text-center tracking-tight text-neutral-950 dark:text-gray-50 [text-wrap:balance] sm:text-7xl">
                       {/* Your End-to-End Product Development Partner — Crafting,
                       Building, and Scaling Solutions */}
-                      Partner with Us to Build Scalable Web & Mobile Apps, APIs,
-                      GenAI, and DevOps Solutions
+                      Partner with Us to Build Web & Mobile Apps, APIs,
+                      GenAI, and DevOps
                       {/* 635bff */}
                     </h1>
 
@@ -396,7 +396,7 @@ export default function Home(): JSX.Element {
                     <Link to="/contact">
                       <ShimmerButton className="shadow-2xl mx-auto md:mx-0">
                         <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                          Start Your Project Now
+                          Connect Now
                         </span>
                       </ShimmerButton>
                     </Link>
@@ -433,59 +433,48 @@ export default function Home(): JSX.Element {
                 <Container className="mt-24">
                   <GridList>
                     <GridListItem
-                      title="Web Apps"
+                      title="Web & Mobile Apps"
                       image={
                         require("@site/static/img/web-development.png").default
                       }
                     >
-                      Reactive Dashboards based on Vuejs, SEO Friendly
-                      Frontends, Mobile Responsive Pages, Progressive Web
-                      Applications
+                      We build responsive, scalable web and mobile applications tailored to your business needs and goals.
                     </GridListItem>
                     <GridListItem
-                      title="Architecture"
+                      title="APIs"
                       image={
                         require("@site/static/img/web-architecture.png").default
                       }
                     >
-                      We build backends on the advanced PHP framework Laravel,
-                      paired with Postgres, MySQL, Redis, and Firebase for
-                      database
+                      We design robust, secure APIs that streamline communication between systems, enhancing integration and scalability.
                     </GridListItem>
                     <GridListItem
-                      title="Mobile Apps"
+                      title="DevOps"
                       image={
                         require("@site/static/img/app-development.png").default
                       }
                     >
-                      We build native applications on Android and iOS using Java
-                      and Swift and APIs which bring these applications to life
+                      Our DevOps services optimize your development process, ensuring continuous integration, delivery, and efficient system operations.
                     </GridListItem>
                     <GridListItem
-                      title="Open Source"
+                      title="Generative AI"
                       image={
                         require("@site/static/img/open-source.png").default
                       }
                     >
-                      Your applications leverage open-source technologies with
-                      strong support including PHP, Laravel, JavaScript,
-                      Postgres, MySQL, Redis, Neo4J, Android & iOS
+                      We develop cutting-edge Generative AI solutions that drive automation and deliver tailored, data-driven experiences for businesses.
                     </GridListItem>
                     <GridListItem
-                      title="Integrations"
+                      title="UI/UX Design"
                       image={require("@site/static/img/software.png").default}
                     >
-                      We integrate with various third party APIs and SaaS Apps
-                      to make your applications very powerful. To name a few:
-                      Algolia, Firebase, Google and many more
+                      Focused on user-centric design, we craft intuitive, visually appealing interfaces that enhance user engagement and satisfaction.
                     </GridListItem>
                     <GridListItem
-                      title="Scale"
+                      title="Dedicated Team"
                       image={require("@site/static/img/cloud.png").default}
                     >
-                      We ensure scalability by deploying on AWS and Digital
-                      Ocean, with Cloudinary for image handling, and Laravel
-                      Forge & Envoyer in our workflow
+                      Our skilled, dedicated team seamlessly integrates with your project, delivering high-quality solutions and exceptional service.
                     </GridListItem>
                   </GridList>
                 </Container>
