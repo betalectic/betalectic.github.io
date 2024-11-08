@@ -116,7 +116,7 @@ export default function About() {
             src: require("../images/team/manasa_ai.jpg").default,
           },
           description:
-            "Manasa is the shape shifter. A young entrepreneur with a vision to develop Tech centric solutions for budding enterprises. Dynamic, committed to service excellence and developing qualitative IT products. With a background of  Civil engineering and Masters in Finance Management, Manasa envisions to bring variety of talent  in serving customers from Diverse industries.",
+            "Manasa is the shape shifter. An entrepreneur with a vision to develop tech-centric solutions for budding enterprises. Dynamic, committed to service excellence and developing qualitative IT products. Manasa envisions a world where businesses of all sizes can easily adapt to emerging technologies, empowering them to run their operations seamlessly and thrive in a digital-first world.",
           xUrl: "https://x.com/ManasaMadapu",
           linkedinUrl: "https://www.linkedin.com/in/manasa-madapu-02388512a/",
         },
@@ -460,32 +460,23 @@ export default function About() {
 
         <Container className="mt-24">
           <GridList>
-            <GridListItem title="Meticulous">
-              The first part of any partnership is getting our designer to put
-              your logo in our template. The second step is getting them to do
-              the colors.
+            <GridListItem title="Client-Centric Innovation">
+            We prioritize our clients’ needs, crafting solutions that foster their growth and innovation.
             </GridListItem>
-            <GridListItem title="Efficient">
-              We pride ourselves on never missing a deadline which is easy
-              because most of the work was done years ago.
+            <GridListItem title="Integrity and Transparency">
+            We uphold honesty and transparency in all interactions, building trust and credibility.
             </GridListItem>
-            <GridListItem title="Adaptable">
-              Every business has unique needs and our greatest challenge is
-              shoe-horning those needs into something we already built.
+            <GridListItem title="Excellence in Quality">
+            We are committed to delivering high-quality, secure, and scalable solutions.
             </GridListItem>
-            <GridListItem title="Honest">
-              We are transparent about all of our processes, banking on the
-              simple fact our clients never actually read anything.
+            <GridListItem title="Agility and Speed">
+            We embrace flexibility and prioritize swift delivery, especially in bringing MVPs to market.
             </GridListItem>
-            <GridListItem title="Loyal">
-              We foster long-term relationships with our clients that go beyond
-              just delivering a product, allowing us to invoice them for
-              decades.
+            <GridListItem title="Collaboration and Teamwork">
+            We believe in the power of collaboration — both within our team and with our clients.
             </GridListItem>
-            <GridListItem title="Innovative">
-              The technological landscape is always evolving and so are we. We
-              are constantly on the lookout for new open source projects to
-              clone.
+            <GridListItem title="Continuous Learning and Improvement">
+            We are dedicated to learning, growing, and adapting with the tech landscape.
             </GridListItem>
           </GridList>
         </Container>
@@ -541,7 +532,7 @@ export default function About() {
       >
         <motion.div layout className="relative isolate flex w-full flex-col">
           <Container className="mx-auto max-w-7xl px-6 py-12 sm:py-20 lg:py-32">
-            <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24 text-justify">
               <div className="flex justify-center order-1 lg:order-2">
                 <IconCloudDemo />
               </div>
@@ -553,7 +544,7 @@ export default function About() {
                   </p>
                   <div className="mt-8 space-y-6 text-base">
                     <p>
-                      In a world of open-source software,
+                      In a world of open-source softwares,
                       SaaS solutions, and a multitude of development frameworks,
                       we figure out what is best for your product (cost wise,
                       development wise, scaling wise) and give you the beta.
