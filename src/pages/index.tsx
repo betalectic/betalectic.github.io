@@ -514,9 +514,10 @@ export default function Home(): JSX.Element {
                     .default,
                 }}
               >
-                The team at Studio went above and beyond with our onboarding,
-                even finding a way to access the user’s microphone without
-                triggering one of those annoying permission dialogs.
+                We understand the challenges businesses face in today’s competitive
+                landscape. We’re here to guide you through every stage - helping you
+                shape your vision, overcome challenges, and get your app to market
+                seamlessly.
               </Testimonial>
               {/* <Services /> */}
               <ContactSection />
