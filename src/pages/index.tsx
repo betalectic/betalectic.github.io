@@ -376,8 +376,8 @@ export default function Home(): JSX.Element {
             <main>
               <Container className="mt-12">
                 <div className="md:flex">
-                  <FadeIn className=" md:w-full m-auto ">
-                    <h1 className="font-display text-4xl md:text-start sm:text-center font-bold tracking-tight text-neutral-950 dark:text-gray-50 [text-wrap:balance] sm:text-5xl">
+                  <FadeIn className="md:w-full m-auto ">
+                    <h1 className="font-display text-5xl font-medium md:text-start sm:text-center tracking-tight text-neutral-950 dark:text-gray-50 [text-wrap:balance] sm:text-7xl">
                       {/* Your End-to-End Product Development Partner — Crafting,
                       Building, and Scaling Solutions */}
                       Partner with Us to Build Scalable Web & Mobile Apps, APIs,
