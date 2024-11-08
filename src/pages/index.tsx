@@ -18,13 +18,14 @@ function CaseStudies({ caseStudies }: any) {
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="8 Years of Excellence in IT Services"
         className="mt-24 sm:mt-32 lg:mt-40 text-neutral-900 dark:text-neutral-50"
       >
         <p className="text-neutral-700 dark:text-neutral-300">
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          We believe technology is the answer to the world’s greatest challenges.
+          By harnessing its power, we can create innovative solutions that drive
+          progress and solve complex problems across industries. Through collaboration
+          and innovation, we aim to make technology accessible and impactful for all.
         </p>
       </SectionIntro>
       <Container className="my-20">
@@ -484,23 +485,23 @@ export default function Home(): JSX.Element {
                   {
                     href: "/",
                     date: "2023-11-01",
-                    title: "Transforming ideas into digital solutions",
+                    title: "Betalectic's MF Stack",
                     description:
-                      "Where innovation meets execution at full speed. we don’t just build software we engineer impact. Our team thrives on turning complex challenges into seamless, tailored solutions that move fast, scale effortlessly.",
+                      "Distribute Mutual Funds efficiently with our robust MF stack, delivering seamless solutions in just 6-8 weeks for fast market entry.",
                   },
                   {
                     href: "/",
                     date: "2024-11-01",
-                    title: "Transforming ideas into digital solutions",
+                    title: "Betalectic AI",
                     description:
-                      "Where innovation meets execution at full speed. we don’t just build software we engineer impact. Our team thrives on turning complex challenges into seamless, tailored solutions that move fast, scale effortlessly.",
+                      "Harness Betalectic AI’s advanced Generative AI solutions, designed to meet your unique business needs and drive transformative growth.",
                   },
                   {
                     href: "/",
                     date: "2025-11-01",
-                    title: "Transforming ideas into digital solutions",
+                    title: "UX Designs",
                     description:
-                      "Where innovation meets execution at full speed. we don’t just build software we engineer impact. Our team thrives on turning complex challenges into seamless, tailored solutions that move fast, scale effortlessly.",
+                      "Create intuitive, visually compelling user interfaces with our expert UI/UX design services, enhancing user experience and engagement.",
                   },
                 ]}
               />
