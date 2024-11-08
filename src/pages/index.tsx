@@ -420,13 +420,12 @@ export default function Home(): JSX.Element {
               <div className="mt-32">
                 <SectionIntro
                   eyebrow="Our Services"
-                  title="Balancing reliability and innovation"
+                  title="Transforming Ideas into Products"
                 >
                   <p className="text-base text-neutral-600 dark:text-neutral-300">
-                    We strive to stay at the forefront of emerging trends and
-                    technologies, while completely ignoring them and forking
-                    that old Rails project we feel comfortable using. We stand
-                    by our core values to justify that decision.
+                    Build your Minimum Viable Product with #shipcentric mindset. We empower
+                    your businesses to scale, innovate, and thrive. We provide end-to-end services,
+                    from development to deployment, ensuring seamless growth and efficiency.
                   </p>
                 </SectionIntro>
 
