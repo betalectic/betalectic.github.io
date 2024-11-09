@@ -13,6 +13,7 @@ import {
 } from "../components/studio/components/GridList";
 import { OrbitingCircles } from "../components/magicui/orbiting-circles";
 import { ShimmerButton } from "../components/magicui/shimmer-button";
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 
 function CaseStudies({ caseStudies }: any) {
   return (
@@ -107,8 +108,11 @@ function Clients() {
 }
 
 export function OrbitingCirclesDemo() {
-  const isMobile = window.innerWidth < 426 ? true : false;
-  const isTablet = window.innerWidth >= 425 && window.innerWidth <= 768;
+  const isMobile = ExecutionEnvironment.canUseDOM && window.innerWidth < 426;
+  const isTablet =
+    ExecutionEnvironment.canUseDOM &&
+    window.innerWidth >= 425 &&
+    window.innerWidth <= 768;
 
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
