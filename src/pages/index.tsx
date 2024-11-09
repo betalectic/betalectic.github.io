@@ -1683,34 +1683,46 @@ export default function Home(): JSX.Element {
             />
 
             <main>
-              <Container className="mt-12 ">
-                <div className="md:flex ">
-                  <FadeIn className="md:w-full m-auto flex flex-col gap-8">
-                    <h1 className="font-display text-5xl font-medium md:text-start sm:text-center tracking-tight text-neutral-950 dark:text-gray-50 [text-wrap:balance] sm:text-6xl">
+              <Container className="md:mt-12">
+                <div className="md:flex">
+                  <FadeIn className="md:w-full mx-auto flex flex-col gap-8 items-center md:items-start">
+                    <h1 className="font-display text-6xl md:text-7xl font-bold md:text-start text-center tracking-tight text-neutral-950 dark:text-gray-50 [text-wrap:balance] m-0">
                       {/* Your End-to-End Product Development Partner — Crafting,
                       Building, and Scaling Solutions */}
-                      Your End-to-End Development Partner: We build APIs, Web &
-                      Mobile Apps, and Support.
-                      {/* 635bff */}
+                      {/* Your Tech Partner in Taking Product Ideas to Market
+                      Success & Beyond */}
+                      {/* <p>
+                        We build APIs, Web & Mobile Apps, and support you for
+                        years.
+                      </p> */}
+                      Turning Visionary Ideas into Market-Ready Technology
                     </h1>
 
-                    <p className="text-xl md:text-start sm:text-center text-neutral-600 dark:text-neutral-300">
-                      We turn your ideas into products. From architecture and
-                      design to building web & mobile apps, APIs, DevOps,
-                      deployments, and Generative AI solutions, we create
-                      seamless, scalable products that drive success
+                    <p className="text-xl md:text-start text-center text-neutral-600 dark:text-neutral-300 m-0">
+                      We've been transforming visions into successful digital
+                      products since 2016, using Laravel & JavaScript{" "}
+                      <span className="font-semibold">API backends</span>, React{" "}
+                      <span className="font-semibold">web apps</span>, React
+                      Native <span className="font-semibold">mobile apps</span>,
+                      backed by expert product management throughout your
+                      journey. We are{" "}
+                      <span className="font-semibold">
+                        partners for the long run
+                      </span>{" "}
+                      - maintaining and scaling your product while you build
+                      your business.
                     </p>
 
                     <Link to="/contact">
                       <ShimmerButton className="shadow-2xl">
-                        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                          Connect Now
+                        <span className="whitespace-pre-wrap text-center text-xl font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-2xl">
+                          Setup a 30 min free call & Start Shipping
                         </span>
                       </ShimmerButton>
                     </Link>
                   </FadeIn>
 
-                  <div className="z-50 md:w-full ">
+                  <div className="z-50 md:w-full">
                     {/* <img
                       alt="Betalectic logo"
                       src={require("@site/static/img/hexagons.png").default}

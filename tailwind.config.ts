@@ -62,20 +62,20 @@ module.exports = {
       borderRadius: {
         "4xl": "2.5rem",
       },
-      // fontFamily: {
-      //   sans: ["Inter", ...defaultTheme.fontFamily.sans],
-      //   display: [
-      //     ["Inter", ...defaultTheme.fontFamily.sans],
-      //     { fontVariationSettings: '"wdth" 125' },
-      //   ],
-      // },
       fontFamily: {
-        sans: ["Mona Sans", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
         display: [
-          ["Mona Sans", ...defaultTheme.fontFamily.sans],
+          ["Inter", ...defaultTheme.fontFamily.sans],
           { fontVariationSettings: '"wdth" 125' },
         ],
       },
+      // fontFamily: {
+      //   sans: ["Mona Sans", ...defaultTheme.fontFamily.sans],
+      //   display: [
+      //     ["Mona Sans", ...defaultTheme.fontFamily.sans],
+      //     { fontVariationSettings: '"wdth" 125' },
+      //   ],
+      // },
     },
   },
 } satisfies Config;
