@@ -3,6 +3,7 @@ import { Container } from "./Container";
 import { FadeIn } from "./FadeIn";
 import { socialMediaProfiles } from "./SocialMedia";
 import { Logo } from "./Logo";
+import BetalecticLogo from "../../../../static/img/betalectic_logo_svg.svg";
 
 const navigation = [
   {
@@ -63,8 +64,7 @@ export function Footer() {
           <div className="md:ml-auto">
             <Link href="/" aria-label="Home">
               <span className="text-sm text-neutral-700 dark:text-neutral-50">
-                <Logo className="h-8" fillOnHover />© Betalectic{" "}
-                {new Date().getFullYear()}
+                <Logo className="h-8" fillOnHover />
               </span>
             </Link>
           </div>
