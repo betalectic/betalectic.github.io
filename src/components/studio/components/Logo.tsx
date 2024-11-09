@@ -1,6 +1,7 @@
 import { useId } from "react";
 import clsx from "clsx";
 import { StylizedImage } from "./StylizedImage";
+import BetalecticLogo from "../../../../static/img/betalectic_logo_svg.svg";
 
 export function Logomark({
   invert = false,
@@ -70,11 +71,7 @@ export function Logo({
     //   />
     // </svg>
     <div className="flex">
-      <img
-        alt="Betalectic logo"
-        src="/img/betalectic_logo_svg.svg"
-        className="w-32 h-12"
-      />
+      <BetalecticLogo />
       {/* <h3 className="my-auto text-black dark:text-white">Betalectic</h3> */}
     </div>
   );
