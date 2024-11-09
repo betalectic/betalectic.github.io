@@ -1700,17 +1700,14 @@ export default function Home(): JSX.Element {
 
                     <p className="text-xl md:text-start text-center text-neutral-600 dark:text-neutral-300 m-0">
                       We've been transforming visions into successful digital
-                      products since 2016, using Laravel & JavaScript{" "}
-                      <span className="font-semibold">API backends</span>, React{" "}
-                      <span className="font-semibold">web apps</span>, React
-                      Native <span className="font-semibold">mobile apps</span>,
-                      backed by expert product management throughout your
-                      journey. We are{" "}
-                      <span className="font-semibold">
-                        partners for the long run
-                      </span>{" "}
-                      - maintaining and scaling your product while you build
-                      your business.
+                      products since 2016, crafting developer-friendly{" "}
+                      <span className="font-semibold">APIs</span>, intuitive{" "}
+                      <span className="font-semibold">web apps</span> and{" "}
+                      <span className="font-semibold">mobile apps</span> with
+                      user-friendly <span className="font-semibold">UX/UI</span>
+                      . Our partnerships extend beyond launch - we stay as{" "}
+                      <span className="font-semibold">your technical team</span>{" "}
+                      evolving your product while you grow.
                     </p>
 
                     <Link to="/contact">
@@ -1740,13 +1737,13 @@ export default function Home(): JSX.Element {
               <div className="mt-32">
                 <SectionIntro
                   eyebrow="Our Services"
-                  title="Transforming Ideas into Products"
+                  title="Transforming Ideas into Businesses"
                 >
                   <p className="text-base text-neutral-600 dark:text-neutral-300">
                     Build your Minimum Viable Product with
                     <span className="font-bold"> #shipcentric</span> mindset. We
                     empower your businesses to scale, innovate, and thrive. We
-                    provide end-to-end services from
+                    provide end-to-end services from{" "}
                     <span className="font-bold">
                       Design, Development to Deployment
                     </span>
@@ -1795,7 +1792,7 @@ export default function Home(): JSX.Element {
                 </Container>
               </div>
 
-              <CaseStudies
+              {/* <CaseStudies
                 caseStudies={[
                   {
                     href: "/",
@@ -1822,7 +1819,7 @@ export default function Home(): JSX.Element {
                     icon: Icons.uxUi,
                   },
                 ]}
-              />
+              /> */}
 
               <Testimonial className="mt-24 sm:mt-32 lg:mt-40">
                 We understand the challenges businesses face in today’s

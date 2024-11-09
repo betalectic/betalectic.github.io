@@ -116,7 +116,7 @@ export default function About() {
             src: require("../images/team/manasa_ai.jpg").default,
           },
           description:
-            "Manasa is the shape shifter. An entrepreneur with a vision to develop tech-centric solutions for budding enterprises. Dynamic, committed to service excellence and developing qualitative IT products. Manasa envisions a world where businesses of all sizes can easily adapt to emerging technologies, empowering them to run their operations seamlessly and thrive in a digital-first world.",
+            "Manasa is a shape shifter. An entrepreneur with a vision to develop tech-centric solutions for budding enterprises. Dynamic, committed to service excellence and developing qualitative IT products. Manasa envisions a world where businesses of all sizes can easily adapt to emerging technologies, empowering them to run their operations seamlessly and thrive in a digital-first world.",
           xUrl: "https://x.com/ManasaMadapu",
           linkedinUrl: "https://www.linkedin.com/in/manasa-madapu-02388512a/",
         },
@@ -1014,7 +1014,7 @@ export default function About() {
           </p>
           <p>
             We have been able to successfully launch various products in domains
-            such as BFSI, Oil & Gas, EduTech, Ecommerce etc.
+            such as BFSI, Oil & Gas, EduTech, Ecommerce.
           </p>
         </div>
       </Section>
