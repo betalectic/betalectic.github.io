@@ -95,7 +95,7 @@ const config: Config = {
       {
         property: "og:title",
         content:
-          "Betalectic: We build Web apps, mobile apps, UI, UX designs, APIs, Generative AI solutions & DevOps",
+          "Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://betalectic.github.io/" },
