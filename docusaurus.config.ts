@@ -99,10 +99,10 @@ const config: Config = {
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://betalectic.github.io/" },
-      {
-        property: "og:image",
-        content: require("./static/img/social-preview.png").default,
-      },
+      // {
+      //   property: "og:image",
+      //   content: require("./static/img/social-preview.png").default,
+      // },
       {
         property: "og:description",
         content:
