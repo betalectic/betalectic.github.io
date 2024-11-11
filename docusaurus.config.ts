@@ -92,12 +92,16 @@ const config: Config = {
         name: "keywords",
         content: "betalectic, documentation, tech blog, mutual fund",
       },
-      { property: "og:title", content: "Betalectic" },
+      {
+        property: "og:title",
+        content:
+          "Betalectic: We build Web apps, mobile apps, UI, UX designs, APIs, Generative AI solutions & DevOps",
+      },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://betalectic.github.io/" },
       {
         property: "og:image",
-        content: "https://betalectic.github.io/img/betalectic_final_logo.png",
+        content: require("./static/img/social-preview.png").default,
       },
       {
         property: "og:description",
@@ -119,7 +123,7 @@ const config: Config = {
       },
       { name: "twitter:site", content: "@betalectic" },
     ],
-    image: "img/betalectic_final_logo.png",
+    image: "img/social-preview.png",
     navbar: {
       hideOnScroll: true,
       logo: {

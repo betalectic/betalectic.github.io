@@ -159,7 +159,10 @@ export default function Contact() {
   }
 
   return (
-    <Layout title="Contact" description="Contact Betalectic">
+    <Layout
+      title="Contact Betalectic for Your Technology Needs"
+      description="Connect with Betalectic for all your technology needs and digital transformation goals. We specialise in helping startups and businesses build Minimum Viable Products (MVPs) quickly and effectively, enabling faster market entry and growth. Reach out to learn how we can support your journey."
+    >
       <MotionConfig
         transition={shouldReduceMotion ? { duration: 0 } : undefined}
       >

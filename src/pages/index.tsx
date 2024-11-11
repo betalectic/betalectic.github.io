@@ -1649,9 +1649,8 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout
-      title={`Home`}
-      description="We are a digital solutions powerhouse, where innovation meets execution at full speed. At this crossroads of creativity and technology, "
-      wrapperClassName="rajiv"
+      title="Betalectic: We build Web apps, mobile apps, UI, UX designs, APIs, Generative AI solutions & DevOps"
+      description="Betalectic is a dynamic software development company specializing in creating powerful web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster. Our mission is to deliver solutions that are not only technically sound but user-centered, enhancing operational efficiency and business growth. Trusted by startups and enterprises alike, Betalectic excels in transforming complex requirements into seamless, affordable digital solutions tailored to meet client objectives."
     >
       <MotionConfig
         transition={shouldReduceMotion ? { duration: 0 } : undefined}

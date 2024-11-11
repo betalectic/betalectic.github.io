@@ -1180,7 +1180,11 @@ export default function About() {
   }
 
   return (
-    <Layout title="About" description="About Betalectic">
+    <Layout
+      title="About Betalectic: Your Partner in Digital Transformation
+"
+      description="At Betalectic we go beyond traditional software development to deliver custom, innovative technology solutions. From web and mobile applications to AI-powered tools, API development, and DevOps, we design systems that drive growth and efficiency. Our mission is to empower businesses to scale and succeed by building robust, user-centered digital products that are fast to market and cost-effective. Trusted by startups and enterprises, we prioritize secure, scalable architectures tailored to meet each client’s unique needs. Discover how we bring your digital vision to life."
+    >
       <MotionConfig
         transition={shouldReduceMotion ? { duration: 0 } : undefined}
       >
