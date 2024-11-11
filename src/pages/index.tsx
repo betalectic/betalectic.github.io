@@ -1700,7 +1700,7 @@ export default function Home(): JSX.Element {
                     <Link to="/contact">
                       <ShimmerButton className="shadow-2xl">
                         <span className="whitespace-pre-wrap text-center text-xl font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-2xl">
-                          Setup a 30 min free call & Start Shipping
+                          Setup a 30 min free call
                         </span>
                       </ShimmerButton>
                     </Link>
