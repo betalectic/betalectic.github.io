@@ -3,7 +3,6 @@ import { Container } from "./Container";
 import { FadeIn } from "./FadeIn";
 import { socialMediaProfiles } from "./SocialMedia";
 import { Logo } from "./Logo";
-import BetalecticLogo from "../../../../static/img/betalectic_logo_svg.svg";
 
 const navigation = [
   {
@@ -61,15 +60,16 @@ export function Footer() {
       <FadeIn>
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           <Navigation />
-          <div className="md:ml-auto">
+          <div className="lg:ml-auto">
             <Link href="/" aria-label="Home">
               <span className="text-sm text-neutral-700 dark:text-neutral-50">
                 <Logo className="h-8" fillOnHover />
               </span>
             </Link>
+            <p className="text-sm text-center">© 2024 Betalectic</p>
           </div>
         </div>
-        <div className="mb-20 mt-24 flex flex-wrap items-end justify-center gap-x-6"></div>
+        <div className="mb-16 mt-24 flex flex-wrap items-end justify-center gap-x-6"></div>
       </FadeIn>
     </Container>
   );

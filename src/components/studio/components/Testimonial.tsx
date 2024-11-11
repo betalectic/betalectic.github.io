@@ -28,7 +28,7 @@ export function Testimonial({
           <figure className="mx-auto max-w-4xl">
             <blockquote className="relative font-display text-3xl font-medium tracking-tight text-neutral-950 dark:text-neutral-50 sm:text-4xl border-l-0">
               {/* Include quotation marks directly in the children content */}
-              <p>{`“${children}”`}</p>
+              <p>{`${children}`}</p>
             </blockquote>
             {/* Render figcaption only if client logo and name are provided */}
             {client.logo && client.name && (

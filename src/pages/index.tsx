@@ -72,7 +72,7 @@ const clients = [
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-100 dark:bg-neutral-300 py-20 sm:mt-24 sm:py-32 lg:mt-56">
+    <div className="mt-24 rounded-4xl bg-neutral-100 dark:bg-neutral-300 py-20 sm:mt-24 sm:py-32 lg:mt-48">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center my-auto font-display text-sm font-semibold tracking-wider text-black sm:text-left">
@@ -121,67 +121,55 @@ export function OrbitingCirclesDemo() {
       {/* Inner Circles */}
       <>
         <OrbitingCircles
+          text="Web & Mobile"
           className="size-[80px] border-none bg-transparent"
           duration={20}
           delay={20}
           radius={isMobile ? 60 : isTablet ? 70 : 80}
         >
-          <div className="flex-col">
-            <Icons.webMobile />
-            <p className="font-bold text-sm text-center">
-              Web & <br /> Mobile
-            </p>
-          </div>
+          <Icons.webMobile />
         </OrbitingCircles>
         <OrbitingCircles
-          className="size-[45px] border-none bg-transparent"
+          text="APIs"
+          className="size-[80px] border-none bg-transparent"
           duration={20}
           delay={10}
           radius={isMobile ? 60 : isTablet ? 70 : 80}
         >
-          <div className="flex-col">
-            <Icons.api />
-            <p className="font-bold text-sm text-center">APIs</p>
-          </div>
+          <Icons.api />
         </OrbitingCircles>
 
         {/* Outer Circles (reverse) */}
 
         <OrbitingCircles
+          text="BFSI"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 125 : isTablet ? 140 : 190}
+          radius={isMobile ? 155 : isTablet ? 160 : 190}
           duration={20}
           delay={25}
           reverse
         >
-          <div className="flex-col">
-            <Icons.bfsi />
-            <p className="font-bold text-sm text-center">BFSI</p>
-          </div>
+          <Icons.bfsi />
         </OrbitingCircles>
         <OrbitingCircles
+          text="DevOps"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 125 : isTablet ? 140 : 190}
+          radius={isMobile ? 155 : isTablet ? 160 : 190}
           duration={20}
           delay={19}
           reverse
         >
-          <div className="flex-col">
-            <Icons.devOps />
-            <p className="font-bold text-sm text-center">DevOps</p>
-          </div>
+          <Icons.devOps />
         </OrbitingCircles>
         <OrbitingCircles
+          text="AI"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 125 : isTablet ? 140 : 190}
+          radius={isMobile ? 155 : isTablet ? 160 : 190}
           duration={20}
           delay={13}
           reverse
         >
-          <div className="flex-col">
-            <Icons.genAi />
-            <p className="font-bold text-sm text-center">AI</p>
-          </div>
+          <Icons.genAi />
         </OrbitingCircles>
       </>
     </div>
@@ -1730,7 +1718,7 @@ export default function Home(): JSX.Element {
                 </div>
               </Container>
 
-              <div className="mt-34">
+              <div className="mt-24">
                 <Clients />
               </div>
 

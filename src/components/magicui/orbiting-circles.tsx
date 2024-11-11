@@ -1,6 +1,7 @@
 import { cn } from "../../lib/utils";
 
 export interface OrbitingCirclesProps {
+  text: string;
   className?: string;
   children?: React.ReactNode;
   reverse?: boolean;
@@ -11,6 +12,7 @@ export interface OrbitingCirclesProps {
 }
 
 export function OrbitingCircles({
+  text,
   className,
   children,
   reverse,
@@ -52,6 +54,9 @@ export function OrbitingCircles({
         )}
       >
         {children}
+        <p className="absolute top-16 text-center text-sm font-bold w-fit m-0 text-nowrap">
+          {text}
+        </p>
       </div>
     </>
   );
