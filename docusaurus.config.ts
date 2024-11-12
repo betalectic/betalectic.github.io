@@ -90,7 +90,8 @@ const config: Config = {
     metadata: [
       {
         name: "keywords",
-        content: "betalectic, documentation, tech blog, mutual fund",
+        content:
+          "Betalectic, software development, web apps, mobile apps, UI/UX design, APIs, generative AI, DevOps, mutual fund tech, digital solutions, tech blog, documentation",
       },
       {
         property: "og:title",
@@ -99,27 +100,31 @@ const config: Config = {
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://betalectic.github.io/" },
-      // {
-      //   property: "og:image",
-      //   content: require("./static/img/social-preview.png").default,
-      // },
+      {
+        property: "og:image",
+        content: "img/social-preview.png",
+      },
       {
         property: "og:description",
         content:
-          "We are a digital solutions powerhouse, where innovation meets execution at full speed. At this crossroads of creativity and technology.",
+          "Betalectic is a dynamic software development company specializing in creating powerful web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster. Our mission is to deliver solutions that are not only technically sound but user-centered, enhancing operational efficiency and business growth. Trusted by startups and enterprises alike, Betalectic excels in transforming complex requirements into seamless, affordable digital solutions tailored to meet client objectives.",
       },
       { property: "og:site_name", content: "Betalectic" },
       { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Betalectic" },
+      {
+        name: "twitter:title",
+        content:
+          "Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps",
+      },
       {
         name: "twitter:description",
         content:
-          "We are a digital solutions powerhouse, where innovation meets execution at full speed. At this crossroads of creativity and technology.",
+          "Betalectic is a dynamic software development company specializing in creating powerful web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster. Our mission is to deliver solutions that are not only technically sound but user-centered, enhancing operational efficiency and business growth. Trusted by startups and enterprises alike, Betalectic excels in transforming complex requirements into seamless, affordable digital solutions tailored to meet client objectives.",
       },
       {
         name: "twitter:image",
-        content: "https://betalectic.github.io/img/betalectic_final_logo.png",
+        content: "img/social-preview.png",
       },
       { name: "twitter:site", content: "@betalectic" },
     ],

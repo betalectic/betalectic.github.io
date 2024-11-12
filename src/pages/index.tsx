@@ -144,7 +144,7 @@ export function OrbitingCirclesDemo() {
         <OrbitingCircles
           text="BFSI"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 150 : isTablet ? 160 : 190}
+          radius={isMobile ? 142 : isTablet ? 160 : 190}
           duration={20}
           delay={25}
           reverse
@@ -154,7 +154,7 @@ export function OrbitingCirclesDemo() {
         <OrbitingCircles
           text="DevOps"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 150 : isTablet ? 160 : 190}
+          radius={isMobile ? 142 : isTablet ? 160 : 190}
           duration={20}
           delay={19}
           reverse
@@ -164,7 +164,7 @@ export function OrbitingCirclesDemo() {
         <OrbitingCircles
           text="AI"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 150 : isTablet ? 160 : 190}
+          radius={isMobile ? 142 : isTablet ? 160 : 190}
           duration={20}
           delay={13}
           reverse
@@ -1697,7 +1697,7 @@ export default function Home(): JSX.Element {
                       evolving your product while you grow.
                     </p>
 
-                    <Link to="/contact">
+                    <Link to="https://cal.com/manasa-madapu">
                       <ShimmerButton className="shadow-2xl">
                         <span className="whitespace-pre-wrap text-center text-xl font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-2xl">
                           Setup a 30 min free call
