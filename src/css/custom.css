@@ -107,13 +107,3 @@ a:hover {
 .navbar__inner {
   @apply max-w-7xl mx-auto md:px-6 lg:px-8;
 } */
-
-.navbar-contact {
-  color: #fff !important;
-  font-weight: bold;
-  background-color: #000;
-  padding: 3px 8px;
-  margin-right: 8px;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
