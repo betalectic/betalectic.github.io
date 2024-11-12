@@ -10,7 +10,7 @@ const BASE_URL =
 const config: Config = {
   title: "Betalectic",
   tagline: "Some tagline to keep things simple",
-  favicon: "img/favicon_betalectic.png",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
   url: "https://betalectic.github.io",
@@ -86,7 +86,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     metadata: [
       {
         name: "keywords",
@@ -150,6 +149,7 @@ const config: Config = {
         },
       ],
     },
+
     footer: {
       style: "dark",
       links: [

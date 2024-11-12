@@ -72,7 +72,7 @@ const clients = [
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-100 dark:bg-neutral-300 py-20 sm:mt-24 sm:py-32 lg:mt-48">
+    <div className="rounded-4xl bg-neutral-100 dark:bg-neutral-300 py-20 sm:mt-8 sm:py-32 lg:mt-48">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center my-auto font-display text-sm font-semibold tracking-wider text-black sm:text-left">
@@ -144,7 +144,7 @@ export function OrbitingCirclesDemo() {
         <OrbitingCircles
           text="BFSI"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 142 : isTablet ? 160 : 190}
+          radius={isMobile ? 140 : isTablet ? 160 : 190}
           duration={20}
           delay={25}
           reverse
@@ -154,7 +154,7 @@ export function OrbitingCirclesDemo() {
         <OrbitingCircles
           text="DevOps"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 142 : isTablet ? 160 : 190}
+          radius={isMobile ? 140 : isTablet ? 160 : 190}
           duration={20}
           delay={19}
           reverse
@@ -164,7 +164,7 @@ export function OrbitingCirclesDemo() {
         <OrbitingCircles
           text="AI"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 142 : isTablet ? 160 : 190}
+          radius={isMobile ? 140 : isTablet ? 160 : 190}
           duration={20}
           delay={13}
           reverse
@@ -186,7 +186,7 @@ const Icons = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_dii_14599_553561)">
-        <rect x="2" y="1" width="48" height="48" rx="24" fill="#645BFF" />
+        <rect x="2" y="1" width="48" height="48" rx="24" fill="#FF8000" />
         <rect
           x="3"
           y="2"
@@ -425,7 +425,7 @@ const Icons = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_dii_14599_553555)">
-        <rect x="2" y="1" width="48" height="48" rx="24" fill="#645BFF" />
+        <rect x="2" y="1" width="48" height="48" rx="24" fill="#AE445A" />
         <rect
           x="3"
           y="2"
@@ -546,7 +546,7 @@ const Icons = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_dii_14599_553543)">
-        <rect x="2" y="1" width="48" height="48" rx="24" fill="#645BFF" />
+        <rect x="2" y="1" width="48" height="48" rx="24" fill="#FA4032" />
         <rect
           x="3"
           y="2"
@@ -667,7 +667,7 @@ const Icons = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_dii_14599_553564)">
-        <rect x="2" y="1" width="48" height="48" rx="24" fill="#645BFF" />
+        <rect x="2" y="1" width="48" height="48" rx="24" fill="#006A67" />
         <rect
           x="3"
           y="2"
@@ -1717,7 +1717,7 @@ export default function Home(): JSX.Element {
                 </div>
               </Container>
 
-              <div className="mt-24">
+              <div className="">
                 <Clients />
               </div>
 
