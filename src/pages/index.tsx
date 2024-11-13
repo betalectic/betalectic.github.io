@@ -111,7 +111,7 @@ export function OrbitingCirclesDemo() {
   const isMobile = ExecutionEnvironment.canUseDOM && window.innerWidth < 426;
   const isTablet =
     ExecutionEnvironment.canUseDOM &&
-    window.innerWidth >= 425 &&
+    window.innerWidth >= 426 &&
     window.innerWidth <= 768;
 
   console.log("isMobile", isMobile);
