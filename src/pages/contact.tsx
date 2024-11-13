@@ -193,7 +193,7 @@ export default function Contact() {
                   {/* Tally Form */}
                   <div className="lg:ml-auto flex lg:justify-start">
                     <iframe
-                      src="https://tally.so/embed/nPB6RB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                      src="https://tally.so/embed/nGoKbO?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
                       className=" dark:filter dark:invert dark:brightness-90"
                       width="500"
                       height="600"
