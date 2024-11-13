@@ -3,7 +3,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.html", "./src/**/*.js", "./src/**/*.tsx"],
+  content: ["./src/**/*.html", "./src/**/*.js", "./src/**/*.tsx", "./*.ts"],
   corePlugins: { preflight: false, container: false },
   // important: "#tailwind_preflight",
   darkMode: ["class", '[data-theme="dark"]'],
@@ -22,23 +22,60 @@ module.exports = {
       "7xl": ["4rem", { lineHeight: "4.5rem" }],
     },
     extend: {
+      animation: {
+        "shimmer-slide":
+          "shimmer-slide var(--speed) ease-in-out infinite alternate",
+        "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
+        orbit: "orbit calc(var(--duration)*1s) linear infinite",
+      },
+      keyframes: {
+        orbit: {
+          "0%": {
+            transform:
+              "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+          },
+          "100%": {
+            transform:
+              "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+          },
+        },
+        "spin-around": {
+          "0%": {
+            transform: "translateZ(0) rotate(0)",
+          },
+          "15%, 35%": {
+            transform: "translateZ(0) rotate(90deg)",
+          },
+          "65%, 85%": {
+            transform: "translateZ(0) rotate(270deg)",
+          },
+          "100%": {
+            transform: "translateZ(0) rotate(360deg)",
+          },
+        },
+        "shimmer-slide": {
+          to: {
+            transform: "translate(calc(100cqw - 100%), 0)",
+          },
+        },
+      },
       borderRadius: {
         "4xl": "2.5rem",
       },
-      // fontFamily: {
-      //   sans: ["Inter", ...defaultTheme.fontFamily.sans],
-      //   display: [
-      //     ["Inter", ...defaultTheme.fontFamily.sans],
-      //     { fontVariationSettings: '"wdth" 125' },
-      //   ],
-      // },
       fontFamily: {
-        sans: ["Mona Sans", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
         display: [
-          ["Mona Sans", ...defaultTheme.fontFamily.sans],
+          ["Inter", ...defaultTheme.fontFamily.sans],
           { fontVariationSettings: '"wdth" 125' },
         ],
       },
+      // fontFamily: {
+      //   sans: ["Mona Sans", ...defaultTheme.fontFamily.sans],
+      //   display: [
+      //     ["Mona Sans", ...defaultTheme.fontFamily.sans],
+      //     { fontVariationSettings: '"wdth" 125' },
+      //   ],
+      // },
     },
   },
 } satisfies Config;

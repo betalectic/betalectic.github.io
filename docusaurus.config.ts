@@ -10,7 +10,7 @@ const BASE_URL =
 const config: Config = {
   title: "Betalectic",
   tagline: "Some tagline to keep things simple",
-  favicon: "img/favicon_betalectic.png",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
   url: "https://betalectic.github.io",
@@ -80,58 +80,75 @@ const config: Config = {
       tagName: "link",
       attributes: {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap", // Adjust weights as needed
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap", // Adjust weights as needed
       },
     },
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     metadata: [
       {
         name: "keywords",
-        content: "betalectic, documentation, tech blog, mutual fund",
+        content:
+          "Betalectic, software development, web apps, mobile apps, UI/UX design, APIs, generative AI, DevOps, mutual fund tech, digital solutions, tech blog, documentation",
       },
-      { property: "og:title", content: "Betalectic" },
+      {
+        property: "og:title",
+        content:
+          "Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps",
+      },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://betalectic.github.io/" },
-      {
-        property: "og:image",
-        content: "https://betalectic.github.io/img/betalectic_logo.png",
-      },
+      // {
+      //   property: "og:image",
+      //   content: "img/social-preview.png",
+      // },
       {
         property: "og:description",
         content:
-          "We are a digital solutions powerhouse, where innovation meets execution at full speed. At this crossroads of creativity and technology.",
+          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster",
       },
       { property: "og:site_name", content: "Betalectic" },
       { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Betalectic" },
+      {
+        name: "twitter:title",
+        content:
+          "Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps",
+      },
       {
         name: "twitter:description",
         content:
-          "We are a digital solutions powerhouse, where innovation meets execution at full speed. At this crossroads of creativity and technology.",
+          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster",
       },
       {
         name: "twitter:image",
-        content: "https://betalectic.github.io/img/betalectic_logo.png",
+        content: "img/social-preview.png",
       },
       { name: "twitter:site", content: "@betalectic" },
     ],
-    image: "img/betalectic_logo.png",
+    image: "img/social-preview.png",
     navbar: {
       hideOnScroll: true,
       logo: {
         alt: "My Site Logo",
-        src: "img/betalectic_logo.png",
+        src: "img/betalectic_logo_svg.svg",
         href: "/",
       },
       items: [
-        { to: "/about", label: "About Us", position: "right" },
-        { to: "/contact", label: "Contact", position: "right" },
+        {
+          to: "/about",
+          label: "About us",
+          position: "right",
+        },
+        {
+          to: "/contact",
+          label: "Contact",
+          position: "right",
+        },
       ],
     },
+
     footer: {
       style: "dark",
       links: [

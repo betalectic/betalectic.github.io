@@ -9,6 +9,7 @@ import { Border } from "../components/studio/components/Border";
 import { Offices } from "../components/studio/components/Offices";
 import { SocialMedia } from "../components/studio/components/SocialMedia";
 import { motion, MotionConfig, useReducedMotion } from "framer-motion";
+import { ShimmerButton } from "../components/magicui/shimmer-button";
 import { GridPattern } from "../components/studio/components/GridPattern";
 
 export default function Contact() {
@@ -120,8 +121,7 @@ export default function Contact() {
           Our offices
         </h2>
         <p className="mt-6 text-base text-neutral-600 dark:text-neutral-400">
-          Prefer doing things in person? We don’t but we have to list our
-          addresses here for legal reasons.
+          Prefer doing things in person? We'd love to meet you.
         </p>
 
         <Offices className="mt-10 grid grid-cols-1 p-0 gap-8 sm:grid-cols-2" />
@@ -160,7 +160,10 @@ export default function Contact() {
   }
 
   return (
-    <Layout title="Contact" description="Contact Betalectic">
+    <Layout
+      title="Contact Betalectic for Your Technology Needs"
+      description="Connect with Betalectic for all your technology needs and digital transformation goals. We specialise in helping startups and businesses build Minimum Viable Products (MVPs) quickly and effectively, enabling faster market entry and growth. Reach out to learn how we can support your journey."
+    >
       <MotionConfig
         transition={shouldReduceMotion ? { duration: 0 } : undefined}
       >
@@ -175,18 +178,25 @@ export default function Contact() {
             <div className="w-full mx-auto">
               <PageIntro eyebrow="Contact us" title="Let’s work together">
                 <p>We can’t wait to hear from you.</p>
+                <Link to="https://cal.com/manasa-madapu">
+                  <ShimmerButton className="shadow-2xl">
+                    <span className="whitespace-pre-wrap text-center text-xl font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-2xl">
+                      Setup a 30 min free call
+                    </span>
+                  </ShimmerButton>
+                </Link>
               </PageIntro>
-              <Container className="mt-24 sm:mt-32 lg:mt-40">
+              <Container className="mt-24 sm:mt-32">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
                   {/* <ContactForm /> */}
                   <ContactDetails />
                   {/* Tally Form */}
-                  <div className="lg:ml-auto flex justify-center lg:justify-start">
+                  <div className="lg:ml-auto flex lg:justify-start">
                     <iframe
                       src="https://tally.so/embed/nPB6RB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
                       className=" dark:filter dark:invert dark:brightness-90"
                       width="500"
-                      height="818"
+                      height="600"
                     >
                       Loading..
                     </iframe>

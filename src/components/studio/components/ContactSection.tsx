@@ -16,9 +16,9 @@ export function ContactSection() {
               <Button
                 invert={false}
                 className="bg-white text-black hover:bg-neutral-300"
-                href="/contact"
+                href="https://cal.com/manasa-madapu"
               >
-                Say Hej
+                Setup a 30 min free call
               </Button>
             </div>
             <div className="mt-10 border-t border-white/10 pt-10">

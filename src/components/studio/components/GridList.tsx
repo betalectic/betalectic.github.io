@@ -30,11 +30,15 @@ export function GridListItem({
   children,
   className,
   invert = false,
+  image,
+  icon: Icon,
 }: {
   title: string;
   children: React.ReactNode;
   className?: string;
   invert?: boolean;
+  image?: string;
+  icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 }) {
   return (
     <li
@@ -42,21 +46,43 @@ export function GridListItem({
         "text-base",
         invert
           ? "text-neutral-300 before:bg-white after:bg-white/10"
-          : "text-neutral-600 before:bg-neutral-950 after:bg-neutral-100",
+          : "text-neutral-600 dark:text-neutral-300 before:bg-neutral-950 after:bg-neutral-100",
         className
       )}
     >
       <FadeIn>
         <Border position="left" className="pl-8" invert={invert}>
+          <div className="flex items-center space-x-2">
+            {Icon ? (
+              <Icon className="w-12 h-12" />
+            ) : (
+              <img alt="Betalectic logo" src={image} className="w-12 h-12" />
+            )}
+            {/* <img alt="Betalectic logo" src={image} className="w-12 h-12" /> */}
+            <strong
+              className={clsx(
+                "font-semibold",
+                invert ? "text-white" : "text-neutral-950 dark:text-neutral-50"
+              )}
+            >
+              {title}
+            </strong>
+          </div>
+
+          {/* <img
+            alt="Betalectic logo"
+            src={require("@site/static/img/favicon_betalectic.png").default}
+            className="w-12 h-12"
+          />
           <strong
             className={clsx(
               "font-semibold",
-              invert ? "text-white" : "text-neutral-950"
+              invert ? "text-white" : "text-neutral-950 dark:text-neutral-50"
             )}
           >
             {title}.
-          </strong>{" "}
-          {children}
+          </strong> */}
+          <div className="p-2">{children}</div>
         </Border>
       </FadeIn>
     </li>

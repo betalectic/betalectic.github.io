@@ -6,14 +6,10 @@ import { Logo } from "./Logo";
 
 const navigation = [
   {
-    title: <p className="text-neutral-950 dark:text-neutral-50">Work</p>,
-    links: [],
-  },
-  {
     title: <p className="text-neutral-950 dark:text-neutral-50">Company</p>,
     links: [
-      { title: "About", href: "/about" },
-      { title: "Contact us", href: "/contact" },
+      { title: "About us", href: "/about" },
+      { title: "Contact", href: "/contact" },
     ],
   },
   {
@@ -64,15 +60,16 @@ export function Footer() {
       <FadeIn>
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           <Navigation />
+          <div className="lg:ml-auto">
+            <Link href="/" aria-label="Home">
+              <span className="text-sm text-neutral-700 dark:text-neutral-50">
+                <Logo className="h-8" fillOnHover />
+              </span>
+            </Link>
+            <p className="text-sm text-center">© 2024 Betalectic</p>
+          </div>
         </div>
-        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
-          <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover />
-          </Link>
-          <p className="text-sm text-neutral-700 dark:text-neutral-50">
-            © Betalectic {new Date().getFullYear()}
-          </p>
-        </div>
+        <div className="mb-16 mt-24 flex flex-wrap items-end justify-center gap-x-6"></div>
       </FadeIn>
     </Container>
   );
