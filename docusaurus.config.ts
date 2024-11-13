@@ -106,7 +106,7 @@ const config: Config = {
       {
         property: "og:description",
         content:
-          "Betalectic is a custom software development company specializing in creating powerful web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster. Our mission is to deliver solutions that are not only technically sound but user-centered, enhancing operational efficiency and business growth. Trusted by startups and enterprises alike, Betalectic excels in transforming complex requirements into seamless, affordable digital solutions tailored to meet client objectives.",
+          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster",
       },
       { property: "og:site_name", content: "Betalectic" },
       { property: "og:locale", content: "en_US" },
@@ -119,7 +119,7 @@ const config: Config = {
       {
         name: "twitter:description",
         content:
-          "Betalectic is a custom software development company specializing in creating powerful web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster. Our mission is to deliver solutions that are not only technically sound but user-centered, enhancing operational efficiency and business growth. Trusted by startups and enterprises alike, Betalectic excels in transforming complex requirements into seamless, affordable digital solutions tailored to meet client objectives.",
+          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster",
       },
       {
         name: "twitter:image",

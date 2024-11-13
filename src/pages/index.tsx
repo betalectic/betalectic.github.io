@@ -186,7 +186,7 @@ const Icons = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_dii_14599_553561)">
-        <rect x="2" y="1" width="48" height="48" rx="24" fill="#FF8000" />
+        <rect x="2" y="1" width="48" height="48" rx="24" fill="#645BFF" />
         <rect
           x="3"
           y="2"
@@ -425,7 +425,7 @@ const Icons = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_dii_14599_553555)">
-        <rect x="2" y="1" width="48" height="48" rx="24" fill="#AE445A" />
+        <rect x="2" y="1" width="48" height="48" rx="24" fill="#645BFF" />
         <rect
           x="3"
           y="2"
@@ -546,7 +546,7 @@ const Icons = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_dii_14599_553543)">
-        <rect x="2" y="1" width="48" height="48" rx="24" fill="#FA4032" />
+        <rect x="2" y="1" width="48" height="48" rx="24" fill="#645BFF" />
         <rect
           x="3"
           y="2"
@@ -667,7 +667,7 @@ const Icons = {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_dii_14599_553564)">
-        <rect x="2" y="1" width="48" height="48" rx="24" fill="#006A67" />
+        <rect x="2" y="1" width="48" height="48" rx="24" fill="#645BFF" />
         <rect
           x="3"
           y="2"
@@ -1650,7 +1650,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title="Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps"
-      description="Betalectic is a custom software development company specializing in creating powerful web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster. Our mission is to deliver solutions that are not only technically sound but user-centered, enhancing operational efficiency and business growth. Trusted by startups and enterprises alike, Betalectic excels in transforming complex requirements into seamless, affordable digital solutions tailored to meet client objectives."
+      description="Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster"
     >
       <MotionConfig
         transition={shouldReduceMotion ? { duration: 0 } : undefined}
