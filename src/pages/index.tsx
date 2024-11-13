@@ -114,7 +114,7 @@ export function OrbitingCirclesDemo() {
     window.innerWidth >= 425 &&
     window.innerWidth <= 768;
 
-  console.log("isMobile", isMobile, window.innerWidth);
+  console.log("isMobile", isMobile);
   console.log("isTablet", isTablet);
 
   return (
