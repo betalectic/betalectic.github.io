@@ -13,7 +13,7 @@ import {
 } from "../components/studio/components/GridList";
 import { OrbitingCircles } from "../components/magicui/orbiting-circles";
 import { ShimmerButton } from "../components/magicui/shimmer-button";
-import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+import { useState, useEffect } from "react";
 
 function CaseStudies({ caseStudies }: any) {
   return (
@@ -107,15 +107,26 @@ function Clients() {
   );
 }
 
-export function OrbitingCirclesDemo() {
-  const isMobile = ExecutionEnvironment.canUseDOM && window.innerWidth < 426;
-  const isTablet =
-    ExecutionEnvironment.canUseDOM &&
-    window.innerWidth >= 426 &&
-    window.innerWidth <= 768;
+function OrbitingCirclesDemo() {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
 
-  console.log("isMobile", isMobile);
-  console.log("isTablet", isTablet);
+  useEffect(() => {
+    const updateDeviceType = () => {
+      const width = window.innerWidth;
+      setIsMobile(width < 426);
+      setIsTablet(width >= 426 && width <= 768);
+    };
+
+    updateDeviceType();
+    window.addEventListener("resize", updateDeviceType);
+
+    // Cleanup on component unmount
+    return () => window.removeEventListener("resize", updateDeviceType);
+  }, []);
+
+  const radius = isMobile ? 60 : isTablet ? 70 : 80;
+  const outerRadius = isMobile ? 150 : isTablet ? 160 : 190;
 
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
@@ -128,7 +139,7 @@ export function OrbitingCirclesDemo() {
           className="size-[80px] border-none bg-transparent"
           duration={20}
           delay={20}
-          radius={isMobile ? 60 : isTablet ? 70 : 80}
+          radius={radius}
         >
           <Icons.webMobile />
         </OrbitingCircles>
@@ -137,17 +148,16 @@ export function OrbitingCirclesDemo() {
           className="size-[80px] border-none bg-transparent"
           duration={20}
           delay={10}
-          radius={isMobile ? 60 : isTablet ? 70 : 80}
+          radius={radius}
         >
           <Icons.api />
         </OrbitingCircles>
 
         {/* Outer Circles (reverse) */}
-
         <OrbitingCircles
           text="BFSI"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 130 : isTablet ? 160 : 190}
+          radius={outerRadius}
           duration={20}
           delay={25}
           reverse
@@ -157,7 +167,7 @@ export function OrbitingCirclesDemo() {
         <OrbitingCircles
           text="DevOps"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 130 : isTablet ? 160 : 190}
+          radius={outerRadius}
           duration={20}
           delay={19}
           reverse
@@ -167,7 +177,7 @@ export function OrbitingCirclesDemo() {
         <OrbitingCircles
           text="AI"
           className="size-[80px] border-none bg-transparent"
-          radius={isMobile ? 130 : isTablet ? 160 : 190}
+          radius={outerRadius}
           duration={20}
           delay={13}
           reverse
