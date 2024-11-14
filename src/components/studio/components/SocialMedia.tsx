@@ -57,9 +57,11 @@ export const socialMediaProfiles = [
 export function SocialMedia({
   className,
   invert = false,
+  nav,
 }: {
   className?: string;
   invert?: boolean;
+  nav?: boolean;
 }) {
   return (
     <ul
@@ -77,10 +79,14 @@ export function SocialMedia({
             aria-label={socialMediaProfile.title}
             className={clsx(
               "transition",
-              invert ? "hover:text-neutral-200" : "hover:text-neutral-700"
+              invert ? "hover:text-neutral-200" : " hover:text-neutral-700"
             )}
           >
-            <socialMediaProfile.icon className="h-6 w-6 fill-current" />
+            <socialMediaProfile.icon
+              className={`h-6 w-6 ${
+                nav ? "fill-white" : "fill-black dark:fill-white"
+              } `}
+            />
           </Link>
         </li>
       ))}

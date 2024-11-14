@@ -290,7 +290,7 @@ export default function Layout(props: Props): JSX.Element {
                     <h2 className="font-display text-base font-semibold text-white">
                       Follow us
                     </h2>
-                    <SocialMedia className="mt-6" invert />
+                    <SocialMedia className="mt-6" nav />
                   </div>
                 </div>
               </Container>
