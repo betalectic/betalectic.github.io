@@ -3,7 +3,7 @@ import Layout from "@theme/Layout";
 
 function NotFound() {
   return (
-    <Layout>
+    <Layout wrapperClassName="max-w-7xl mx-auto px-6 lg:px-8">
       {/* <div className="py-8 w-screen flex items-center">
         <div className="container flex flex-col md:flex-row items-center justify-between px-5 text-gray-700">
           <div className="w-full lg:w-1/2 mx-8">
