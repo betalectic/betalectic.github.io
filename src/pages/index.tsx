@@ -73,7 +73,7 @@ const clients = [
   ["Analitica", require("../images/clients/analitica.png").default],
   ["Kumari", require("../images/clients/kumari.png").default],
   ["UEIN", require("../images/clients/uecin.png").default],
-  ["Vasista", require("../images/clients/vasista.png").default],
+  ["Vasista", require("../images/clients/vasista2.png").default],
 ];
 
 function Clients() {
