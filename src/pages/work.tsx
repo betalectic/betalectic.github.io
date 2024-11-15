@@ -167,7 +167,7 @@ const clients = [
   ["Wiredup", require("../images/clients/wiredup.png").default],
   ["Hyperbola", require("../images/clients/hyperbola.png").default],
   ["FP", require("../images/clients/FP.png").default],
-  ["Analitica", require("../images/clients/analitica.png").default],
+  ["Analitica", require("../images/clients/analitica_logo.png").default],
   ["Kumari", require("../images/clients/kumari.png").default],
   ["UEIN", require("../images/clients/uecin.png").default],
   ["Vasista", require("../images/clients/vasista.png").default],
