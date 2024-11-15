@@ -68,6 +68,12 @@ const clients = [
   ["Evoilve", require("../images/clients/evoilve.png").default],
   ["Novo", require("../images/clients/novo.png").default],
   ["Wiredup", require("../images/clients/wiredup.png").default],
+  ["Hyperbola", require("../images/clients/hyperbola.png").default],
+  ["FP", require("../images/clients/FP.png").default],
+  ["Analitica", require("../images/clients/analitica.png").default],
+  ["Kumari", require("../images/clients/kumari.png").default],
+  ["UEIN", require("../images/clients/uecin.png").default],
+  ["Vasista", require("../images/clients/vasista.png").default],
 ];
 
 function Clients() {
