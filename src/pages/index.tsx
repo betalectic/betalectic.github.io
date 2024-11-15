@@ -100,7 +100,7 @@ function Clients() {
                       <img
                         alt={client}
                         src={logo}
-                        className="w-36 h-12 object-contain aspect-[7/2]"
+                        className="w-[150px] h-12 object-contain aspect-[7/2]"
                       />
                     </div>
                   </FadeIn>
