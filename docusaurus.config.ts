@@ -28,6 +28,9 @@ const config: Config = {
   onBrokenMarkdownLinks: "warn",
 
   plugins: ["docusaurus-tailwindcss-loader"],
+  future: {
+    experimental_faster: true,
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -137,7 +140,7 @@ const config: Config = {
       },
       items: [
         {
-          to: "/about",
+          to: "/about-us",
           label: "About us",
           position: "right",
         },

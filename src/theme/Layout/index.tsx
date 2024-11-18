@@ -33,6 +33,7 @@ import BetalecticWhiteSvg from "../../../static/img/betalectic_white_svg.svg";
 import BLetterLogoLight from "../../../static/img/b_letter_logo_light.svg";
 import BLetterLogoWhite from "../../../static/img/b_letter_logo_white.svg";
 import { initFaviconSwitcher } from "../../lib/faviconSwitcher";
+import { useLocation } from "@docusaurus/router";
 
 function XIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
@@ -102,7 +103,7 @@ function Header({
         <div className="flex items-center gap-x-6">
           <Button
             className="bg-text-neutral-950 dark:bg-neutral-50 dark:text-neutral-950 "
-            href="/about"
+            href="/about-us"
             invert={invert}
           >
             About us
@@ -198,6 +199,10 @@ export default function Layout(props: Props): JSX.Element {
   let openRef = useRef<React.ElementRef<"button">>(null);
   let closeRef = useRef<React.ElementRef<"button">>(null);
   let navRef = useRef<React.ElementRef<"div">>(null);
+
+  const location = useLocation();
+  const isBlogPath = location.pathname.startsWith("/blog");
+  // console.log("docusaurus context", useDocusaurusContext());
 
   useEffect(() => {
     initFaviconSwitcher();
@@ -316,7 +321,8 @@ export default function Layout(props: Props): JSX.Element {
             className={clsx(
               ThemeClassNames.wrapper.main,
               styles.mainWrapper,
-              wrapperClassName
+              wrapperClassName,
+              `${isBlogPath ? "max-w-7xl mx-auto px-6 lg:px-8 mt-8" : ""}`
             )}
           >
             <ErrorBoundary

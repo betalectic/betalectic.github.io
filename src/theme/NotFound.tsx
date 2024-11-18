@@ -36,7 +36,7 @@ function NotFound() {
             <div className="text-6xl md:text-7xl text-[#645BFF] font-extrabold mb-6">
               404
             </div>
-            <p className="text-lg md:text-2xl font-light leading-relaxed mb-6">
+            <p className="text-lg md:text-2xl text-neutral-950 dark:text-neutral-50 font-light leading-relaxed mb-6">
               Sorry, we couldn't find the page you're looking for.
             </p>
             <a
