@@ -8,7 +8,7 @@ const navigation = [
   {
     title: <p className="text-neutral-950 dark:text-neutral-50">Company</p>,
     links: [
-      { title: "About us", href: "/about" },
+      { title: "About us", href: "/about-us" },
       { title: "Contact", href: "/contact" },
     ],
   },

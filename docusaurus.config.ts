@@ -137,7 +137,7 @@ const config: Config = {
       },
       items: [
         {
-          to: "/about",
+          to: "/about-us",
           label: "About us",
           position: "right",
         },
