@@ -25,7 +25,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import { Container } from "../../components/studio/components/Container";
 import { Logo } from "../../components/studio/components/Logo";
 import { Button } from "../../components/studio/components/Button";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { Offices } from "../../components/studio/components/Offices";
 import { SocialMedia } from "../../components/studio/components/SocialMedia";
 import NavbarColorModeToggle from "@theme/Navbar/ColorModeToggle";
@@ -69,6 +69,8 @@ function Header({
 }) {
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   useEffect(() => {
     const updateDeviceType = () => {
@@ -88,7 +90,13 @@ function Header({
     <Container>
       <div className="flex items-center justify-between">
         <Link href="/" aria-label="Home">
-          {isMobile ? (
+          {currentPath === "/mf-stack" ? (
+            <img
+              src={require("../../images/mfstack/mfstack-logo.png").default}
+              className="h-12 w-auto"
+              alt="MF Stack Logo"
+            />
+          ) : isMobile ? (
             expanded ? (
               <BLetterLogoWhite className="h-9 w-9" />
             ) : (
@@ -171,11 +179,11 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
+        <NavigationItem href="/">Home</NavigationItem>
         <NavigationItem href="/mf-stack">MF Stack</NavigationItem>
-        <NavigationItem href="/work">Our Work</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/blog">Blog</NavigationItem>
+        <NavigationItem href="/work">Our Work</NavigationItem>
         <NavigationItem href="/contact">Contact Us</NavigationItem>
       </NavigationRow>
     </nav>
