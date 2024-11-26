@@ -443,7 +443,7 @@ function MfStack() {
 
   return (
     <Layout title="MF Stack" description="MF Stack description to set up here">
-      <Container className="mx-auto max-w-7xl">
+      <Container>
         {/* Hero Image section */}
         <div className="relative isolate pt-10">
           <div
