@@ -86,6 +86,7 @@ function Header({
     return () => window.removeEventListener("resize", updateDeviceType);
   }, []);
 
+  console.log("currentPath", currentPath);
   return (
     <Container>
       <div className="flex items-center justify-between">
