@@ -91,7 +91,7 @@ function Header({
     <Container>
       <div className="flex items-center justify-between">
         <Link href="/" aria-label="Home">
-          {currentPath === "/mf-stack" ? (
+          {currentPath.includes("/mf-stack") ? (
             <img
               src={require("../../images/mfstack/mfstack-logo.png").default}
               className="h-12 w-auto"
