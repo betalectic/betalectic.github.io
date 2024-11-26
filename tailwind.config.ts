@@ -23,6 +23,8 @@ module.exports = {
     },
     extend: {
       animation: {
+        "infinite-scroll": "scrollLeft 20s linear infinite",
+
         "shimmer-slide":
           "shimmer-slide var(--speed) ease-in-out infinite alternate",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
@@ -57,6 +59,10 @@ module.exports = {
           to: {
             transform: "translate(calc(100cqw - 100%), 0)",
           },
+        },
+        scrollLeft: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
       borderRadius: {

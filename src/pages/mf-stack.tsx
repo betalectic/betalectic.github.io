@@ -92,7 +92,8 @@ function MfStack() {
         "SEBI Compliant",
         "Bank-Grade Security",
       ],
-      src: require("../images/mfstack/onboarding.png").default,
+      srcLight: require("../images/mfstack/onboarding.png").default,
+      srcDark: require("../images/mfstack/onboarding-dark.png").default,
     },
     {
       title: "Plug in to the powerful Mutual Fund Transaction Engine",
@@ -110,7 +111,8 @@ function MfStack() {
         "Multi-payment gateway support",
         "Instant order validation",
       ],
-      src: require("../images/mfstack/transaction-engine.png").default,
+      srcLight: require("../images/mfstack/transaction-engine.png").default,
+      srcDark: require("../images/mfstack/transaction-engine-dark.png").default,
     },
     {
       title: "Comprehensive Mutual Fund Reports & Analytics",
@@ -126,7 +128,8 @@ function MfStack() {
         "Supports Distributor Reports such as (AUM Summary, Transactions Report, Purchase and Redemption Reports)",
         "Supports custom comprehensive reports",
       ],
-      src: require("../images/mfstack/reports-analytics.png").default,
+      srcLight: require("../images/mfstack/reports-analytics.png").default,
+      srcDark: require("../images/mfstack/reports-analytics-dark.png").default,
     },
   ];
 
@@ -190,117 +193,118 @@ function MfStack() {
     },
   ];
 
+  const whatWeSolveCards = [
+    {
+      id: 1,
+      name: "Investor Portfolio Management",
+      description:
+        "Real-time portfolio insights at your fingertips. Track investments, visualize allocations, and monitor performance in one comprehensive dashboard.",
+      icon: WhatWeSolveIcons.investor,
+      tags: [
+        "Fintechs",
+        "Independent Distributors",
+        "Wealth Management Companies",
+      ],
+    },
+    {
+      id: 2,
+      name: "Financial Planning",
+      description:
+        "Comprehensive financial planning tools for your clients. From goal-based planning to retirement calculations, deliver strategic guidance.",
+      icon: WhatWeSolveIcons.financialPlanning,
+      tags: [
+        "Fintechs",
+        "Independent Distributors",
+        "Wealth Management Companies",
+      ],
+    },
+    {
+      id: 3,
+      name: "Risk Profiling",
+      description:
+        "Smart risk assessment for informed decisions. Generate risk scores, analyze portfolios, and maintain alignment with client objectives.",
+      icon: WhatWeSolveIcons.riskProfiling,
+      tags: [
+        "Fintechs",
+        "Independent Distributors",
+        "Wealth Management Companies",
+      ],
+    },
+    {
+      id: 4,
+      name: "MF Transactions",
+      description:
+        "Complete mutual fund transaction platform. Process orders, manage SIPs, and track investments with real-time updates.",
+      icon: WhatWeSolveIcons.mfTransactions,
+      tags: [
+        "Fintechs",
+        "Independent Distributors",
+        "Wealth Management Companies",
+      ],
+    },
+    {
+      id: 5,
+      name: "KYC Checks, Onboarding and E-KYC",
+      description:
+        "Digital KYC made simple. Digital onboarding for all investor types with integrated verification systems.",
+      icon: WhatWeSolveIcons.kycChecks,
+      tags: [
+        "Fintechs",
+        "Independent Distributors",
+        "Wealth Management Companies",
+      ],
+    },
+    {
+      id: 6,
+      name: "Fund Details and Performance Data",
+      description:
+        "Real-time fund insights. Access NAVs, track performance, and analyze portfolio holdings instantly.",
+      icon: WhatWeSolveIcons.fundDetails,
+      tags: [
+        "Fintechs",
+        "Independent Distributors",
+        "Wealth Management Companies",
+      ],
+    },
+    {
+      id: 7,
+      name: "Security",
+      description:
+        "Enterprise-grade security for your business. Two-factor authentication, encryption, and robust access controls.",
+      icon: WhatWeSolveIcons.security,
+      tags: [
+        "Fintechs",
+        "Independent Distributors",
+        "Wealth Management Companies",
+      ],
+    },
+    {
+      id: 8,
+      name: "LAMF",
+      description:
+        "Integrated loan management platform. Calculate eligibility, track disbursements, and manage repayments through comprehensive dashboards.",
+      icon: WhatWeSolveIcons.lamf,
+      tags: [
+        "Fintechs",
+        "Independent Distributors",
+        "Wealth Management Companies",
+      ],
+    },
+    {
+      id: 9,
+      name: "Back office",
+      description:
+        "Stay in control with a dedicated dashboard to track, manage, and monitor every aspect of your application seamlessly.",
+      icon: WhatWeSolveIcons.backOffice,
+      tags: [
+        "Fintechs",
+        "Independent Distributors",
+        "Wealth Management Companies",
+      ],
+    },
+  ];
+
   const GalleryWithTags = () => {
-    const whatWeSolveCards = [
-      {
-        id: 1,
-        name: "Investor Portfolio Management",
-        description:
-          "Real-time portfolio insights at your fingertips. Track investments, visualize allocations, and monitor performance in one comprehensive dashboard.",
-        icon: WhatWeSolveIcons.investor,
-        tags: [
-          "Fintechs",
-          "Independent Distributors",
-          "Wealth Management Companies",
-        ],
-      },
-      {
-        id: 2,
-        name: "Financial Planning",
-        description:
-          "Comprehensive financial planning tools for your clients. From goal-based planning to retirement calculations, deliver strategic guidance.",
-        icon: WhatWeSolveIcons.financialPlanning,
-        tags: [
-          "Fintechs",
-          "Independent Distributors",
-          "Wealth Management Companies",
-        ],
-      },
-      {
-        id: 3,
-        name: "Risk Profiling",
-        description:
-          "Smart risk assessment for informed decisions. Generate risk scores, analyze portfolios, and maintain alignment with client objectives.",
-        icon: WhatWeSolveIcons.riskProfiling,
-        tags: [
-          "Fintechs",
-          "Independent Distributors",
-          "Wealth Management Companies",
-        ],
-      },
-      {
-        id: 4,
-        name: "MF Transactions",
-        description:
-          "Complete mutual fund transaction platform. Process orders, manage SIPs, and track investments with real-time updates.",
-        icon: WhatWeSolveIcons.mfTransactions,
-        tags: [
-          "Fintechs",
-          "Independent Distributors",
-          "Wealth Management Companies",
-        ],
-      },
-      {
-        id: 5,
-        name: "KYC Checks, Onboarding and E-KYC",
-        description:
-          "Digital KYC made simple. Digital onboarding for all investor types with integrated verification systems.",
-        icon: WhatWeSolveIcons.kycChecks,
-        tags: [
-          "Fintechs",
-          "Independent Distributors",
-          "Wealth Management Companies",
-        ],
-      },
-      {
-        id: 6,
-        name: "Fund Details and Performance Data",
-        description:
-          "Real-time fund insights. Access NAVs, track performance, and analyze portfolio holdings instantly.",
-        icon: WhatWeSolveIcons.fundDetails,
-        tags: [
-          "Fintechs",
-          "Independent Distributors",
-          "Wealth Management Companies",
-        ],
-      },
-      {
-        id: 7,
-        name: "Security",
-        description:
-          "Enterprise-grade security for your business. Two-factor authentication, encryption, and robust access controls.",
-        icon: WhatWeSolveIcons.security,
-        tags: [
-          "Fintechs",
-          "Independent Distributors",
-          "Wealth Management Companies",
-        ],
-      },
-      {
-        id: 8,
-        name: "LAMF",
-        description:
-          "Integrated loan management platform. Calculate eligibility, track disbursements, and manage repayments through comprehensive dashboards.",
-        icon: WhatWeSolveIcons.lamf,
-        tags: [
-          "Fintechs",
-          "Independent Distributors",
-          "Wealth Management Companies",
-        ],
-      },
-      {
-        id: 9,
-        name: "Back office",
-        description:
-          "Stay in control with a dedicated dashboard to track, manage, and monitor every aspect of your application seamlessly.",
-        icon: WhatWeSolveIcons.backOffice,
-        tags: [
-          "Fintechs",
-          "Independent Distributors",
-          "Wealth Management Companies",
-        ],
-      },
-    ];
     const tags = [
       "Fintechs",
       "Independent Distributors",
@@ -332,24 +336,36 @@ function MfStack() {
       setShuffledCards(shuffleArray(filtered));
     };
 
-    useEffect(() => {
-      const handleScroll = () => {
-        if (sectionRef.current && tagRef.current) {
-          const sectionRect = sectionRef.current.getBoundingClientRect();
-          const tagRect = tagRef.current.getBoundingClientRect();
-
-          // Check if the top of the section is above the top of the viewport
-          if (sectionRect.top <= 0 && sectionRect.bottom > tagRect.height) {
-            setIsSticky(true);
-          } else {
-            setIsSticky(false);
-          }
-        }
+    // Debounce implementation
+    const debounce = (func, delay) => {
+      let timer;
+      return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          func(...args);
+        }, delay);
       };
+    };
 
+    const handleScroll = debounce(() => {
+      if (sectionRef.current && tagRef.current) {
+        const sectionRect = sectionRef.current.getBoundingClientRect();
+        const tagHeight = tagRef.current.offsetHeight;
+
+        // Check if the tag section needs to be sticky
+        const shouldStick =
+          sectionRect.top <= 0 && sectionRect.bottom > tagHeight;
+
+        if (shouldStick !== isSticky) {
+          setIsSticky(shouldStick);
+        }
+      }
+    }, 50); // Adjust the delay as needed (50ms is a good balance for performance)
+
+    useEffect(() => {
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [handleScroll]);
 
     const cardVariants = {
       hidden: { opacity: 0, y: 20 },
@@ -359,34 +375,35 @@ function MfStack() {
 
     return (
       <div className="mx-auto">
+        {/* Sticky Tags */}
         <div
           ref={tagRef}
-          className={`flex flex-wrap gap-4 justify-center mb-8 transition-all duration-300 ${
+          className={`w-full overflow-x-auto ${
             isSticky
-              ? "fixed top-0 py-2 left-0 right-0 bg-white dark:bg-gray-900 z-50"
+              ? "fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 z-50 py-2"
               : "relative"
           }`}
         >
-          {tags.map((tag, index) => (
-            <button
-              key={index}
-              onClick={() => handleTagChange(tag)}
-              className={`px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 ${
-                activeTag === tag
-                  ? "bg-indigo-600 text-white shadow-lg"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
-            >
-              {tag}
-            </button>
-          ))}
+          <div className="flex gap-4 justify-center px-4 md:px-8 transition-all duration-300">
+            {tags.map((tag, index) => (
+              <button
+                key={index}
+                onClick={() => handleTagChange(tag)}
+                className={`px-2 py-1 md:px-4 md:py-2 rounded-full font-medium md:text-sm text-[10px] transition-all duration-300 ${
+                  activeTag === tag
+                    ? "bg-indigo-600 text-white shadow-lg"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                {tag}
+              </button>
+            ))}
+          </div>
         </div>
 
+        {/* Cards Section */}
         <div ref={sectionRef} className="mt-16">
-          <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
-            layout
-          >
+          <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <AnimatePresence>
               {shuffledCards.map((card) => (
                 <motion.div
@@ -426,9 +443,9 @@ function MfStack() {
 
   return (
     <Layout title="MF Stack" description="MF Stack description to set up here">
-      <Container className="mx-auto max-w-7xl px-6 lg:py-20">
+      <Container className="mx-auto max-w-7xl">
         {/* Hero Image section */}
-        <div className="relative isolate pt-8">
+        <div className="relative isolate pt-10">
           <div
             aria-hidden="true"
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -438,11 +455,11 @@ function MfStack() {
                 clipPath:
                   "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
               }}
-              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr  opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             />
           </div>
           <div className="py-24 bg-[#292399] rounded-3xl h-[550px] md:h-[750px] sm:py-32 lg:pb-40">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl lg:px-8">
               <div className="mx-auto max-w-2xl text-center">
                 <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-50 sm:text-7xl">
                   The New Age of
@@ -455,7 +472,7 @@ function MfStack() {
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-md bg-[#7F56D9] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#6a47b8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+                    className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
                   >
                     Get Quote
                   </a>
@@ -463,75 +480,64 @@ function MfStack() {
               </div>
               <div className="mt-16 sm:mt-24">
                 <img
+                  loading="lazy"
                   alt="App screenshot"
-                  width={2532}
-                  height={1442}
                   src={require("../images/mfstack/hero-image.png").default}
-                  className="rounded-lg shadow-2xl ring-2 ring-gray-900/10"
+                  className="rounded-2xl md:rounded-4xl shadow-2xl dark:hidden ring-2 ring-gray-900/10"
+                />
+                <img
+                  loading="lazy"
+                  alt="App screenshot"
+                  src={require("../images/mfstack/hero-image-dark.png").default}
+                  className="rounded-2xl md:rounded-4xl shadow-2xl hidden dark:block ring-2 ring-gray-900/10"
                 />
               </div>
             </div>
           </div>
-          <div
-            aria-hidden="true"
-            className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          >
-            <div
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-              className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            />
-          </div>
         </div>
         {/* Logos section */}
-        <div className="mt-[200px] md:mt-[700px] py-12 ">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="text-center text-lg/8 font-semibold text-gray-900 dark:text-gray-50 ">
+        <div className="mt-[200px] md:mt-[300px] lg:mt-[700px] py-10 bg-[#F9FAFB] dark:bg-gray-100 rounded-2xl">
+          <div className="mx-auto lg:px-8 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+            <h2 className="text-center text-sm font-semibold text-[#475467] ">
               Our Integration Partners
             </h2>
-            <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-4 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-              <img
-                alt="Fintech Primitives"
-                src={require("../images/mfstack/fp.png").default}
-                width={158}
-                height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              />
-              <img
-                alt="KFintech"
-                src={require("../images/mfstack/kfintech.png").default}
-                width={158}
-                height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              />
-              <img
-                alt="Cybrilla"
-                src={require("../images/mfstack/cybrilla.png").default}
-                width={158}
-                height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              />
-              <img
-                alt="Cams"
-                src={require("../images/mfstack/cams.png").default}
-                width={158}
-                height={48}
-                className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-              />
-              {/* <img
-                  alt="MF Stack"
-                  src={require("../images/mfstack/mfstack.png").default}
-                  width={158}
-                  height={48}
-                  className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                /> */}
+            <div className="relative overflow-hidden w-full mt-10">
+              <div className="flex gap-12 animate-infinite-scroll">
+                {[
+                  {
+                    src: require("../images/mfstack/fp.png").default,
+                    alt: "Fintech Primitives",
+                  },
+                  {
+                    src: require("../images/mfstack/kfintech.png").default,
+                    alt: "KFintech",
+                  },
+                  {
+                    src: require("../images/mfstack/cybrilla.png").default,
+                    alt: "Cybrilla",
+                  },
+                  {
+                    src: require("../images/mfstack/cams.png").default,
+                    alt: "Cams",
+                  },
+                ].map((logo, index) => (
+                  <img
+                    key={index}
+                    loading="lazy"
+                    alt={logo.alt}
+                    src={logo.src}
+                    width={158}
+                    height={48}
+                    className="h-12 object-contain"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
+
         {/* For whom and how section */}
-        <div className="py-12 md:py-32">
+        <div className="py-16">
           <div className="mx-auto lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
@@ -550,8 +556,8 @@ function MfStack() {
           </div>
         </div>
         {/* How we solve section */}
-        <div className="py-12 md:py-32">
-          <div className="mx-auto lg:px-8">
+        <div className="py-12">
+          <div className="lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
                 How we solve?
@@ -564,8 +570,8 @@ function MfStack() {
                 blocks for your platform
               </p>
             </div>
-            <div className="mx-auto mt-10 max-w-2xl lg:max-w-none">
-              <dl className="grid max-w-xl grid-cols-1 gap-x-6 gap-y-8 lg:max-w-none lg:grid-cols-3">
+            <div className="mt-10 max-w-2xl lg:max-w-none">
+              <dl className="grid max-w-xl grid-cols-1 md:grid-cols-2 mx-auto gap-x-6 gap-y-8 lg:max-w-none lg:grid-cols-3">
                 {howWeSolveCards.map((feature) => (
                   <div
                     key={feature.name}
@@ -586,14 +592,14 @@ function MfStack() {
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#"
-              className="rounded-md bg-[#7F56D9] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#6a47b8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+              className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#6a47b8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
             >
               Get Quote
             </a>
           </div>
         </div>
         {/* Features section */}
-        <div className="py-12 md:py-32">
+        <div className="py-16">
           <div className="mx-auto lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
@@ -612,7 +618,7 @@ function MfStack() {
                 {featuresCards.map((section, index) => (
                   <div
                     key={index}
-                    className="mx-auto grid max-w-2xl grid-cols-1 my-24 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+                    className="mx-auto grid max-w-2xl grid-cols-1 my-32 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-2"
                   >
                     <div
                       className={`lg:pr-8 lg:pt-4 ${
@@ -622,7 +628,7 @@ function MfStack() {
                       <div className="lg:max-w-lg">
                         <section.icon aria-hidden="true" />
 
-                        <h2 className="text-2xl mt-2 font-semibold text-indigo-600 dark:text-indigo-400">
+                        <h2 className="text-2xl mt-2 font-semibold text-gray-900 dark:text-indigo-400">
                           {section.title}
                         </h2>
 
@@ -642,7 +648,7 @@ function MfStack() {
                               >
                                 <path
                                   d="M9.41716 14.2687L12.9172 17.7687L19.9172 10.7687M26.3338 14.2687C26.3338 20.712 21.1105 25.9354 14.6672 25.9354C8.22383 25.9354 3.00049 20.712 3.00049 14.2687C3.00049 7.8254 8.22383 2.60205 14.6672 2.60205C21.1105 2.60205 26.3338 7.8254 26.3338 14.2687Z"
-                                  stroke="#7F56D9"
+                                  stroke="#4E45DD"
                                   strokeWidth="2.33333"
                                   strokeLinecap="round"
                                   strokeLinejoin="round"
@@ -655,24 +661,21 @@ function MfStack() {
                         </dl>
                       </div>
                     </div>
-                    <div className="mt-16 sm:mt-24">
+                    <div className="my-auto">
                       <img
-                        alt={section.title}
-                        width={2532}
-                        height={1442}
-                        src={section.src}
-                        className="rounded-lg shadow-2xl ring-2 ring-gray-900/10"
+                        alt={`${section.title} - Light`}
+                        src={section.srcLight} // Light mode image source
+                        className={`shadow-2xl rounded-2xl dark:hidden ${
+                          index === 0 && "ring-2 ring-neutral-200"
+                        }`}
+                      />
+                      {/* Dark mode image */}
+                      <img
+                        alt={`${section.title} - Dark`}
+                        src={section.srcDark} // Dark mode image source
+                        className={`shadow-2xl rounded-2xl hidden dark:block`}
                       />
                     </div>
-                    {/* <img
-                      alt={section.title}
-                      src={section.src}
-                      className={`w-[30rem] md:w-[48rem] max-w-none shadow-xl border-2 border-neutral-200 rounded-3xl my-auto ${
-                        index % 2 === 0
-                          ? ""
-                          : "md:-ml-[300px] lg:-ml-[450px] xl:-ml-72" // Adjusted for medium screens
-                      }`}
-                    /> */}
                   </div>
                 ))}
               </div>
@@ -681,7 +684,7 @@ function MfStack() {
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#"
-              className="rounded-md bg-[#7F56D9] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#6a47b8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+              className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
             >
               Get Quote
             </a>
@@ -689,7 +692,7 @@ function MfStack() {
         </div>
 
         {/* Why choose us section */}
-        <div className="py-12 md:py-32">
+        <div className="py-16">
           <div className="mx-auto">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
@@ -733,14 +736,14 @@ function MfStack() {
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#"
-              className="rounded-md bg-[#7F56D9] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#6a47b8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+              className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
             >
               Get Quote
             </a>
           </div>
         </div>
         {/* FAQ Section */}
-        <div className="py-12 bg rounded-2xl md:py-32 ">
+        <div className="py-16">
           <h2 className="text-4xl font-semibold tracking-tight text-center text-gray-900 dark:text-gray-50 sm:text-5xl">
             Frequently asked questions
           </h2>
@@ -779,7 +782,7 @@ function MfStack() {
           </div>
         </div>
         {/* Have questions section */}
-        <div className="pt-12 md:pt-32">
+        <div className="py-16">
           <div className="relative -mx-4 overflow-hidden bg-indigo-100 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 rounded-3xl md:px-16">
             <div>
               <p className="font-display text-center text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
@@ -792,7 +795,7 @@ function MfStack() {
               <div className="mt-10 flex justify-center items-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-md bg-[#7F56D9] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#6a47b8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+                  className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
                 >
                   Get in touch
                 </a>

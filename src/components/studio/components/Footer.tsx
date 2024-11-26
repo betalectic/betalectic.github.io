@@ -61,7 +61,7 @@ export function Footer() {
       <FadeIn>
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           <Navigation />
-          <div className="flex justify-between md:flex-col md:ml-auto">
+          <div className="flex md:flex-col justify-between md:my-auto md:ml-auto">
             <Link href="/mf-stack">
               <img
                 className="w-36"
@@ -74,12 +74,15 @@ export function Footer() {
             <Link href="/" aria-label="Home">
               <span className="text-sm text-neutral-700 dark:text-neutral-50">
                 <Logo className="h-8" fillOnHover />
-                <p className="text-sm">© 2024 Betalectic</p>
               </span>
             </Link>
           </div>
         </div>
-        <div className="mb-16 mt-24 flex flex-wrap items-end justify-center gap-x-6"></div>
+        <div className="mb-16 mt-24 flex flex-wrap items-end justify-center gap-x-6">
+          <p className="text-sm text-center">
+            Copyright {new Date().getFullYear()} © Betalectic
+          </p>
+        </div>
       </FadeIn>
     </Container>
   );
