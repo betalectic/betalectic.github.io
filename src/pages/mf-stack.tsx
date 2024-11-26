@@ -571,7 +571,7 @@ function MfStack() {
               </p>
             </div>
             <div className="mt-10 max-w-2xl lg:max-w-none">
-              <dl className="grid max-w-xl grid-cols-1 md:grid-cols-2 mx-auto gap-x-6 gap-y-8 lg:max-w-none lg:grid-cols-3">
+              <dl className="grid max-w-2xl grid-cols-1 md:grid-cols-2 mx-auto gap-x-6 gap-y-8 lg:max-w-none lg:grid-cols-3">
                 {howWeSolveCards.map((feature) => (
                   <div
                     key={feature.name}
@@ -664,15 +664,14 @@ function MfStack() {
                     <div className="my-auto">
                       <img
                         alt={`${section.title} - Light`}
-                        src={section.srcLight} // Light mode image source
+                        src={section.srcLight}
                         className={`shadow-2xl rounded-2xl dark:hidden ${
                           index === 0 && "ring-2 ring-neutral-200"
                         }`}
                       />
-                      {/* Dark mode image */}
                       <img
                         alt={`${section.title} - Dark`}
-                        src={section.srcDark} // Dark mode image source
+                        src={section.srcDark}
                         className={`shadow-2xl rounded-2xl hidden dark:block`}
                       />
                     </div>
