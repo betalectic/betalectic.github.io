@@ -82,6 +82,10 @@ module.exports = {
       //     { fontVariationSettings: '"wdth" 125' },
       //   ],
       // },
+      colors: {
+        "mf-stack-purple-light": "#3A33BB",
+        "mf-stack-brand-button": "#4E45DD",
+      },
     },
   },
 } satisfies Config;

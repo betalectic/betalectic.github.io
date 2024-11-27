@@ -421,7 +421,7 @@ function MfStack() {
         </div>
 
         {/* Cards Section */}
-        <div ref={sectionRef} className="mt-16">
+        <div ref={sectionRef} className="mt-14">
           <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <AnimatePresence>
               {shuffledCards.map((card) => (
@@ -447,7 +447,7 @@ function MfStack() {
                         {card.name}
                       </h2>
                     </div>
-                    <dd className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+                    <dd className="text-base/7 text-gray-600 dark:text-gray-300">
                       {card.description}
                     </dd>
                   </div>
@@ -491,7 +491,7 @@ function MfStack() {
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+                    className="rounded-md bg-mf-stack-brand-button px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
                   >
                     Get Quote
                   </a>
@@ -520,7 +520,7 @@ function MfStack() {
             <h2 className="text-center text-sm font-semibold text-[#475467] ">
               Our Integration Partners
             </h2>
-            <div className="relative block md:hidden overflow-hidden w-full mt-10">
+            <div className="relative block md:hidden overflow-hidden w-full mt-6">
               <div className="flex gap-12 animate-infinite-scroll">
                 {logoImages.map((logo, index) => (
                   <img
@@ -536,7 +536,7 @@ function MfStack() {
               </div>
             </div>
 
-            <div className="hidden md:flex justify-center mt-10 md:gap-x-4 lg:gap-x-16">
+            <div className="hidden md:flex justify-center mt-6 md:gap-x-4 lg:gap-x-16">
               {logoImages.map((image, index) => (
                 <img
                   key={index}
@@ -554,17 +554,17 @@ function MfStack() {
         <div className="flex flex-col gap-y-24 my-24">
           {/* For whom and how section */}
           <div className="">
-            <div className="mx-auto lg:px-8">
-              <div className="mx-auto max-w-2xl lg:text-center">
+            <div className="mx-auto lg:px-8 flex flex-col gap-y-12">
+              <div className="lg:text-center">
                 <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
                   For whom and how?
                 </h2>
-                <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
+                <p className="mt-2 text-pretty text-5xl md:text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 lg:text-balance">
                   Tailor made solutions for your business goals
                 </p>
-                <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
-                  Flexible mutual fund solutions that grow with your
-                  business,regardless of size or scale.
+                <p className="mt-5 mx-auto w-2/5 text-xl text-gray-600 dark:text-gray-300">
+                  Flexible mutual fund solutions that grow with your business,
+                  regardless of size or scale.
                 </p>
               </div>
               {/* <TabComponent /> */}
@@ -581,12 +581,12 @@ function MfStack() {
                 <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
                   Products
                 </p>
-                <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
+                <p className="mt-5 text-xl text-gray-600 dark:text-gray-300">
                   From SDKs to full-stack solutions, choose the right building
                   blocks for your platform
                 </p>
               </div>
-              <div className="mt-10 max-w-2xl lg:max-w-none">
+              <div className="mt-12 max-w-2xl lg:max-w-none">
                 <dl className="grid max-w-2xl grid-cols-1 md:grid-cols-2 mx-auto gap-x-6 gap-y-8 lg:max-w-none lg:grid-cols-3">
                   {howWeSolveCards.map((feature) => (
                     <div
@@ -597,7 +597,7 @@ function MfStack() {
                       <h2 className="mt-4 text-gray-900 dark:text-gray-50">
                         {feature.name}
                       </h2>
-                      <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600 dark:text-gray-300">
+                      <dd className="flex flex-auto flex-col text-base/7 text-gray-600 dark:text-gray-300">
                         <p className="">{feature.description}</p>
                       </dd>
                     </div>
@@ -605,10 +605,10 @@ function MfStack() {
                 </dl>
               </div>
             </div>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-12 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#6a47b8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+                className="rounded-md bg-mf-stack-brand-button px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:text-white"
               >
                 Get Quote
               </a>
@@ -649,10 +649,11 @@ function MfStack() {
                             {section.title}
                           </h2>
 
-                          <p className="mt-6 text-md text-gray-600 dark:text-gray-300">
+                          <p className="text-md text-gray-600 dark:text-gray-300">
                             {section.description}
                           </p>
-                          <dl className="max-w-xl text-base/7 text-gray-600 dark:text-gray-300 lg:max-w-none space-y-0">
+
+                          <dl className="mt-8 max-w-xl text-base/7 text-gray-600 dark:text-gray-300 lg:max-w-none space-y-0">
                             {section.points.map((point, idx) => (
                               <div key={idx} className="flex items-start gap-2">
                                 <svg
@@ -672,7 +673,7 @@ function MfStack() {
                                   />
                                 </svg>
 
-                                <p className="text-sm">{point}</p>
+                                <p className="text-base">{point}</p>
                               </div>
                             ))}
                           </dl>
@@ -699,7 +700,7 @@ function MfStack() {
               <div className="flex items-center justify-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+                  className="rounded-md bg-mf-stack-brand-button px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:text-white"
                 >
                   Get Quote
                 </a>
@@ -711,7 +712,8 @@ function MfStack() {
           <div className="">
             <div className="mx-auto">
               <div className="mx-auto max-w-2xl lg:text-center">
-                <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
+                {/* <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400"> */}
+                <h2 className="text-base/7 font-semibold text-mf-stack-purple-light dark:text-indigo-400">
                   Why choose us?
                 </h2>
                 <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
@@ -724,35 +726,33 @@ function MfStack() {
                   of every solution.
                 </p>
               </div>
-              <div className="mx-auto mt-16 max-w-2xl lg:max-w-none">
-                <div className="mx-auto max-w-7xl">
-                  <div className="grid grid-cols-1 gap-4 mt-8 xl:mt-12 md:grid-cols-2 xl:grid-cols-4">
-                    {whyChooseUsCards.map((component, index) => (
-                      <div
-                        key={index}
-                        className="flex flex-col px-6 py-4 space-y-4 bg-gray-100 rounded-xl dark:bg-gray-800"
-                      >
-                        <div className="flex-shrink-0 flex">
-                          <component.icon aria-hidden="true" />
-                        </div>
-
-                        <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white min-h-[48px]">
-                          {component.title}
-                        </h1>
-
-                        <p className="text-gray-500 dark:text-gray-300 min-h-[64px]">
-                          {component.description}
-                        </p>
+              <div className="mt-16 lg:max-w-none">
+                <div className="grid grid-cols-1 gap-4 mt-8 xl:mt-12 md:grid-cols-2 xl:grid-cols-4">
+                  {whyChooseUsCards.map((component, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col px-6 py-4 space-y-4 bg-gray-100 rounded-xl dark:bg-gray-800"
+                    >
+                      <div className="flex-shrink-0 flex">
+                        <component.icon aria-hidden="true" />
                       </div>
-                    ))}
-                  </div>
+
+                      <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white min-h-[48px]">
+                        {component.title}
+                      </h1>
+
+                      <p className="text-gray-500 dark:text-gray-300 min-h-[64px]">
+                        {component.description}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-12 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+                className="rounded-md bg-mf-stack-brand-button px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-mf-stack-brand-button focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:text-white"
               >
                 Get Quote
               </a>
@@ -811,7 +811,7 @@ function MfStack() {
                 <div className="mt-10 flex justify-center items-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+                    className="rounded-md bg-mf-stack-brand-button px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:text-white"
                   >
                     Get in touch
                   </a>
