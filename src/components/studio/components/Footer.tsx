@@ -78,8 +78,8 @@ export function Footer() {
             </Link>
           </div>
         </div>
-        <div className="mb-16 mt-24 flex flex-wrap items-end justify-center gap-x-6">
-          <p className="text-sm text-center">
+        <div className="py-16 text-center">
+          <p className="text-sm">
             Copyright {new Date().getFullYear()} © Betalectic
           </p>
         </div>
