@@ -313,10 +313,10 @@ function MfStack() {
       src: require("../images/mfstack/kfintech.png").default,
       alt: "KFintech",
     },
-    {
-      src: require("../images/mfstack/cybrilla.png").default,
-      alt: "Cybrilla",
-    },
+    // {
+    //   src: require("../images/mfstack/cybrilla.png").default,
+    //   alt: "Cybrilla",
+    // },
     {
       src: require("../images/mfstack/cams.png").default,
       alt: "Cams",
