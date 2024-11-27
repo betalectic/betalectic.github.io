@@ -304,6 +304,25 @@ function MfStack() {
     },
   ];
 
+  const logoImages = [
+    {
+      src: require("../images/mfstack/fp.png").default,
+      alt: "Fintech Primitives",
+    },
+    {
+      src: require("../images/mfstack/kfintech.png").default,
+      alt: "KFintech",
+    },
+    {
+      src: require("../images/mfstack/cybrilla.png").default,
+      alt: "Cybrilla",
+    },
+    {
+      src: require("../images/mfstack/cams.png").default,
+      alt: "Cams",
+    },
+  ];
+
   const GalleryWithTags = () => {
     const tags = [
       "Fintechs",
@@ -497,30 +516,13 @@ function MfStack() {
         </div>
         {/* Logos section */}
         <div className="mt-[200px] md:mt-[300px] lg:mt-[700px] py-10 bg-[#F9FAFB] dark:bg-gray-100 rounded-2xl">
-          <div className="mx-auto lg:px-8 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+          <div className="mx-auto lg:px-8">
             <h2 className="text-center text-sm font-semibold text-[#475467] ">
               Our Integration Partners
             </h2>
-            <div className="relative overflow-hidden w-full mt-10">
+            <div className="relative block md:hidden overflow-hidden w-full mt-10">
               <div className="flex gap-12 animate-infinite-scroll">
-                {[
-                  {
-                    src: require("../images/mfstack/fp.png").default,
-                    alt: "Fintech Primitives",
-                  },
-                  {
-                    src: require("../images/mfstack/kfintech.png").default,
-                    alt: "KFintech",
-                  },
-                  {
-                    src: require("../images/mfstack/cybrilla.png").default,
-                    alt: "Cybrilla",
-                  },
-                  {
-                    src: require("../images/mfstack/cams.png").default,
-                    alt: "Cams",
-                  },
-                ].map((logo, index) => (
+                {logoImages.map((logo, index) => (
                   <img
                     key={index}
                     loading="lazy"
@@ -532,6 +534,19 @@ function MfStack() {
                   />
                 ))}
               </div>
+            </div>
+
+            <div className="hidden md:flex justify-center mt-10 md:gap-x-4 lg:gap-x-16">
+              {logoImages.map((image, index) => (
+                <img
+                  key={index}
+                  alt={image.alt}
+                  src={image.src}
+                  width={148}
+                  height={40}
+                  className={`max-h-12 object-contain`}
+                />
+              ))}
             </div>
           </div>
         </div>
