@@ -551,268 +551,271 @@ function MfStack() {
           </div>
         </div>
 
-        {/* For whom and how section */}
-        <div className="py-16">
-          <div className="mx-auto lg:px-8">
-            <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
-                For whom and how?
-              </h2>
-              <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
-                Tailor made solutions for your business goals
-              </p>
-              <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
-                Flexible mutual fund solutions that grow with your
-                business,regardless of size or scale.
-              </p>
-            </div>
-            {/* <TabComponent /> */}
-            <GalleryWithTags />
-          </div>
-        </div>
-        {/* How we solve section */}
-        <div className="py-12">
-          <div className="lg:px-8">
-            <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
-                How we solve?
-              </h2>
-              <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
-                Products
-              </p>
-              <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
-                From SDKs to full-stack solutions, choose the right building
-                blocks for your platform
-              </p>
-            </div>
-            <div className="mt-10 max-w-2xl lg:max-w-none">
-              <dl className="grid max-w-2xl grid-cols-1 md:grid-cols-2 mx-auto gap-x-6 gap-y-8 lg:max-w-none lg:grid-cols-3">
-                {howWeSolveCards.map((feature) => (
-                  <div
-                    key={feature.name}
-                    className="flex flex-col bg-white dark:bg-gray-900 shadow-lg p-8 rounded-xl ring-1 ring-neutral-200 dark:ring-neutral-700"
-                  >
-                    <feature.icon aria-hidden="true" />
-                    <h2 className="mt-4 text-gray-900 dark:text-gray-50">
-                      {feature.name}
-                    </h2>
-                    <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600 dark:text-gray-300">
-                      <p className="">{feature.description}</p>
-                    </dd>
-                  </div>
-                ))}
-              </dl>
+        <div className="flex flex-col gap-y-24 my-24">
+          {/* For whom and how section */}
+          <div className="">
+            <div className="mx-auto lg:px-8">
+              <div className="mx-auto max-w-2xl lg:text-center">
+                <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
+                  For whom and how?
+                </h2>
+                <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
+                  Tailor made solutions for your business goals
+                </p>
+                <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
+                  Flexible mutual fund solutions that grow with your
+                  business,regardless of size or scale.
+                </p>
+              </div>
+              {/* <TabComponent /> */}
+              <GalleryWithTags />
             </div>
           </div>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#6a47b8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
-            >
-              Get Quote
-            </a>
-          </div>
-        </div>
-        {/* Features section */}
-        <div className="py-16">
-          <div className="mx-auto lg:px-8">
-            <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
-                Features
-              </h2>
-              <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
-                Core Mutual Fund Solutions
-              </p>
-              <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
-                Power your Distribution platform with proven APIs for
-                Onboarding, Transactions, and Reporting from Fintech Primitives.
-              </p>
-            </div>
-            <div className="mx-auto mt-16 max-w-2xl lg:max-w-none">
-              <div className="mx-auto">
-                {featuresCards.map((section, index) => (
-                  <div
-                    key={index}
-                    className="mx-auto grid max-w-2xl grid-cols-1 my-32 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-2"
-                  >
+          {/* How we solve section */}
+          <div className="">
+            <div className="lg:px-8">
+              <div className="mx-auto max-w-2xl lg:text-center">
+                <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
+                  How we solve?
+                </h2>
+                <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
+                  Products
+                </p>
+                <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
+                  From SDKs to full-stack solutions, choose the right building
+                  blocks for your platform
+                </p>
+              </div>
+              <div className="mt-10 max-w-2xl lg:max-w-none">
+                <dl className="grid max-w-2xl grid-cols-1 md:grid-cols-2 mx-auto gap-x-6 gap-y-8 lg:max-w-none lg:grid-cols-3">
+                  {howWeSolveCards.map((feature) => (
                     <div
-                      className={`lg:pr-8 lg:pt-4 ${
-                        index % 2 !== 0 ? "lg:order-last" : ""
-                      }`}
+                      key={feature.name}
+                      className="flex flex-col bg-white dark:bg-gray-900 shadow-lg p-8 rounded-xl ring-1 ring-neutral-200 dark:ring-neutral-700"
                     >
-                      <div className="lg:max-w-lg">
-                        <section.icon aria-hidden="true" />
-
-                        <h2 className="text-2xl mt-2 font-semibold text-gray-900 dark:text-indigo-400">
-                          {section.title}
-                        </h2>
-
-                        <p className="mt-6 text-md text-gray-600 dark:text-gray-300">
-                          {section.description}
-                        </p>
-                        <dl className="max-w-xl text-base/7 text-gray-600 dark:text-gray-300 lg:max-w-none space-y-0">
-                          {section.points.map((point, idx) => (
-                            <div key={idx} className="flex items-start gap-2">
-                              <svg
-                                className="flex-shrink-0 w-6 h-6"
-                                width="26"
-                                height="25"
-                                viewBox="0 0 29 29"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M9.41716 14.2687L12.9172 17.7687L19.9172 10.7687M26.3338 14.2687C26.3338 20.712 21.1105 25.9354 14.6672 25.9354C8.22383 25.9354 3.00049 20.712 3.00049 14.2687C3.00049 7.8254 8.22383 2.60205 14.6672 2.60205C21.1105 2.60205 26.3338 7.8254 26.3338 14.2687Z"
-                                  stroke="#4E45DD"
-                                  strokeWidth="2.33333"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                />
-                              </svg>
-
-                              <p className="text-sm">{point}</p>
-                            </div>
-                          ))}
-                        </dl>
-                      </div>
+                      <feature.icon aria-hidden="true" />
+                      <h2 className="mt-4 text-gray-900 dark:text-gray-50">
+                        {feature.name}
+                      </h2>
+                      <dd className="mt-4 flex flex-auto flex-col text-base/7 text-gray-600 dark:text-gray-300">
+                        <p className="">{feature.description}</p>
+                      </dd>
                     </div>
-                    <div className="my-auto">
-                      <img
-                        alt={`${section.title} - Light`}
-                        src={section.srcLight}
-                        className={`shadow-2xl rounded-2xl dark:hidden ${
-                          index === 0 && "ring-2 ring-neutral-200"
-                        }`}
-                      />
-                      <img
-                        alt={`${section.title} - Dark`}
-                        src={section.srcDark}
-                        className={`shadow-2xl rounded-2xl hidden dark:block`}
-                      />
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </dl>
               </div>
             </div>
-          </div>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
-            >
-              Get Quote
-            </a>
-          </div>
-        </div>
-
-        {/* Why choose us section */}
-        <div className="py-16">
-          <div className="mx-auto">
-            <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
-                Why choose us?
-              </h2>
-              <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
-                Why work with us?
-              </p>
-              <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
-                With over 8 years of experience in IT products and services
-                across continents, we understand that every need is unique, and
-                quality is paramount. We place the end user at the heart of
-                every solution.
-              </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#6a47b8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+              >
+                Get Quote
+              </a>
             </div>
-            <div className="mx-auto mt-16 max-w-2xl lg:max-w-none">
-              <div className="mx-auto max-w-7xl">
-                <div className="grid grid-cols-1 gap-4 mt-8 xl:mt-12 md:grid-cols-2 xl:grid-cols-4">
-                  {whyChooseUsCards.map((component, index) => (
+          </div>
+          {/* Features section */}
+          <div className="">
+            <div className="mx-auto lg:px-8 flex flex-col gap-y-12">
+              <div className="mx-auto max-w-2xl lg:text-center">
+                <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
+                  Features
+                </h2>
+                <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
+                  Core Mutual Fund Solutions
+                </p>
+                <p className="mt-6 mb-0 text-lg/8 text-gray-600 dark:text-gray-300">
+                  Power your Distribution platform with proven APIs for
+                  Onboarding, Transactions, and Reporting from Fintech
+                  Primitives.
+                </p>
+              </div>
+              <div className="mx-auto max-w-2xl lg:max-w-none">
+                <div className="mx-auto flex flex-col gap-y-12">
+                  {featuresCards.map((section, index) => (
                     <div
                       key={index}
-                      className="flex flex-col px-6 py-4 space-y-4 bg-gray-100 rounded-xl dark:bg-gray-800"
+                      className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-2"
                     >
-                      <div className="flex-shrink-0 flex">
-                        <component.icon aria-hidden="true" />
+                      <div
+                        className={`lg:pr-8 ${
+                          index % 2 !== 0 ? "lg:order-last" : ""
+                        }`}
+                      >
+                        <div className="lg:max-w-lg">
+                          <section.icon aria-hidden="true" />
+
+                          <h2 className="text-2xl mt-2 font-semibold text-gray-900 dark:text-indigo-400">
+                            {section.title}
+                          </h2>
+
+                          <p className="mt-6 text-md text-gray-600 dark:text-gray-300">
+                            {section.description}
+                          </p>
+                          <dl className="max-w-xl text-base/7 text-gray-600 dark:text-gray-300 lg:max-w-none space-y-0">
+                            {section.points.map((point, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <svg
+                                  className="flex-shrink-0 w-6 h-6"
+                                  width="26"
+                                  height="25"
+                                  viewBox="0 0 29 29"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M9.41716 14.2687L12.9172 17.7687L19.9172 10.7687M26.3338 14.2687C26.3338 20.712 21.1105 25.9354 14.6672 25.9354C8.22383 25.9354 3.00049 20.712 3.00049 14.2687C3.00049 7.8254 8.22383 2.60205 14.6672 2.60205C21.1105 2.60205 26.3338 7.8254 26.3338 14.2687Z"
+                                    stroke="#4E45DD"
+                                    strokeWidth="2.33333"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                  />
+                                </svg>
+
+                                <p className="text-sm">{point}</p>
+                              </div>
+                            ))}
+                          </dl>
+                        </div>
                       </div>
-
-                      <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white min-h-[48px]">
-                        {component.title}
-                      </h1>
-
-                      <p className="text-gray-500 dark:text-gray-300 min-h-[64px]">
-                        {component.description}
-                      </p>
+                      <div className="my-auto">
+                        <img
+                          alt={`${section.title} - Light`}
+                          src={section.srcLight}
+                          className={`shadow-2xl rounded-2xl dark:hidden ${
+                            index === 0 && "ring-2 ring-neutral-200"
+                          }`}
+                        />
+                        <img
+                          alt={`${section.title} - Dark`}
+                          src={section.srcDark}
+                          className={`shadow-2xl rounded-2xl hidden dark:block`}
+                        />
+                      </div>
                     </div>
                   ))}
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
-            >
-              Get Quote
-            </a>
-          </div>
-        </div>
-        {/* FAQ Section */}
-        <div className="py-16">
-          <h2 className="text-4xl font-semibold tracking-tight text-center text-gray-900 dark:text-gray-50 sm:text-5xl">
-            Frequently asked questions
-          </h2>
-          <p className="mt-6 text-md text-gray-600 dark:text-gray-300 text-center">
-            Everything you need to know about the product and billing.
-          </p>
-          <div className="mx-auto max-w-4xl divide-y divide-gray-900/10 dark:divide-gray-100">
-            <dl className="mt-10 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100">
-              {faqQuestions.map((faq) => (
-                <Disclosure key={faq.question} as="div" className="pt-6">
-                  <dt>
-                    <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900 dark:text-gray-50">
-                      <span className="text-base/7 font-semibold">
-                        {faq.question}
-                      </span>
-                      <span className="ml-6 flex h-7 items-center">
-                        <PlusIcon
-                          aria-hidden="true"
-                          className="size-6 group-data-[open]:hidden"
-                        />
-                        <MinusIcon
-                          aria-hidden="true"
-                          className="size-6 [.group:not([data-open])_&]:hidden"
-                        />
-                      </span>
-                    </DisclosureButton>
-                  </dt>
-                  <DisclosurePanel as="dd" className="mt-2 pr-12">
-                    <p className="text-base/7 text-gray-600 dark:text-gray-300">
-                      {faq.answer}
-                    </p>
-                  </DisclosurePanel>
-                </Disclosure>
-              ))}
-            </dl>
-          </div>
-        </div>
-        {/* Have questions section */}
-        <div className="py-16">
-          <div className="relative -mx-4 overflow-hidden bg-indigo-100 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 rounded-3xl md:px-16">
-            <div>
-              <p className="font-display text-center text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
-                Still have questions ?
-              </p>
-              <p className="mt-4 text-center text-lg tracking-tight text-blue-900">
-                Can’t find the answer you’re looking for? Please chat to our
-                friendly team.
-              </p>
-              <div className="mt-10 flex justify-center items-center gap-x-6">
+              <div className="flex items-center justify-center gap-x-6">
                 <a
                   href="#"
                   className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
                 >
-                  Get in touch
+                  Get Quote
                 </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Why choose us section */}
+          <div className="">
+            <div className="mx-auto">
+              <div className="mx-auto max-w-2xl lg:text-center">
+                <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
+                  Why choose us?
+                </h2>
+                <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
+                  Why work with us?
+                </p>
+                <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
+                  With over 8 years of experience in IT products and services
+                  across continents, we understand that every need is unique,
+                  and quality is paramount. We place the end user at the heart
+                  of every solution.
+                </p>
+              </div>
+              <div className="mx-auto mt-16 max-w-2xl lg:max-w-none">
+                <div className="mx-auto max-w-7xl">
+                  <div className="grid grid-cols-1 gap-4 mt-8 xl:mt-12 md:grid-cols-2 xl:grid-cols-4">
+                    {whyChooseUsCards.map((component, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-col px-6 py-4 space-y-4 bg-gray-100 rounded-xl dark:bg-gray-800"
+                      >
+                        <div className="flex-shrink-0 flex">
+                          <component.icon aria-hidden="true" />
+                        </div>
+
+                        <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white min-h-[48px]">
+                          {component.title}
+                        </h1>
+
+                        <p className="text-gray-500 dark:text-gray-300 min-h-[64px]">
+                          {component.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+              >
+                Get Quote
+              </a>
+            </div>
+          </div>
+          {/* FAQ Section */}
+          <div className="">
+            <h2 className="text-4xl font-semibold tracking-tight text-center text-gray-900 dark:text-gray-50 sm:text-5xl">
+              Frequently asked questions
+            </h2>
+            <p className="mt-6 text-md text-gray-600 dark:text-gray-300 text-center">
+              Everything you need to know about the product and billing.
+            </p>
+            <div className="mx-auto max-w-4xl divide-y divide-gray-900/10 dark:divide-gray-100">
+              <dl className="mt-10 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100">
+                {faqQuestions.map((faq) => (
+                  <Disclosure key={faq.question} as="div" className="pt-6">
+                    <dt>
+                      <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900 dark:text-gray-50">
+                        <span className="text-base/7 font-semibold">
+                          {faq.question}
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          <PlusIcon
+                            aria-hidden="true"
+                            className="size-6 group-data-[open]:hidden"
+                          />
+                          <MinusIcon
+                            aria-hidden="true"
+                            className="size-6 [.group:not([data-open])_&]:hidden"
+                          />
+                        </span>
+                      </DisclosureButton>
+                    </dt>
+                    <DisclosurePanel as="dd" className="mt-2 pr-12">
+                      <p className="text-base/7 text-gray-600 dark:text-gray-300">
+                        {faq.answer}
+                      </p>
+                    </DisclosurePanel>
+                  </Disclosure>
+                ))}
+              </dl>
+            </div>
+          </div>
+          {/* Have questions section */}
+          <div className="">
+            <div className="relative -mx-4 overflow-hidden bg-indigo-100 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 rounded-3xl md:px-16">
+              <div>
+                <p className="font-display text-center text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
+                  Still have questions ?
+                </p>
+                <p className="mt-4 text-center text-lg tracking-tight text-blue-900">
+                  Can’t find the answer you’re looking for? Please chat to our
+                  friendly team.
+                </p>
+                <div className="mt-10 flex justify-center items-center gap-x-6">
+                  <a
+                    href="#"
+                    className="rounded-md bg-[#4E45DD] px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-[#4E45DD] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
+                  >
+                    Get in touch
+                  </a>
+                </div>
               </div>
             </div>
           </div>
