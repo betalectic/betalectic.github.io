@@ -78,7 +78,7 @@ export function Footer() {
             </Link>
           </div>
         </div>
-        <div className="py-16 text-center">
+        <div className="py-8 text-center">
           <p className="text-sm">
             Copyright {new Date().getFullYear()} © Betalectic
           </p>

@@ -9,9 +9,9 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
-import { useState, useRef, useEffect } from "react";
-import WhatWeSolveIcons from "../images/mfstack/WhatWeSolveIcons";
-import { motion, AnimatePresence } from "framer-motion";
+import GalleryWithTags from "../components/mfstack/GalleryWithTags";
+import GetQuoteCTA from "../components/mfstack/GetQuoteCTA";
+import SectionHeader from "../components/mfstack/SectionHeader";
 
 function MfStack() {
   const howWeSolveCards = [
@@ -162,145 +162,42 @@ function MfStack() {
 
   const faqQuestions = [
     {
-      question: "Is there a free trial available?",
+      question: "What Mutual fund Transaction Providers do you Support?",
       answer:
-        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+        "Our Transaction production is powered by Fintech Primitive APIs.",
     },
     {
-      question: "Can I change my plan later?",
+      question: "What product do I get in 8 weeks?",
       answer:
-        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+        "In 8 weeks we provide our standard templated app, which comprises of features like Investor Onboarding, Different types of transactions and Standard Reports. ",
     },
     {
-      question: "What is your cancellation policy?",
+      question: "What kind of transactions do you support?",
       answer:
-        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+        "We support the following kinds of transactions: One time purchase, SIP, Switch, SWP, STP and Redemption",
     },
     {
-      question: "Can other info be added to an invoice?",
+      question: "What features do you support for SIP investments?",
       answer:
-        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+        "We support Pause, Cancel and Resume of SIP. Other than this we also support Step up and Step down SIPs",
     },
     {
-      question: "How does billing work?",
+      question: "Do you build solutions for customized MF Product?",
       answer:
-        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+        "Yes, we can build a custom solution for your needs. You can setup a call with our team which will understand your requirements, and layout a plan for your custom application. We take care of the look and feel of your app and build you an enterprise grade application which can help you scale your business.",
     },
     {
-      question: "How do I change my account email?",
-      answer:
-        "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
-    },
-  ];
-
-  const whatWeSolveCards = [
-    {
-      id: 1,
-      name: "Investor Portfolio Management",
-      description:
-        "Real-time portfolio insights at your fingertips. Track investments, visualize allocations, and monitor performance in one comprehensive dashboard.",
-      icon: WhatWeSolveIcons.investor,
-      tags: [
-        "Fintechs",
-        "Independent Distributors",
-        "Wealth Management Companies",
-      ],
+      question: "How to migrate my current investors to FP?",
+      answer: "",
     },
     {
-      id: 2,
-      name: "Financial Planning",
-      description:
-        "Comprehensive financial planning tools for your clients. From goal-based planning to retirement calculations, deliver strategic guidance.",
-      icon: WhatWeSolveIcons.financialPlanning,
-      tags: [
-        "Fintechs",
-        "Independent Distributors",
-        "Wealth Management Companies",
-      ],
+      question:
+        "If I migrate to FP, do I have to create new mandates for my investors?",
+      answer: "",
     },
     {
-      id: 3,
-      name: "Risk Profiling",
-      description:
-        "Smart risk assessment for informed decisions. Generate risk scores, analyze portfolios, and maintain alignment with client objectives.",
-      icon: WhatWeSolveIcons.riskProfiling,
-      tags: [
-        "Fintechs",
-        "Independent Distributors",
-        "Wealth Management Companies",
-      ],
-    },
-    {
-      id: 4,
-      name: "MF Transactions",
-      description:
-        "Complete mutual fund transaction platform. Process orders, manage SIPs, and track investments with real-time updates.",
-      icon: WhatWeSolveIcons.mfTransactions,
-      tags: [
-        "Fintechs",
-        "Independent Distributors",
-        "Wealth Management Companies",
-      ],
-    },
-    {
-      id: 5,
-      name: "KYC Checks, Onboarding and E-KYC",
-      description:
-        "Digital KYC made simple. Digital onboarding for all investor types with integrated verification systems.",
-      icon: WhatWeSolveIcons.kycChecks,
-      tags: [
-        "Fintechs",
-        "Independent Distributors",
-        "Wealth Management Companies",
-      ],
-    },
-    {
-      id: 6,
-      name: "Fund Details and Performance Data",
-      description:
-        "Real-time fund insights. Access NAVs, track performance, and analyze portfolio holdings instantly.",
-      icon: WhatWeSolveIcons.fundDetails,
-      tags: [
-        "Fintechs",
-        "Independent Distributors",
-        "Wealth Management Companies",
-      ],
-    },
-    {
-      id: 7,
-      name: "Security",
-      description:
-        "Enterprise-grade security for your business. Two-factor authentication, encryption, and robust access controls.",
-      icon: WhatWeSolveIcons.security,
-      tags: [
-        "Fintechs",
-        "Independent Distributors",
-        "Wealth Management Companies",
-      ],
-    },
-    {
-      id: 8,
-      name: "LAMF",
-      description:
-        "Integrated loan management platform. Calculate eligibility, track disbursements, and manage repayments through comprehensive dashboards.",
-      icon: WhatWeSolveIcons.lamf,
-      tags: [
-        "Fintechs",
-        "Independent Distributors",
-        "Wealth Management Companies",
-      ],
-    },
-    {
-      id: 9,
-      name: "Back office",
-      description:
-        "Stay in control with a dedicated dashboard to track, manage, and monitor every aspect of your application seamlessly.",
-      icon: WhatWeSolveIcons.backOffice,
-      tags: [
-        "Fintechs",
-        "Independent Distributors",
-        "Wealth Management Companies",
-      ],
+      question: "How to migrate the existing folios to FP?",
+      answer: "",
     },
   ];
 
@@ -322,143 +219,6 @@ function MfStack() {
       alt: "Cams",
     },
   ];
-
-  const GalleryWithTags = () => {
-    const tags = [
-      "Fintechs",
-      "Independent Distributors",
-      "Wealth Management Companies",
-    ];
-
-    const [isSticky, setIsSticky] = useState(false);
-    const sectionRef = useRef(null);
-    const tagRef = useRef(null);
-
-    const [activeTag, setActiveTag] = useState("Fintechs");
-    const [shuffledCards, setShuffledCards] = useState(whatWeSolveCards);
-
-    const shuffleArray = (array) => {
-      const shuffled = [...array];
-      for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-      }
-      return shuffled;
-    };
-
-    const handleTagChange = (tag) => {
-      setActiveTag(tag);
-      const filtered =
-        tag === "All"
-          ? whatWeSolveCards
-          : whatWeSolveCards.filter((card) => card.tags.includes(tag));
-      setShuffledCards(shuffleArray(filtered));
-    };
-
-    // Debounce implementation
-    const debounce = (func, delay) => {
-      let timer;
-      return (...args) => {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-          func(...args);
-        }, delay);
-      };
-    };
-
-    const handleScroll = debounce(() => {
-      if (sectionRef.current && tagRef.current) {
-        const sectionRect = sectionRef.current.getBoundingClientRect();
-        const tagHeight = tagRef.current.offsetHeight;
-
-        // Check if the tag section needs to be sticky
-        const shouldStick =
-          sectionRect.top <= 0 && sectionRect.bottom > tagHeight;
-
-        if (shouldStick !== isSticky) {
-          setIsSticky(shouldStick);
-        }
-      }
-    }, 50); // Adjust the delay as needed (50ms is a good balance for performance)
-
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, [handleScroll]);
-
-    const cardVariants = {
-      hidden: { opacity: 0, y: 20 },
-      visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
-      exit: { opacity: 0, y: -20, transition: { duration: 0.2 } },
-    };
-
-    return (
-      <div className="mx-auto">
-        {/* Sticky Tags */}
-        <div
-          ref={tagRef}
-          className={`w-full overflow-x-auto ${
-            isSticky
-              ? "fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 z-50 py-2"
-              : "relative"
-          }`}
-        >
-          <div className="flex gap-4 justify-center px-4 md:px-8 transition-all duration-300">
-            {tags.map((tag, index) => (
-              <button
-                key={index}
-                onClick={() => handleTagChange(tag)}
-                className={`px-2 py-1 md:px-4 md:py-2 rounded-full font-medium md:text-sm text-[10px] transition-all duration-300 ${
-                  activeTag === tag
-                    ? "bg-indigo-600 text-white shadow-lg"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-              >
-                {tag}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Cards Section */}
-        <div ref={sectionRef} className="mt-14">
-          <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <AnimatePresence>
-              {shuffledCards.map((card) => (
-                <motion.div
-                  key={card.id}
-                  className="bg-gray-50 dark:bg-gray-900 shadow-lg p-6 rounded-xl ring-1 ring-neutral-200 dark:ring-neutral-700 transition-shadow duration-300"
-                  variants={cardVariants}
-                  initial="hidden"
-                  animate="visible"
-                  exit="exit"
-                  layout
-                >
-                  <div
-                    className="flex flex-col"
-                    style={{
-                      minHeight: "100px",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <div>
-                      <card.icon aria-hidden="true" />
-                      <h2 className="font-bold text-md mt-2 text-gray-900 dark:text-gray-50">
-                        {card.name}
-                      </h2>
-                    </div>
-                    <dd className="text-base/7 text-gray-600 dark:text-gray-300">
-                      {card.description}
-                    </dd>
-                  </div>
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </motion.div>
-        </div>
-      </div>
-    );
-  };
 
   return (
     <Layout title="MF Stack" description="MF Stack description to set up here">
@@ -488,14 +248,7 @@ function MfStack() {
                   Effortlessly build Mutual Fund Web & Mobile Applications for
                   your investors in just 8 weeks
                 </p>
-                <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <a
-                    href="#"
-                    className="rounded-md bg-mf-stack-brand-button px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white"
-                  >
-                    Get Quote
-                  </a>
-                </div>
+                <GetQuoteCTA buttonText={"Get Quote"} buttonLink={"#"} />
               </div>
               <div className="mt-16 sm:mt-24">
                 <img
@@ -536,7 +289,7 @@ function MfStack() {
               </div>
             </div>
 
-            <div className="hidden md:flex justify-center mt-6 md:gap-x-4 lg:gap-x-16">
+            <div className="hidden md:flex justify-around mt-6 md:gap-x-4 lg:gap-x-16">
               {logoImages.map((image, index) => (
                 <img
                   key={index}
@@ -553,220 +306,171 @@ function MfStack() {
 
         <div className="flex flex-col gap-y-24 my-24">
           {/* For whom and how section */}
-          <div className="">
-            <div className="mx-auto lg:px-8 flex flex-col gap-y-12">
-              <div className="lg:text-center">
-                <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
-                  For whom and how?
-                </h2>
-                <p className="mt-2 text-pretty text-5xl md:text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 lg:text-balance">
-                  Tailor made solutions for your business goals
-                </p>
-                <p className="mt-5 mx-auto w-2/5 text-xl text-gray-600 dark:text-gray-300">
-                  Flexible mutual fund solutions that grow with your business,
-                  regardless of size or scale.
-                </p>
-              </div>
-              {/* <TabComponent /> */}
-              <GalleryWithTags />
-            </div>
+          <div className="mx-auto lg:px-8 flex flex-col gap-y-12">
+            <SectionHeader
+              sectionTag={"For whom and how?"}
+              sectionTitle={"Tailor made solutions for your business goals"}
+              sectionDescription={
+                "Flexible mutual fund solutions that grow with your business, regardless of size or scale."
+              }
+            />
+
+            <GalleryWithTags />
           </div>
           {/* How we solve section */}
-          <div className="">
-            <div className="lg:px-8">
-              <div className="mx-auto max-w-2xl lg:text-center">
-                <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
-                  How we solve?
-                </h2>
-                <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
-                  Products
-                </p>
-                <p className="mt-5 text-xl text-gray-600 dark:text-gray-300">
-                  From SDKs to full-stack solutions, choose the right building
-                  blocks for your platform
-                </p>
-              </div>
-              <div className="mt-12 max-w-2xl lg:max-w-none">
-                <dl className="grid max-w-2xl grid-cols-1 md:grid-cols-2 mx-auto gap-x-6 gap-y-8 lg:max-w-none lg:grid-cols-3">
-                  {howWeSolveCards.map((feature) => (
-                    <div
-                      key={feature.name}
-                      className="flex flex-col bg-white dark:bg-gray-900 shadow-lg p-8 rounded-xl ring-1 ring-neutral-200 dark:ring-neutral-700"
-                    >
-                      <feature.icon aria-hidden="true" />
-                      <h2 className="mt-4 text-gray-900 dark:text-gray-50">
-                        {feature.name}
-                      </h2>
-                      <dd className="flex flex-auto flex-col text-base/7 text-gray-600 dark:text-gray-300">
-                        <p className="">{feature.description}</p>
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
+          <div className="mx-auto lg:px-8">
+            <SectionHeader
+              sectionTag={"How we solve?"}
+              sectionTitle={"Products"}
+              sectionDescription={
+                "From SDKs to full-stack solutions, choose the right building blocks for your platform."
+              }
+            />
+            <div className="mt-8">
+              <dl className="grid max-w-2xl grid-cols-1 md:grid-cols-2 mx-auto gap-x-6 gap-y-8 lg:max-w-none lg:grid-cols-3">
+                {howWeSolveCards.map((feature) => (
+                  <div
+                    key={feature.name}
+                    className="flex flex-col bg-white dark:bg-gray-900 shadow-lg p-8 rounded-xl ring-1 ring-neutral-200 dark:ring-neutral-700"
+                  >
+                    <feature.icon aria-hidden="true" />
+                    <h2 className="mt-4 text-gray-900 dark:text-gray-50">
+                      {feature.name}
+                    </h2>
+                    <dd className="flex flex-auto flex-col text-base/7 text-gray-600 dark:text-gray-300">
+                      <p className="">{feature.description}</p>
+                    </dd>
+                  </div>
+                ))}
+              </dl>
             </div>
-            <div className="mt-12 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-mf-stack-brand-button px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:text-white"
-              >
-                Get Quote
-              </a>
-            </div>
+
+            <GetQuoteCTA buttonText={"Get Quote"} buttonLink={"#"} />
           </div>
+
           {/* Features section */}
-          <div className="">
+          <div>
             <div className="mx-auto lg:px-8 flex flex-col gap-y-12">
-              <div className="mx-auto max-w-2xl lg:text-center">
-                <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">
-                  Features
-                </h2>
-                <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
-                  Core Mutual Fund Solutions
-                </p>
-                <p className="mt-6 mb-0 text-lg/8 text-gray-600 dark:text-gray-300">
-                  Power your Distribution platform with proven APIs for
-                  Onboarding, Transactions, and Reporting from Fintech
-                  Primitives.
-                </p>
-              </div>
-              <div className="mx-auto max-w-2xl lg:max-w-none">
-                <div className="mx-auto flex flex-col gap-y-12">
-                  {featuresCards.map((section, index) => (
+              <SectionHeader
+                sectionTag={"Features"}
+                sectionTitle={"Core Mutual Fund Solutions"}
+                sectionDescription={
+                  "Power your Distribution platform with proven APIs for Onboarding, Transactions, and Reporting from Fintech Primitives."
+                }
+              />
+              <div className="mx-auto flex flex-col gap-y-12">
+                {featuresCards.map((section, index) => (
+                  <div
+                    key={index}
+                    className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+                  >
                     <div
-                      key={index}
-                      className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+                      className={`lg:pr-8 ${
+                        index % 2 !== 0 ? "lg:order-last" : ""
+                      }`}
                     >
-                      <div
-                        className={`lg:pr-8 ${
-                          index % 2 !== 0 ? "lg:order-last" : ""
-                        }`}
-                      >
-                        <div className="lg:max-w-lg">
-                          <section.icon aria-hidden="true" />
+                      <div className="lg:max-w-lg">
+                        <section.icon aria-hidden="true" />
 
-                          <h2 className="text-2xl mt-2 font-semibold text-gray-900 dark:text-indigo-400">
-                            {section.title}
-                          </h2>
+                        <h2 className="text-2xl mt-2 font-semibold text-gray-900 dark:text-indigo-400">
+                          {section.title}
+                        </h2>
 
-                          <p className="text-md text-gray-600 dark:text-gray-300">
-                            {section.description}
-                          </p>
+                        <p className="text-md text-gray-600 dark:text-gray-300">
+                          {section.description}
+                        </p>
 
-                          <dl className="mt-8 max-w-xl text-base/7 text-gray-600 dark:text-gray-300 lg:max-w-none space-y-0">
-                            {section.points.map((point, idx) => (
-                              <div key={idx} className="flex items-start gap-2">
-                                <svg
-                                  className="flex-shrink-0 w-6 h-6"
-                                  width="26"
-                                  height="25"
-                                  viewBox="0 0 29 29"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M9.41716 14.2687L12.9172 17.7687L19.9172 10.7687M26.3338 14.2687C26.3338 20.712 21.1105 25.9354 14.6672 25.9354C8.22383 25.9354 3.00049 20.712 3.00049 14.2687C3.00049 7.8254 8.22383 2.60205 14.6672 2.60205C21.1105 2.60205 26.3338 7.8254 26.3338 14.2687Z"
-                                    stroke="#4E45DD"
-                                    strokeWidth="2.33333"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                </svg>
+                        <dl className="mt-8 max-w-xl text-base/7 text-gray-600 dark:text-gray-300 lg:max-w-none space-y-0">
+                          {section.points.map((point, idx) => (
+                            <div key={idx} className="flex items-start gap-2">
+                              <svg
+                                className="flex-shrink-0 w-6 h-6"
+                                width="26"
+                                height="25"
+                                viewBox="0 0 29 29"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M9.41716 14.2687L12.9172 17.7687L19.9172 10.7687M26.3338 14.2687C26.3338 20.712 21.1105 25.9354 14.6672 25.9354C8.22383 25.9354 3.00049 20.712 3.00049 14.2687C3.00049 7.8254 8.22383 2.60205 14.6672 2.60205C21.1105 2.60205 26.3338 7.8254 26.3338 14.2687Z"
+                                  stroke="#4E45DD"
+                                  strokeWidth="2.33333"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </svg>
 
-                                <p className="text-base">{point}</p>
-                              </div>
-                            ))}
-                          </dl>
-                        </div>
-                      </div>
-                      <div className="my-auto">
-                        <img
-                          alt={`${section.title} - Light`}
-                          src={section.srcLight}
-                          className={`shadow-2xl rounded-2xl dark:hidden ${
-                            index === 0 && "ring-2 ring-neutral-200"
-                          }`}
-                        />
-                        <img
-                          alt={`${section.title} - Dark`}
-                          src={section.srcDark}
-                          className={`shadow-2xl rounded-2xl hidden dark:block`}
-                        />
+                              <p className="text-base">{point}</p>
+                            </div>
+                          ))}
+                        </dl>
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
-              <div className="flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-mf-stack-brand-button px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:text-white"
-                >
-                  Get Quote
-                </a>
+                    <div className="my-auto">
+                      <img
+                        alt={`${section.title} - Light`}
+                        src={section.srcLight}
+                        className={`shadow-2xl rounded-2xl dark:hidden ${
+                          index === 0 && "ring-2 ring-neutral-200"
+                        }`}
+                      />
+                      <img
+                        alt={`${section.title} - Dark`}
+                        src={section.srcDark}
+                        className={`shadow-2xl rounded-2xl hidden dark:block`}
+                      />
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
+            <GetQuoteCTA buttonText={"Get Quote"} buttonLink={"#"} />
           </div>
 
           {/* Why choose us section */}
-          <div className="">
-            <div className="mx-auto">
-              <div className="mx-auto max-w-2xl lg:text-center">
-                {/* <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400"> */}
-                <h2 className="text-base/7 font-semibold text-mf-stack-purple-light dark:text-indigo-400">
-                  Why choose us?
-                </h2>
-                <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50 sm:text-5xl lg:text-balance">
-                  Why work with us?
-                </p>
-                <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
-                  With over 8 years of experience in IT products and services
-                  across continents, we understand that every need is unique,
-                  and quality is paramount. We place the end user at the heart
-                  of every solution.
-                </p>
-              </div>
-              <div className="mt-16 lg:max-w-none">
-                <div className="grid grid-cols-1 gap-4 mt-8 xl:mt-12 md:grid-cols-2 xl:grid-cols-4">
-                  {whyChooseUsCards.map((component, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col px-6 py-4 space-y-4 bg-gray-100 rounded-xl dark:bg-gray-800"
-                    >
-                      <div className="flex-shrink-0 flex">
-                        <component.icon aria-hidden="true" />
-                      </div>
 
-                      <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white min-h-[48px]">
-                        {component.title}
-                      </h1>
-
-                      <p className="text-gray-500 dark:text-gray-300 min-h-[64px]">
-                        {component.description}
-                      </p>
+          <div className="mx-auto">
+            <SectionHeader
+              sectionTag={"Why choose us?"}
+              sectionTitle={"Why work with us?"}
+              sectionDescription={
+                " With over 8 years of experience in IT products and services across continents, we understand that every need is unique, and quality is paramount. We place the end user at the heart of every solution."
+              }
+            />
+            <div className="mt-16 lg:max-w-none">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+                {whyChooseUsCards.map((component, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col px-6 py-4 space-y-4 bg-gray-100 rounded-xl dark:bg-gray-800"
+                  >
+                    <div className="flex-shrink-0 flex">
+                      <component.icon aria-hidden="true" />
                     </div>
-                  ))}
-                </div>
+
+                    <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white min-h-[48px]">
+                      {component.title}
+                    </h1>
+
+                    <p className="text-gray-500 dark:text-gray-300 min-h-[64px]">
+                      {component.description}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="mt-12 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-mf-stack-brand-button px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer hover:bg-mf-stack-brand-button focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:text-white"
-              >
-                Get Quote
-              </a>
-            </div>
+            <GetQuoteCTA buttonText={"Get Quote"} buttonLink={"#"} />
           </div>
+
           {/* FAQ Section */}
           <div className="">
             <h2 className="text-4xl font-semibold tracking-tight text-center text-gray-900 dark:text-gray-50 sm:text-5xl">
               Frequently asked questions
             </h2>
-            <p className="mt-6 text-md text-gray-600 dark:text-gray-300 text-center">
+            <p className="mt-6 mb-10 text-md text-gray-600 dark:text-gray-300 text-center">
               Everything you need to know about the product and billing.
             </p>
-            <div className="mx-auto max-w-4xl divide-y divide-gray-900/10 dark:divide-gray-100">
+            <div className="mx-auto max-w-4xl">
               <dl className="mt-10 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100">
                 {faqQuestions.map((faq) => (
                   <Disclosure key={faq.question} as="div" className="pt-6">
@@ -798,25 +502,16 @@ function MfStack() {
             </div>
           </div>
           {/* Have questions section */}
-          <div className="">
-            <div className="relative -mx-4 overflow-hidden bg-indigo-100 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 rounded-3xl md:px-16">
-              <div>
-                <p className="font-display text-center text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
-                  Still have questions ?
-                </p>
-                <p className="mt-4 text-center text-lg tracking-tight text-blue-900">
-                  Can’t find the answer you’re looking for? Please chat to our
-                  friendly team.
-                </p>
-                <div className="mt-10 flex justify-center items-center gap-x-6">
-                  <a
-                    href="#"
-                    className="rounded-md bg-mf-stack-brand-button px-6 py-3 text-sm font-semibold text-white shadow-md hover:cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 transition-all duration-300 ease-in-out transform hover:text-white"
-                  >
-                    Get in touch
-                  </a>
-                </div>
-              </div>
+          <div className="relative -mx-4 overflow-hidden bg-indigo-100 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 rounded-3xl md:px-16">
+            <div>
+              <p className="font-display text-center text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
+                Still have questions ?
+              </p>
+              <p className="mt-4 text-center text-lg tracking-tight text-blue-900">
+                Can’t find the answer you’re looking for? Please chat to our
+                friendly team.
+              </p>
+              <GetQuoteCTA buttonText={"Get in touch"} buttonLink={"#"} />
             </div>
           </div>
         </div>
