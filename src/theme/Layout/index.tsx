@@ -30,6 +30,7 @@ import { Offices } from "../../components/studio/components/Offices";
 import { SocialMedia } from "../../components/studio/components/SocialMedia";
 import NavbarColorModeToggle from "@theme/Navbar/ColorModeToggle";
 import BetalecticWhiteSvg from "../../../static/img/betalectic_white_svg.svg";
+import BetalecticMobileLogo from "../../static/img/betalectic_mobile_logo.svg";
 import BLetterLogoLight from "../../../static/img/b_letter_logo_light.svg";
 import BLetterLogoWhite from "../../../static/img/b_letter_logo_white.svg";
 import { initFaviconSwitcher } from "../../lib/faviconSwitcher";
@@ -93,7 +94,7 @@ function Header({
               <BetalecticWhiteSvg />
             ) : (
               // <BLetterLogoLight className="h-9 w-9" />
-              <Logo className="h-8" fillOnHover invert={invert} />
+              <BetalecticMobileLogo />
             )
           ) : expanded ? (
             <BetalecticWhiteSvg />
