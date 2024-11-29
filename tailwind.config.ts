@@ -22,6 +22,9 @@ module.exports = {
       "7xl": ["4rem", { lineHeight: "4.5rem" }],
     },
     extend: {
+      boxShadow: {
+        "custom-inset": "inset 0px 1px 4px 0px rgba(0, 0, 0, 0.25)",
+      },
       animation: {
         "infinite-scroll": "scrollLeft 20s linear infinite",
 

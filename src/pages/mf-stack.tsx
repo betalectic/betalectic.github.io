@@ -245,7 +245,7 @@ function MfStack() {
                   The New Age of
                   <span className="text-[#CCC9FF]"> MF Distribution</span>
                 </h1>
-                <p className="mt-4 px-4 py-2 text-center max-w-md mx-auto text-pretty text-lg rounded-lg font-medium text-gray-50 bg-[#1B1677] sm:text-xl/8">
+                <p className="mt-4 px-4 py-2 text-center shadow-custom-inset max-w-fit mx-auto text-pretty text-lg rounded-lg font-medium text-gray-50 bg-[#1B1677] sm:text-xl/8">
                   Empowered by Fintech Primitive APIs
                 </p>
                 <p className="mt-8 px-12 text-pretty text-lg font-medium text-[#CCC9FF] sm:text-xl/8">
