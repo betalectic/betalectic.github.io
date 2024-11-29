@@ -74,8 +74,8 @@ function Header({
   useEffect(() => {
     const updateDeviceType = () => {
       const width = window.innerWidth;
-      setIsMobile(width < 426);
-      setIsTablet(width >= 426 && width <= 768);
+      setIsMobile(width < 461);
+      setIsTablet(width >= 461 && width <= 768);
     };
 
     updateDeviceType();
