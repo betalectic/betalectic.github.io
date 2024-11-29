@@ -22,7 +22,12 @@ module.exports = {
       "7xl": ["4rem", { lineHeight: "4.5rem" }],
     },
     extend: {
+      boxShadow: {
+        "custom-inset": "inset 0px 1px 4px 0px rgba(0, 0, 0, 0.25)",
+      },
       animation: {
+        "infinite-scroll": "scrollLeft 20s linear infinite",
+
         "shimmer-slide":
           "shimmer-slide var(--speed) ease-in-out infinite alternate",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
@@ -58,6 +63,10 @@ module.exports = {
             transform: "translate(calc(100cqw - 100%), 0)",
           },
         },
+        scrollLeft: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       borderRadius: {
         "4xl": "2.5rem",
@@ -76,6 +85,10 @@ module.exports = {
       //     { fontVariationSettings: '"wdth" 125' },
       //   ],
       // },
+      colors: {
+        "mf-stack-purple-light": "#3A33BB",
+        "mf-stack-brand-button": "#4E45DD",
+      },
     },
   },
 } satisfies Config;

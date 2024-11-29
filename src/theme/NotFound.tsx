@@ -3,7 +3,7 @@ import Layout from "@theme/Layout";
 
 function NotFound() {
   return (
-    <Layout>
+    <Layout wrapperClassName="max-w-7xl mx-auto px-6 lg:px-8">
       {/* <div className="py-8 w-screen flex items-center">
         <div className="container flex flex-col md:flex-row items-center justify-between px-5 text-gray-700">
           <div className="w-full lg:w-1/2 mx-8">
@@ -36,7 +36,7 @@ function NotFound() {
             <div className="text-6xl md:text-7xl text-[#645BFF] font-extrabold mb-6">
               404
             </div>
-            <p className="text-lg md:text-2xl font-light leading-relaxed mb-6">
+            <p className="text-lg md:text-2xl text-neutral-950 dark:text-neutral-50 font-light leading-relaxed mb-6">
               Sorry, we couldn't find the page you're looking for.
             </p>
             <a
