@@ -51,6 +51,7 @@ p {
   --ifm-code-font-size: 95%;
   --ifm-heading-font-family: "Inter";
   --ifm-font-family-base: "Inter";
+  --ifm-link-color: #635bff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -67,13 +68,20 @@ p {
 } */
 
 [data-theme="dark"] {
-  --ifm-color-primary: #8884ff;
-  --ifm-color-primary-dark: #a5a0ff;
-  --ifm-color-primary-darker: #847eff;
-  --ifm-color-primary-darkest: #635bff;
-  --ifm-color-primary-light: #847eff;
-  --ifm-color-primary-lighter: #948fff;
-  --ifm-color-primary-lightest: #c6c3ff;
+  --ifm-color-primary: #7a73ff; /* A softer shade that still stands out on dark background */
+  --ifm-color-primary-dark: #615bff; /* Slightly darker version for primary interactions */
+  --ifm-color-primary-darker: #5047ff; /* Darker shade with more depth */
+  --ifm-color-primary-darkest: #3a32cc; /* Darkest for accents */
+  --ifm-color-primary-light: #918cff; /* Lighter accent for hover or secondary */
+  --ifm-color-primary-lighter: #a39eff; /* Even lighter for subtle highlights */
+  --ifm-color-primary-lightest: #d0ceff; /* Lightest accent for background elements */
+  --ifm-link-color: #7a73ff;
+  --ifm-code-font-size: 95%;
+  --ifm-heading-font-family: "Inter";
+  --ifm-font-family-base: "Inter";
+
+  /* Code highlighting background for dark mode */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 
 /* Increase the size of the navbar logo */
