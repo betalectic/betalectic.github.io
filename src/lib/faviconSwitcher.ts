@@ -6,7 +6,9 @@ export function updateFavicon() {
     "link[rel='icon']"
   ) as HTMLLinkElement | null;
 
-  favicon.href = isDarkMode ? "/img/favdark.svg" : "/img/favicon.ico";
+  if (favicon)
+    favicon.href = isDarkMode ? "/img/favdark.svg" : "/img/favicon.ico";
+  else console.log("Favicon not found");
 }
 
 export function initFaviconSwitcher() {

@@ -90,9 +90,10 @@ function Header({
         <Link href="/" aria-label="Home">
           {isMobile ? (
             expanded ? (
-              <BLetterLogoWhite className="h-9 w-9" />
+              <BetalecticWhiteSvg />
             ) : (
-              <BLetterLogoLight className="h-9 w-9" />
+              // <BLetterLogoLight className="h-9 w-9" />
+              <Logo className="h-8" fillOnHover invert={invert} />
             )
           ) : expanded ? (
             <BetalecticWhiteSvg />
@@ -101,17 +102,18 @@ function Header({
           )}
         </Link>
         <div className="flex items-center gap-x-6">
-          <Button
-            className="bg-text-neutral-950 dark:bg-neutral-50 dark:text-neutral-950 "
-            href="/about-us"
-            invert={invert}
-          >
-            About us
-          </Button>
           {!expanded && (
-            <NavbarColorModeToggle className={styles.colorModeToggle} />
+            <Button
+              className="bg-text-neutral-950 dark:bg-neutral-50 dark:text-neutral-950 "
+              href="/about-us"
+              invert={invert}
+            >
+              About us
+            </Button>
           )}
-
+          {/* {!expanded && !isMobile && (
+            <NavbarColorModeToggle className={styles.colorModeToggle} />
+          )} */}
           <button
             ref={toggleRef}
             type="button"
@@ -170,6 +172,14 @@ function NavigationItem({
 function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
+      <NavigationRow>
+        <NavigationItem href="/about-us">About Us</NavigationItem>
+        {/* <NavigationItem href="#"> */}
+        <div className="flex justify-center items-center">
+          <NavbarColorModeToggle className={styles.colorModeToggle} />
+        </div>
+        {/* </NavigationItem> */}
+      </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/work">Our Work</NavigationItem>
         <NavigationItem href="/contact">Contact Us</NavigationItem>
