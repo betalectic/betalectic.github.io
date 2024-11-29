@@ -111,9 +111,16 @@ function Header({
               About us
             </Button>
           )}
-          {/* {!expanded && !isMobile && (
-            <NavbarColorModeToggle className={styles.colorModeToggle} />
-          )} */}
+          {!isMobile && (
+            <NavbarColorModeToggle
+              className={`${styles.colorModeToggle} bg-white rounded-4xl dark:bg-transparent`}
+            />
+          )}
+          {expanded && isMobile && (
+            <NavbarColorModeToggle
+              className={`${styles.colorModeToggle} bg-white rounded-4xl dark:bg-transparent`}
+            />
+          )}
           <button
             ref={toggleRef}
             type="button"
@@ -173,21 +180,16 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/about-us">About Us</NavigationItem>
-        {/* <NavigationItem href="#"> */}
-        <div className="flex justify-center items-center">
+        {/* <div className="flex justify-center items-center">
           <NavbarColorModeToggle className={styles.colorModeToggle} />
-        </div>
-        {/* </NavigationItem> */}
-      </NavigationRow>
-      <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
+        </div> */}
+        <NavigationItem href="/about-us">About Us</NavigationItem>
         <NavigationItem href="/contact">Contact Us</NavigationItem>
       </NavigationRow>
-      {/* <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
-      </NavigationRow> */}
+      {/* <NavigationRow> */}
+      {/* <NavigationItem href="/work">Our Work</NavigationItem> */}
+      {/* <NavigationItem href="/blog">Blog</NavigationItem> */}
+      {/* </NavigationRow> */}
     </nav>
   );
 }
