@@ -16,6 +16,24 @@ import SectionHeader from "../components/mfstack/SectionHeader";
 function MfStack() {
   const howWeSolveCards = [
     {
+      name: "Embeddable Solutions - Domain Kit",
+      description:
+        "White-label investment solutions for your domain. Custom branding and seamless integration for your platform.",
+      icon: HowWeSolveIcons.domainKit,
+    },
+    {
+      name: "Embeddable Solutions - Hosted Workflows",
+      description:
+        "Ready-to-deploy investment workflows. Fast, secure, and compliant solutions for your fintech needs.",
+      icon: HowWeSolveIcons.hostedWorkflows,
+    },
+    {
+      name: "Embeddable Solutions - SDKs",
+      description:
+        "Robust investment APIs at your fingertips. Tested components and comprehensive documentation for quick integration.",
+      icon: HowWeSolveIcons.sdks,
+    },
+    {
       name: "Investor Web App",
       description:
         "A modern platform for complete portfolio management - track investments, execute transactions, and monitor performance through a secure interface.",
@@ -51,24 +69,7 @@ function MfStack() {
         "Connect with investments via WhatsApp. Access updates, transactions, and support instantly through India's favorite messaging app.",
       icon: HowWeSolveIcons.whatsApp,
     },
-    {
-      name: "Embeddable Solutions - Domain Kit",
-      description:
-        "White-label investment solutions for your domain. Custom branding and seamless integration for your platform.",
-      icon: HowWeSolveIcons.domainKit,
-    },
-    {
-      name: "Embeddable Solutions - Hosted Workflows",
-      description:
-        "Ready-to-deploy investment workflows. Fast, secure, and compliant solutions for your fintech needs.",
-      icon: HowWeSolveIcons.hostedWorkflows,
-    },
-    {
-      name: "Embeddable Solutions - SDKs",
-      description:
-        "Robust investment APIs at your fingertips. Tested components and comprehensive documentation for quick integration.",
-      icon: HowWeSolveIcons.sdks,
-    },
+
     {
       name: "Tailored solutions for your needs",
       description:
@@ -245,6 +246,9 @@ function MfStack() {
                   <span className="text-[#CCC9FF]"> MF Distribution</span>
                 </h1>
                 <p className="mt-8 px-12 text-pretty text-lg font-medium text-[#CCC9FF] sm:text-xl/8">
+                  [Text to be added here]
+                </p>
+                <p className="mt-2 px-12 text-pretty text-lg font-medium text-[#CCC9FF] sm:text-xl/8">
                   Effortlessly build Mutual Fund Web & Mobile Applications for
                   your investors in just 8 weeks
                 </p>

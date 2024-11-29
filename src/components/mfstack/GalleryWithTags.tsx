@@ -14,6 +14,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
     {
@@ -26,6 +27,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
     {
@@ -38,6 +40,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
     {
@@ -50,6 +53,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
     {
@@ -62,6 +66,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
     {
@@ -74,6 +79,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
     {
@@ -86,6 +92,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
     {
@@ -98,6 +105,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
     {
@@ -110,6 +118,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
     {
@@ -122,6 +131,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
     {
@@ -134,6 +144,7 @@ const GalleryWithTags = () => {
         "Fintechs",
         "Independent Distributors",
         "Wealth Management Companies",
+        "AMCs",
       ],
     },
   ];
@@ -142,6 +153,7 @@ const GalleryWithTags = () => {
     "Fintechs",
     "Independent Distributors",
     "Wealth Management Companies",
+    "AMCs",
   ];
 
   const [isSticky, setIsSticky] = useState(false);
