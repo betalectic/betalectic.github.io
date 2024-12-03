@@ -11,8 +11,9 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import { useDateTimeFormat } from "@docusaurus/theme-common/internal";
 import type { Props } from "@theme/BlogLayout";
-import { Container } from "../../components/studio/components/Container";
 import { WavyBackground } from "../../components/magicui/wavy-background";
+import { useLocation } from "@docusaurus/router";
+import BlogAuthor from "@theme/Blog/Components/Author";
 
 function DateTime({
   date,
@@ -26,18 +27,13 @@ function DateTime({
 
 export default function BlogLayout(props: Props): JSX.Element {
   const { sidebar, toc, children, ...layoutProps } = props;
-  const hasSidebar = sidebar && sidebar.items.length > 0;
 
-  console.log("props bloglayout", props);
-  const featuredPost = children[0].props.items?.find(
-    ({ content }) => content.frontMatter.featured === true
-  );
+  const location = useLocation();
+  const isBlogPage =
+    location.pathname === "/blog" || location.pathname === "/blog/";
+  console.log("isBlogPage", isBlogPage);
 
-  console.log("featuredPost", featuredPost);
-
-  const regularPosts = children[0].props.items?.filter(
-    ({ content }) => content.frontMatter.featured === undefined
-  );
+  const featuredPost = children[0].props.items?.[0];
 
   const dateTimeFormat = useDateTimeFormat({
     day: "numeric",
@@ -46,56 +42,76 @@ export default function BlogLayout(props: Props): JSX.Element {
     timeZone: "UTC",
   });
 
-  console.log("regularPosts", regularPosts);
-
   return (
     <Layout {...layoutProps}>
       <div className="container margin-vert--lg">
         <div className="row">
           <main
-            className={clsx("col", {
-              "": hasSidebar,
-              "col--9 col--offset-1": !hasSidebar,
-            })}
+            className={clsx(
+              `col ${isBlogPage ? "col--10" : "col--9"} col--offset-1`
+            )}
           >
-            <Container className="">
+            <div className="mx-auto">
+              {isBlogPage && (
+                <h1 className="text-black dark:text-white z-10 text-pretty">
+                  The Betalectic Blogs
+                </h1>
+              )}
+
               <div className="w-full">
                 {featuredPost && (
-                  <WavyBackground className="max-w-4xl mx-auto pb-24 md:pb-40">
-                    <h1 className="text-black text-pretty">
-                      The Betalectic Blogs
-                    </h1>
+                  <>
+                    <WavyBackground
+                      backgroundFill="white dark:black"
+                      className="max-w-4xl mt-8 mx-auto pb-24 md:pb-40"
+                    >
+                      <div className="mt-2 mx-auto flex flex-col p-2 sm:flex-row gap-4 shadow-2xl bg-white dark:bg-neutral-900 rounded-lg">
+                        <div className="">
+                          <img
+                            className="object-cover h-full rounded-l-lg"
+                            src={featuredPost?.content.frontMatter.image}
+                            alt="Featured post image"
+                          />
+                        </div>
+                        <div className="p-2">
+                          <h2 className="text-3xl font-bold">
+                            {featuredPost?.content.metadata.title}
+                          </h2>
+                          <DateTime
+                            date={featuredPost?.content.metadata.date}
+                            formattedDate={dateTimeFormat.format(
+                              new Date(featuredPost?.content.metadata.date)
+                            )}
+                          />
+                          {featuredPost?.content.metadata.authors.length >
+                            0 && (
+                            <div className="mt-4">
+                              {featuredPost?.content.metadata.authors.map(
+                                (author, index) => (
+                                  <BlogAuthor key={index} author={author} />
+                                )
+                              )}
+                            </div>
+                          )}
 
-                    <div className="mt-14 shadow-2xl bg-white rounded-2xl p-4">
-                      <h2 className="text-3xl font-bold">
-                        {featuredPost.content.metadata.title}
-                      </h2>
-                      <p className="text-gray-600">
-                        {featuredPost.content.metadata.description}
-                      </p>
-                      <DateTime
-                        date={featuredPost.content.metadata.date}
-                        formattedDate={dateTimeFormat.format(
-                          new Date(featuredPost.content.metadata.date)
-                        )}
-                      />
+                          <div className="mt-4">
+                            <featuredPost.content />
+                          </div>
 
-                      <div className="mt-4">
-                        <featuredPost.content />
+                          <Link
+                            href={featuredPost?.content.metadata.permalink}
+                            className="ml-auto"
+                          >
+                            Read More
+                          </Link>
+                        </div>
                       </div>
-
-                      <Link
-                        href={featuredPost.content.metadata.permalink}
-                        className="flex"
-                      >
-                        Read More
-                      </Link>
-                    </div>
-                  </WavyBackground>
+                    </WavyBackground>
+                  </>
                 )}
                 {children}
               </div>
-            </Container>
+            </div>
           </main>
 
           {toc && <div className="col col--2">{toc}</div>}

@@ -1,9 +1,9 @@
 ---
-title: "Amazing Featured Post"
+title: "First Amazing Featured Post"
 date: 2024-12-01
 description: "This is a featured blog post."
 tags: [featured]
-featured: true
+authors: [yangshun]
 ---
 
 Content of the featured post goes here.

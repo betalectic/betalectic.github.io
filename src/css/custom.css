@@ -23,6 +23,10 @@ html {
   margin-top: 60px;
 }
 
+.avatar__photo {
+  border-radius: 8px;
+}
+
 /* body {
   font-family: "Inter", sans-serif;
 }

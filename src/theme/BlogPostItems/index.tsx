@@ -17,21 +17,17 @@ export default function BlogPostItems({
 }: Props): JSX.Element {
   return (
     <>
-      {items.map(({ content: BlogPostContent }, index) => (
+      {items.slice(1).map(({ content: BlogPostContent }, index) => (
         <BlogPostProvider
           key={BlogPostContent.metadata.permalink}
           content={BlogPostContent}
         >
-          <div
-            className={clsx(
-              "blog-post-item",
-              index === 0 ? "shadow-2xl" : "shadow-none"
-            )}
-          >
+          <div className={clsx("blog-post-item")}>
             <BlogPostItemComponent>
               <BlogPostContent />
             </BlogPostItemComponent>
           </div>
+          <hr />
         </BlogPostProvider>
       ))}
     </>

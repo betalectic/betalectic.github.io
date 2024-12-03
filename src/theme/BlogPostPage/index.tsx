@@ -65,7 +65,6 @@ function BlogPostPageContent({
 
 export default function BlogPostPage(props: Props): JSX.Element {
   const BlogPostContent = props.content;
-  console.log("Content", BlogPostContent);
   return (
     <BlogPostProvider content={props.content} isBlogPostPage>
       <HtmlClassNameProvider
