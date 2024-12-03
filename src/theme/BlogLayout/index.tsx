@@ -33,7 +33,7 @@ export default function BlogLayout(props: Props): JSX.Element {
     location.pathname === "/blog" || location.pathname === "/blog/";
   console.log("isBlogPage", isBlogPage);
 
-  const featuredPost = children[0].props.items?.[0];
+  const featuredPost = children[0].props?.items?.[0];
 
   const dateTimeFormat = useDateTimeFormat({
     day: "numeric",
