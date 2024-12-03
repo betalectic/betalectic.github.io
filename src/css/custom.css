@@ -12,6 +12,21 @@
 @import "../styles/components.css";
 @import "../styles/utilities.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
+.tableOfContents_bqdL {
+  max-height: 1000px;
+  position: fixed !important;
+  overflow: visible;
+  margin-top: 60px;
+}
+
+.avatar__photo {
+  border-radius: 8px;
+}
+
 /* body {
   font-family: "Inter", sans-serif;
 }
