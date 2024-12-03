@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Betalectic Blog</title>
+        <link>https://betalectic.github.io/pr-preview/pr-26/blog</link>
+        <description>Betalectic Blog</description>
+        <lastBuildDate>Tue, 03 Dec 2024 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Second Story Post]]></title>
+            <link>https://betalectic.github.io/pr-preview/pr-26/blog/second-story</link>
+            <guid>https://betalectic.github.io/pr-preview/pr-26/blog/second-story</guid>
+            <pubDate>Tue, 03 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[My ideas for blog posts inevitably start to dry up after over two years at Apache APISIX. Hence, I did some triage on the APISIX repo. I stumbled upon this one question:]]></description>
+            <content:encoded><![CDATA[<div class="flex gap-4"><div><p>My ideas for blog posts inevitably start to dry up after over two years at Apache APISIX. Hence, I did some triage on the APISIX repo. I stumbled upon this one question:</p>
+<p>We have a requirement to use a plugin, where we need to route the traffic on percentage basis. I'll give an example for better understanding.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-is-url">What is URL<a href="https://betalectic.github.io/pr-preview/pr-26/blog/second-story#what-is-url" class="hash-link" aria-label="Direct link to What is URL" title="Direct link to What is URL">​</a></h2>
+<p>We have an URL <a href="https://xyz.com/ca/fr/index.html" target="_blank" rel="noopener noreferrer">https://xyz.com/ca/fr/index.html</a> where ca is country (canada) and fr is french language. Now the traffic needs to routed 10% to <a href="https://xyz.com/ca/en/index.html" target="_blank" rel="noopener noreferrer">https://xyz.com/ca/en/index.html</a> and the remaining 90% to <a href="https://xyz.com/ca/fr/index.html" target="_blank" rel="noopener noreferrer">https://xyz.com/ca/fr/index.html</a>. And whenever we're routing the traffic to <a href="https://xyz.com/ca/en/index.html" target="_blank" rel="noopener noreferrer">https://xyz.com/ca/en/index.html</a> we need to set a cookie. So for next call, if the cookie is there, it should directly go to <a href="https://xyz.com/ca/en/index.html" target="_blank" rel="noopener noreferrer">https://xyz.com/ca/en/index.html</a> else it should go via a 10:90 traffic split. What is the best possible way to achieve this ??</p>
+<p>-- help request: Setting cookie based on a condition</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="use-case">Use case<a href="https://betalectic.github.io/pr-preview/pr-26/blog/second-story#use-case" class="hash-link" aria-label="Direct link to Use case" title="Direct link to Use case">​</a></h2>
+<p>The use case is interesting, and I decided to tackle it.</p>
+<p>I'll rephrase the requirements first:</p>
+<p>If no cookie is set, randomly forward the request to one of the upstreams
+If a cookie has been set, forward the request to the correct upstream.
+For easier testing:</p>
+<p>Software engineering is a field that always changes to keep up with innovation and client needs. As developers, we have a difficult job staying up to date with these swift changes. It is imperative that we approach our information sources selectively because it is so easy for anyone to create a blog and publish anything.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="change-of-odds">Change of odds<a href="https://betalectic.github.io/pr-preview/pr-26/blog/second-story#change-of-odds" class="hash-link" aria-label="Direct link to Change of odds" title="Direct link to Change of odds">​</a></h2>
+<p>I change the odds from 10:90 to 50:50
+I use the root instead of a host plus a path
+Finally, I assume that the upstream sets the cookie.</p>
+<p>Newcomers to Apache APISIX understand the matching algorithm very quickly: if a request matches a route's host, method, and path, forward it to the upstream set.</p>
+<p>Everything you need to know about CSS in blog and guide form. CSS Tricks is a top resource for developers who need to find out how anything in CSS works. I definitely use their site as a main resource for figuring out the best practices to meet the designs of designers on my products!</p></div></div>]]></content:encoded>
+            <category>Facebook</category>
+            <category>Docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[First Amazing Featured Post]]></title>
+            <link>https://betalectic.github.io/pr-preview/pr-26/blog/2024/12/02/first-amazing-post</link>
+            <guid>https://betalectic.github.io/pr-preview/pr-26/blog/2024/12/02/first-amazing-post</guid>
+            <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is a featured blog post.]]></description>
+            <content:encoded><![CDATA[<div class="flex gap-4"><div><p>Content of the featured post goes here.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>]]></content:encoded>
+            <category>Featured</category>
+        </item>
+        <item>
+            <title><![CDATA[User Story Post]]></title>
+            <link>https://betalectic.github.io/pr-preview/pr-26/blog/user-story</link>
+            <guid>https://betalectic.github.io/pr-preview/pr-26/blog/user-story</guid>
+            <pubDate>Sat, 12 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[A user story describes product features from the end user’s perspective. Product managers and designers write these brief stories to convey why users need or want certain functionality]]></description>
+            <content:encoded><![CDATA[<div class="flex gap-4"><div><p>A user story describes product features from the end user’s perspective. Product managers and designers write these brief stories to convey why users need or want certain functionality</p>
+<p>Here are a few tips you might find useful.</p>
+<p>For software devs, it's easy to focus on what you're making and forget who you're building software for. While the Agile methodology stresses the importance of feature requirements, the end user should be top of mind throughout the entire software development process. Thankfully, you can frame these requirements in a short, simple description. We call these templates a user story.</p>
+<p><strong>Creating user</strong> stories helps devs understand the problems they’re solving for users and how to make their tasks easier. With simple, non-technical language, you can establish the value behind a piece of software. Not only will this help teams understand what they're making, but also why it matters.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-is-a-user-story">What is a user story?<a href="https://betalectic.github.io/pr-preview/pr-26/blog/user-story#what-is-a-user-story" class="hash-link" aria-label="Direct link to What is a user story?" title="Direct link to What is a user story?">​</a></h2>
+<p><img decoding="async" loading="lazy" src="https://www.pluralsight.com/content/dam/pluralsight2/siege-blog-assets/user-story-definition.png" alt="User Story" class="img_ev3q"></p>
+<p>A user story describes product features from the end user’s perspective. Product managers and designers write these brief stories to convey why users need or want certain functionality. Within the range of Agile team practices, user stories are the smallest unit of work, so they are intended to be specific.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="three-cs">Three C's<a href="https://betalectic.github.io/pr-preview/pr-26/blog/user-story#three-cs" class="hash-link" aria-label="Direct link to Three C's" title="Direct link to Three C's">​</a></h2>
+<p>Three elements go into creating user stories, known as the three C’s:</p>
+<p><strong>The card</strong>: This is the physical place where you write a user story. Placing the story on a physical card helps cement for team members the criteria and user problem it’s solving.</p>
+<p><strong>The conversation</strong>: User stories inspire team discussions on how to meet the user requirements. Your team can brainstorm new solutions by asking questions and reaching a shared understanding.</p>
+<p><strong>The confirmation</strong>: Product managers and designers need to lay out acceptance criteria that meet user requirements. Once your team wants to proceed with a solution, devs move forward with this confirmation.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="standard-user-story-template">Standard user story template<a href="https://betalectic.github.io/pr-preview/pr-26/blog/user-story#standard-user-story-template" class="hash-link" aria-label="Direct link to Standard user story template" title="Direct link to Standard user story template">​</a></h2>
+<p>User stories consist of one or two sentences. In that space, they describe end users who earn value through your product. The user story format reads: "As a [user], I want to [goal] so that [benefit]."</p>
+<p>Let's explore that format in more detail:</p>
+<p><strong>As a [user]</strong>: Explain who you're building this product for. Go beyond job titles and cliches, and capture the user's inner sense of value. If your organization uses buyer personas, you can apply a specific one here.</p>
+<p><strong>I want to [goal]</strong>: Describe the user’s intentions rather than how they get there. The goal matters more than implementation.</p>
+<p><strong>So that [benefit]</strong>: Break down how meeting a goal benefits the user. Remember to look at the bigger picture or a deeper desire in users.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="types-of-user-stories">Types of user stories<a href="https://betalectic.github.io/pr-preview/pr-26/blog/user-story#types-of-user-stories" class="hash-link" aria-label="Direct link to Types of user stories" title="Direct link to Types of user stories">​</a></h2>
+<p>Depending on the complexity of your user stories, they may fit into different categories. Sometimes, you can even combine user stories into a larger narrative. Below are the four main types of user stories:</p>
+<p><strong>Simple</strong>: These are individual or self-contained user stories that focus on a particular user or type of product.</p>
+<p><strong>Epic</strong>: Groups of related user stories come together to form epics. They may involve multiple users working together or independently or multiple needs for a single type of user to achieve some goal or benefit.</p>
+<p><strong>Thematic</strong>: These are major investments and strategies that group epics together. Thematic user stories highlight how a company will achieve wider goals.</p>
+<p><strong>Scaled Agile Framework (SAFe)</strong>: These user stories add extra details such as a benefit hypothesis, cost of delay, or nonfunctional requirements.</p>
+<p><img decoding="async" loading="lazy" src="https://www.pluralsight.com/content/dam/pluralsight2/siege-blog-assets/user-story-types.png" alt="Types of User Stories" class="img_ev3q"></p>
+<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
+<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
+<p>The blog post date can be extracted from filenames, such as:</p>
+<ul>
+<li><code>2019-05-30-welcome.md</code></li>
+<li><code>2019-05-30-welcome/index.md</code></li>
+</ul>
+<p>A blog post folder can be convenient to co-locate blog post images:</p>
+<p>The blog supports tags as well!</p>
+<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p></div></div>]]></content:encoded>
+            <category>Facebook</category>
+            <category>Docusaurus</category>
+        </item>
+    </channel>
+</rss>
