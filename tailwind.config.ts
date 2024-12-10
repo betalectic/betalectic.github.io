@@ -84,8 +84,8 @@ module.exports = {
   },
   plugins: [
     scopedPreflightStyles({
-      isolationStrategy: isolateOutsideOfContainer(".no-twp", {
-        plus: ".twp", // optional, if you have your Tailwind components under .no-twp, you need them to be preflighted
+      isolationStrategy: isolateOutsideOfContainer(".twp", {
+        plus: ".no-twp", // optional, if you have your Tailwind components under .no-twp, you need them to be preflighted
       }),
     }),
   ],

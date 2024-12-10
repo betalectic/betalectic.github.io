@@ -200,7 +200,7 @@ export default function Home(): JSX.Element {
   let shouldReduceMotion = useReducedMotion();
 
   return (
-    <div className="no-twp">
+    <div className="twp">
       <Layout
         title="Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps"
         description="Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster"
