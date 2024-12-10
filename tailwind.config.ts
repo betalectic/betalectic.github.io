@@ -1,10 +1,14 @@
 import { type Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
+import {
+  scopedPreflightStyles,
+  isolateOutsideOfContainer,
+} from "tailwindcss-scoped-preflight";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.html", "./src/**/*.js", "./src/**/*.tsx", "./*.ts"],
-  corePlugins: { preflight: false, container: false },
+  corePlugins: { preflight: false },
   // important: "#tailwind_preflight",
   darkMode: ["class", '[data-theme="dark"]'],
   theme: {
@@ -78,4 +82,11 @@ module.exports = {
       // },
     },
   },
+  plugins: [
+    scopedPreflightStyles({
+      isolationStrategy: isolateOutsideOfContainer(".no-twp", {
+        plus: ".twp", // optional, if you have your Tailwind components under .no-twp, you need them to be preflighted
+      }),
+    }),
+  ],
 } satisfies Config;
