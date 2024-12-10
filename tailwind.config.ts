@@ -8,7 +8,6 @@ import {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.html", "./src/**/*.js", "./src/**/*.tsx", "./*.ts"],
-  corePlugins: { preflight: false },
   // important: "#tailwind_preflight",
   darkMode: ["class", '[data-theme="dark"]'],
   theme: {
