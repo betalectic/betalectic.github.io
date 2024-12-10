@@ -160,53 +160,58 @@ export default function Contact() {
   }
 
   return (
-    <Layout
-      title="Contact Betalectic for Your Technology Needs"
-      description="Connect with Betalectic for all your technology needs and digital transformation goals. We specialise in helping startups and businesses build Minimum Viable Products (MVPs) quickly and effectively, enabling faster market entry and growth. Reach out to learn how we can support your journey."
-    >
-      <MotionConfig
-        transition={shouldReduceMotion ? { duration: 0 } : undefined}
+    <div className="twp">
+      <Layout
+        title="Contact Betalectic for Your Technology Needs"
+        description="Connect with Betalectic for all your technology needs and digital transformation goals. We specialise in helping startups and businesses build Minimum Viable Products (MVPs) quickly and effectively, enabling faster market entry and growth. Reach out to learn how we can support your journey."
       >
-        <motion.div layout className="relative isolate flex w-full flex-col">
+        <MotionConfig
+          transition={shouldReduceMotion ? { duration: 0 } : undefined}
+        >
           <motion.div layout className="relative isolate flex w-full flex-col">
-            <GridPattern
-              className="absolute inset-x-0 -top-24 -z-10 h-[1000px] w-full fill-neutral-50  stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
-              yOffset={-96}
-              interactive
-            />
+            <motion.div
+              layout
+              className="relative isolate flex w-full flex-col"
+            >
+              <GridPattern
+                className="absolute inset-x-0 -top-24 -z-10 h-[1000px] w-full fill-neutral-50  stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
+                yOffset={-96}
+                interactive
+              />
 
-            <div className="w-full mx-auto">
-              <PageIntro eyebrow="Contact us" title="Let’s work together">
-                <p>We can’t wait to hear from you.</p>
-                <Link to="https://cal.com/manasa-madapu">
-                  <ShimmerButton className="shadow-2xl">
-                    <span className="whitespace-pre-wrap text-center text-xl font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-2xl">
-                      Setup a 30 min free call
-                    </span>
-                  </ShimmerButton>
-                </Link>
-              </PageIntro>
-              <Container className="mt-24 sm:mt-32">
-                <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
-                  {/* <ContactForm /> */}
-                  <ContactDetails />
-                  {/* Tally Form */}
-                  <div className="lg:ml-auto flex lg:justify-start">
-                    <iframe
-                      src="https://tally.so/embed/nGoKbO?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                      className=" dark:filter dark:invert dark:brightness-90"
-                      width="500"
-                      height="600"
-                    >
-                      Loading..
-                    </iframe>
+              <div className="w-full mx-auto">
+                <PageIntro eyebrow="Contact us" title="Let’s work together">
+                  <p>We can’t wait to hear from you.</p>
+                  <Link to="https://cal.com/manasa-madapu">
+                    <ShimmerButton className="shadow-2xl">
+                      <span className="whitespace-pre-wrap text-center text-xl font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-2xl">
+                        Setup a 30 min free call
+                      </span>
+                    </ShimmerButton>
+                  </Link>
+                </PageIntro>
+                <Container className="mt-24 sm:mt-32">
+                  <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
+                    {/* <ContactForm /> */}
+                    <ContactDetails />
+                    {/* Tally Form */}
+                    <div className="lg:ml-auto flex lg:justify-start">
+                      <iframe
+                        src="https://tally.so/embed/nGoKbO?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                        className=" dark:filter dark:invert dark:brightness-90"
+                        width="500"
+                        height="600"
+                      >
+                        Loading..
+                      </iframe>
+                    </div>
                   </div>
-                </div>
-              </Container>
-            </div>
+                </Container>
+              </div>
+            </motion.div>
           </motion.div>
-        </motion.div>
-      </MotionConfig>
-    </Layout>
+        </MotionConfig>
+      </Layout>
+    </div>
   );
 }

@@ -2,7 +2,7 @@ import { type Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
 import {
   scopedPreflightStyles,
-  isolateOutsideOfContainer,
+  isolateInsideOfContainer,
 } from "tailwindcss-scoped-preflight";
 
 /** @type {import('tailwindcss').Config} */
@@ -83,8 +83,8 @@ module.exports = {
   },
   plugins: [
     scopedPreflightStyles({
-      isolationStrategy: isolateOutsideOfContainer(".twp", {
-        plus: ".no-twp", // optional, if you have your Tailwind components under .no-twp, you need them to be preflighted
+      isolationStrategy: isolateInsideOfContainer(".twp", {
+        except: ".no-twp", // optional, if you have your Tailwind components under .no-twp, you need them to be preflighted
       }),
     }),
   ],

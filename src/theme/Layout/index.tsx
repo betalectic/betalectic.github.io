@@ -338,13 +338,11 @@ export default function Layout(props: Props): JSX.Element {
               `${isBlogPath ? "max-w-7xl mx-auto px-6 lg:px-8 mt-8" : ""}`
             )}
           >
-            <div className="twp">
-              <ErrorBoundary
-                fallback={(params) => <ErrorPageContent {...params} />}
-              >
-                {children}
-              </ErrorBoundary>
-            </div>
+            <ErrorBoundary
+              fallback={(params) => <ErrorPageContent {...params} />}
+            >
+              {children}
+            </ErrorBoundary>
           </div>
 
           {!noFooter && <Footer />}
