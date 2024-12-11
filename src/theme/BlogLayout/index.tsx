@@ -47,7 +47,9 @@ export default function BlogLayout(props: Props): JSX.Element {
     <Layout {...layoutProps}>
       <div className="container margin-vert--lg">
         <div className="row">
-          <main className={clsx(`col ${isBlogPage ? "col--12" : "col--10"}`)}>
+          <main
+            className={clsx(`col mx-auto ${isBlogPage ? "col--12" : "col--9"}`)}
+          >
             <div className="mx-auto">
               {isBlogPage && (
                 <h1 className="text-black dark:text-white z-10 text-pretty">
