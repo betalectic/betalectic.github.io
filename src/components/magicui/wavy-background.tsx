@@ -10,8 +10,8 @@ export const WavyBackground = ({
   colors,
   waveWidth,
   backgroundFill,
-  blur = 5,
-  speed = "fast",
+  blur = 1,
+  speed = "slow",
   waveOpacity = 0.5,
   ...props
 }: {
@@ -61,6 +61,11 @@ export const WavyBackground = ({
     render();
   };
 
+  const getBackgroundFillColor = () => {
+    const root = getComputedStyle(document.documentElement);
+    return root.getPropertyValue("--background-fill-color").trim();
+  };
+
   const waveColors = colors ?? [
     "#635BFF",
     "#5B77FF",
@@ -85,10 +90,10 @@ export const WavyBackground = ({
 
   let animationId: number;
   const render = () => {
-    ctx.fillStyle = "transparent";
+    ctx.fillStyle = getBackgroundFillColor();
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
-    drawWave(5);
+    drawWave(6);
     animationId = requestAnimationFrame(render);
   };
 
@@ -99,16 +104,6 @@ export const WavyBackground = ({
     };
   }, []);
 
-  const [isSafari, setIsSafari] = useState(false);
-  useEffect(() => {
-    // I'm sorry but i have got to support it on safari.
-    setIsSafari(
-      typeof window !== "undefined" &&
-        navigator.userAgent.includes("Safari") &&
-        !navigator.userAgent.includes("Chrome")
-    );
-  }, []);
-
   return (
     <div
       className={cn(
@@ -117,12 +112,9 @@ export const WavyBackground = ({
       )}
     >
       <canvas
-        className="absolute z-0 w-full"
+        className="absolute top-36 z-0 w-full"
         ref={canvasRef}
         id="canvas"
-        style={{
-          ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
-        }}
       ></canvas>
       <div className={cn("relative z-10", className)} {...props}>
         {children}

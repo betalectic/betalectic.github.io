@@ -16,11 +16,13 @@ html {
   scroll-behavior: smooth;
 }
 
-.tableOfContents_bqdL {
-  max-height: 1000px;
-  position: fixed !important;
-  overflow: visible;
-  margin-top: 60px;
+.tableOfContents_RLlU {
+  max-height: calc(
+    100vh - (var(--ifm-navbar-height) + 2rem)
+  ); /* Ensures it fits within the viewport */
+  top: calc(var(--ifm-navbar-height) + 1rem) !important; /* Sticky offset */
+  position: sticky !important; /* Enables sticky positioning */
+  overflow-y: auto; /* Allows scrolling within the element */
 }
 
 .avatar__photo {
@@ -68,6 +70,7 @@ p {
   --ifm-font-family-base: "Inter";
   --ifm-link-color: #635bff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --background-fill-color: white;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -94,6 +97,7 @@ p {
   --ifm-code-font-size: 95%;
   --ifm-heading-font-family: "Inter";
   --ifm-font-family-base: "Inter";
+  --background-fill-color: black;
 
   /* Code highlighting background for dark mode */
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
@@ -121,6 +125,14 @@ a:visited {
 /* Change hover link color */
 a:hover {
   text-decoration: none;
+}
+
+.waves {
+  color: white;
+}
+
+[data-theme="dark"] .waves {
+  color: black;
 }
 
 /* .navbar {
