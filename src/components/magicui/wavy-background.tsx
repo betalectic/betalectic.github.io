@@ -10,7 +10,7 @@ export const WavyBackground = ({
   colors,
   waveWidth,
   backgroundFill,
-  blur = 1,
+  blur = 7,
   speed = "slow",
   waveOpacity = 0.5,
   ...props
@@ -112,7 +112,7 @@ export const WavyBackground = ({
       )}
     >
       <canvas
-        className="absolute top-36 z-0 w-full"
+        className="absolute top-42 z-0 w-full"
         ref={canvasRef}
         id="canvas"
       ></canvas>
