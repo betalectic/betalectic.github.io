@@ -71,6 +71,7 @@ p {
   --ifm-link-color: #635bff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --background-fill-color: white;
+  --ifm-global-spacing: 0.5rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -98,6 +99,8 @@ p {
   --ifm-heading-font-family: "Inter";
   --ifm-font-family-base: "Inter";
   --background-fill-color: black;
+
+  --ifm-global-spacing: 0.5rem;
 
   /* Code highlighting background for dark mode */
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
