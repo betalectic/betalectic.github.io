@@ -46,6 +46,7 @@ const config: Config = {
       {
         docs: false,
         blog: {
+          path: "./blog",
           blogSidebarCount: 0,
           showReadingTime: true,
           feedOptions: {
@@ -76,6 +77,14 @@ const config: Config = {
           customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "our-work",
+        path: "./our-work", // This path must exist
+        routeBasePath: "our-work",
+      },
     ],
   ],
 
