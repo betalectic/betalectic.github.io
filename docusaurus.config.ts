@@ -12,29 +12,29 @@ const config: Config = {
   tagline: "Some tagline to keep things simple",
   favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
   url: "https://betalectic.github.io",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: BASE_URL,
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Betalectic", // Usually your GitHub org/user name.
-  projectName: "betalectic", // Usually your repo name.
+  organizationName: "Betalectic",
+  projectName: "betalectic",
   deploymentBranch: "main",
   trailingSlash: false,
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
-  plugins: ["docusaurus-tailwindcss-loader"],
-  future: {
-    experimental_faster: true,
-  },
+  plugins: [
+    "docusaurus-tailwindcss-loader",
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "our-work",
+        path: "./our-work", // Ensure this path exists in your project
+        routeBasePath: "our-work", // Access at /our-work
+        blogSidebarCount: 0,
+        showReadingTime: true,
+      },
+    ],
+  ],
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -53,7 +53,6 @@ const config: Config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
@@ -78,14 +77,6 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        id: "our-work",
-        path: "./our-work", // This path must exist
-        routeBasePath: "our-work",
-      },
-    ],
   ],
 
   headTags: [
@@ -93,7 +84,7 @@ const config: Config = {
       tagName: "link",
       attributes: {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap", // Adjust weights as needed
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap",
       },
     },
   ],
@@ -112,14 +103,10 @@ const config: Config = {
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://betalectic.github.io/" },
-      // {
-      //   property: "og:image",
-      //   content: "img/social-preview.png",
-      // },
       {
         property: "og:description",
         content:
-          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster",
+          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions.",
       },
       { property: "og:site_name", content: "Betalectic" },
       { property: "og:locale", content: "en_US" },
@@ -132,12 +119,9 @@ const config: Config = {
       {
         name: "twitter:description",
         content:
-          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster",
+          "Betalectic is a custom software development company specialising in building scalable web and mobile applications.",
       },
-      {
-        name: "twitter:image",
-        content: "img/social-preview.png",
-      },
+      { name: "twitter:image", content: "img/social-preview.png" },
       { name: "twitter:site", content: "@betalectic" },
     ],
     image: "img/social-preview.png",

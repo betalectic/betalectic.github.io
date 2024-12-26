@@ -1,5 +1,5 @@
 ---
-title: "First Amazing Featured Post"
+title: "Our work First Amazing Featured Post"
 date: 2024-12-01
 description: "This is a featured blog post."
 tags: [featured]
