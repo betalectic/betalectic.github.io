@@ -22,3 +22,8 @@ featured:
   label: Featured
   permalink: /featured
   description: Featured tag description
+
+fintech:
+  label: Fintech
+  permalink: /fintech
+  description: Fintech tag description
