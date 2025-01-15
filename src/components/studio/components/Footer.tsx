@@ -67,7 +67,9 @@ export function Footer() {
                 <Logo className="h-8" fillOnHover />
               </span>
             </Link>
-            <p className="text-sm text-center">© 2024 Betalectic</p>
+            <p className="text-sm text-center">
+              © {new Date().getFullYear()} Betalectic
+            </p>
           </div>
         </div>
         <div className="mb-16 mt-24 flex flex-wrap items-end justify-center gap-x-6"></div>
