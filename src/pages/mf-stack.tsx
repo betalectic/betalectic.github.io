@@ -225,7 +225,7 @@ function MfStack() {
     <Layout title="MF Stack" description="MF Stack description to set up here">
       <Container>
         {/* Hero Image section */}
-        <div className="relative isolate pt-10">
+        <div className="relative isolate">
           <div
             aria-hidden="true"
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -238,72 +238,84 @@ function MfStack() {
               className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             />
           </div>
-          <div className="py-24 bg-[#292399] rounded-3xl h-[550px] md:h-[750px] sm:py-32 lg:pb-40">
-            <div className="mx-auto max-w-7xl lg:px-8">
-              <div className="mx-auto max-w-2xl text-center">
-                <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-50 sm:text-7xl">
+
+          <div className="bg-[#292399] rounded-3xl px-4 sm:px-6 lg:px-8 mb-8 sm:mb-12 lg:mb-16">
+            <div className="mx-auto max-w-7xl">
+              <div className="mx-auto max-w-2xl pt-16 sm:pt-24 lg:pt-32 text-center">
+                <h1 className="text-balance text-4xl sm:text-5xl lg:text-7xl font-semibold tracking-tight text-gray-50">
                   The New Age of
                   <span className="text-[#CCC9FF]"> MF Distribution</span>
                 </h1>
-                <p className="mt-4 px-4 py-2 text-center shadow-custom-inset max-w-fit mx-auto text-pretty text-lg rounded-lg font-medium text-gray-50 bg-[#1B1677] sm:text-xl/8">
+                <p className="mt-4 px-4 py-2 text-center shadow-custom-inset max-w-fit mx-auto text-pretty text-base sm:text-lg lg:text-xl font-medium text-gray-50 bg-[#1B1677] rounded-lg">
                   Empowered by Fintech Primitive APIs
                 </p>
-                <p className="mt-8 px-12 text-pretty text-lg font-medium text-[#CCC9FF] sm:text-xl/8">
+                <p className="mt-6 sm:mt-8 px-4 sm:px-12 text-pretty text-base sm:text-lg lg:text-xl font-medium text-[#CCC9FF]">
                   Effortlessly build Mutual Fund Web & Mobile Applications for
                   your investors in just 8 weeks
                 </p>
                 <GetQuoteCTA buttonText={"Get Quote"} buttonLink={"#"} />
               </div>
-              <div className="mt-16 sm:mt-24">
-                <img
-                  loading="lazy"
-                  alt="App screenshot"
-                  src={require("../images/mfstack/hero-image.png").default}
-                  className="rounded-2xl md:rounded-4xl shadow-2xl dark:hidden ring-2 ring-gray-900/10"
-                />
-                <img
-                  loading="lazy"
-                  alt="App screenshot"
-                  src={require("../images/mfstack/hero-image-dark.png").default}
-                  className="rounded-2xl md:rounded-4xl shadow-2xl hidden dark:block ring-2 ring-gray-900/10"
-                />
+
+              <div className="mt-12 sm:mt-16 lg:mt-24 pb-16 sm:pb-24 lg:pb-32">
+                <div className="relative mx-auto max-w-5xl">
+                  <img
+                    loading="lazy"
+                    alt="App screenshot"
+                    src={require("../images/mfstack/hero-image.png").default}
+                    className="w-full rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl dark:hidden ring-2 ring-gray-900/10"
+                  />
+                  <img
+                    loading="lazy"
+                    alt="App screenshot"
+                    src={
+                      require("../images/mfstack/hero-image-dark.png").default
+                    }
+                    className="w-full rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl hidden dark:block ring-2 ring-gray-900/10"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* Logos section */}
-        <div className="mt-[200px] md:mt-[300px] lg:mt-[700px] py-10 bg-[#F9FAFB] dark:bg-gray-100 rounded-2xl">
-          <div className="mx-auto lg:px-8">
-            <h2 className="text-center text-sm font-semibold text-[#475467] ">
-              Our Integration Partners
-            </h2>
-            <div className="relative block md:hidden overflow-hidden w-full mt-6">
-              <div className="flex gap-12 animate-infinite-scroll">
-                {logoImages.map((logo, index) => (
-                  <img
-                    key={index}
-                    loading="lazy"
-                    alt={logo.alt}
-                    src={logo.src}
-                    width={158}
-                    height={48}
-                    className="h-12 object-contain"
-                  />
-                ))}
-              </div>
-            </div>
 
-            <div className="hidden md:flex justify-around mt-6 md:gap-x-4 lg:gap-x-16">
-              {logoImages.map((image, index) => (
-                <img
-                  key={index}
-                  alt={image.alt}
-                  src={image.src}
-                  width={148}
-                  height={40}
-                  className={`max-h-12 object-contain`}
-                />
-              ))}
+          {/* Logos section */}
+          <div className="px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl">
+              <div className="bg-[#F9FAFB] dark:bg-gray-100 rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-10">
+                <h2 className="text-center text-sm sm:text-base font-semibold text-[#475467]">
+                  Our Integration Partners
+                </h2>
+
+                {/* Mobile scrolling logos */}
+                <div className="relative block md:hidden overflow-hidden w-full mt-6">
+                  <div className="flex gap-8 sm:gap-12 animate-infinite-scroll">
+                    {logoImages.map((logo, index) => (
+                      <img
+                        key={index}
+                        loading="lazy"
+                        alt={logo.alt}
+                        src={logo.src}
+                        width={128}
+                        height={40}
+                        className="h-8 sm:h-12 object-contain"
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                {/* Desktop static logos */}
+                <div className="hidden md:flex flex-wrap justify-around items-center mt-6 gap-6 lg:gap-12">
+                  {logoImages.map((image, index) => (
+                    <img
+                      key={index}
+                      alt={image.alt}
+                      src={image.src}
+                      width={148}
+                      height={40}
+                      className="h-10 lg:h-12 object-contain"
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
