@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbetalectic_website=self.webpackChunkbetalectic_website||[]).push([["627"],{7548:function(e){e.exports=JSON.parse('{"blogBasePath":"/pr-preview/pr-26/blog","blogTitle":"Blog","authorsListPath":"/pr-preview/pr-26/blog/authors"}')}}]);
