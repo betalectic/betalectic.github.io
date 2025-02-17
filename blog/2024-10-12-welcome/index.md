@@ -1,8 +1,8 @@
 ---
 slug: user-story
 title: Building Scalable Mobile Apps for Financial Services - Key Features and Best Practices
-authors: [Manasa]
-tags: [FinTech, docusaurus]
+authors: [manasa]
+tags: [fintech, docusaurus]
 ---
 
 In today’s fast-paced digital landscape, mobile apps have become an essential tool for financial services to engage with customers and deliver value. With the rise of fintech innovations and the proliferation of smartphones, consumers now expect instant access to banking, investment, insurance, and payment services at their fingertips. This shift has driven financial institutions to prioritize mobile-first strategies to meet the demands of tech-savvy users. 
@@ -42,4 +42,4 @@ Customizable dashboards empower users by presenting personalized insights tailor
 
 The dashboard provides clear visualizations of progress toward each goal, highlighting contributions, returns, and remaining targets in an intuitive format. Additionally, these apps often use advanced algorithms to suggest rebalancing strategies or additional investments to help users stay on track, ensuring a highly individualized investment experience that evolves with their needs.
 
-
+![User Story](https://www.pluralsight.com/content/dam/pluralsight2/siege-blog-assets/user-story-definition.png)

@@ -1,7 +1,7 @@
 ---
 slug: second-story
 title: Second Story Post
-authors: [slorber]
+authors: [shrey]
 tags: [facebook, docusaurus]
 image: https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg
 ---

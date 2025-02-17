@@ -50,11 +50,11 @@ export default function BlogLayout(props: Props): JSX.Element {
           <main
             className={clsx(`col mx-auto ${isBlogPage ? "col--11" : "col--9"}`)}
           >
-            {isBlogPage && (
+            {/* {isBlogPage && (
               <h1 className="text-black dark:text-white z-10 text-pretty">
                 The Betalectic Blogs
               </h1>
-            )}
+            )} */}
 
             <div className="w-full">
               {featuredPost && (

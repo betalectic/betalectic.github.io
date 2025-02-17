@@ -1,21 +1,20 @@
-Manasa:
+manasa:
   name: Manasa Madapu
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+  title: Co-Founder, Betalectic
+  url: https://github.com/ManasaMadapu
+  image_url: https://pbs.twimg.com/profile_images/1854874782384201728/ad8jUVyx_400x400.jpg
   page: true
   socials:
-    x: Manasa
-    linkedin: Manasa
+    x: https://x.com/ManasaMadapu
+    linkedin: https://www.linkedin.com/in/manasa-madapu/
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+shrey:
+  name: Shrey Dhyani
+  title: Software Engineer & Avid Reader
+  image_url: https://avatars.githubusercontent.com/u/107391802?s=96&v=4
   page:
     # customize the url of the author page at /blog/authors/<permalink>
     permalink: "/all-sebastien-lorber-articles"
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
+    x: https://x.com/ShreyDhyani?t=bzsmTzRjO2DiqgVPqVZthQ&s=09
+    linkedin: https://www.linkedin.com/in/shrey-dhyani-60a63b157/
