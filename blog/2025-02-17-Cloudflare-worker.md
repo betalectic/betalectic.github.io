@@ -31,15 +31,15 @@ Imagine if your website could run super fast no matter where your users are in t
 
 Think of Cloudflare Workers as tiny, on-demand programs that run whenever someone visits your site or uses your API. Here’s what happens step by step:
 
-### **1️⃣ A User Makes a Request**
+### A User Makes a Request
 
 When someone visits your site or calls your API, instead of going to a traditional server, the request is sent to the **nearest Cloudflare data center**. This saves time by reducing how far the data has to travel.
 
-### **2️⃣ The Worker Runs Instantly**
+### The Worker Runs Instantly
 
 Once the request reaches Cloudflare, the Worker **executes your code on demand**. It runs in a super lightweight and isolated environment (powered by the same V8 engine as Chrome and Node.js).
 
-### **3️⃣ A Response is Sent Back – Fast!**
+### A Response is Sent Back – Fast!
 
 The Worker can do all sorts of things—fetching data, modifying responses, checking authentication, caching content, and more. Once it’s done, the response **goes back to the user from the closest edge server**, making everything feel snappy.
 

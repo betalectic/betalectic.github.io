@@ -1,7 +1,7 @@
 ---
 slug: dynamic-table-component
 title: "Building a Dynamic Table Component: Backend Config Driven"
-authors: [manasa]
+authors: [shrey]
 tags: [fintech]
 image: https://img.freepik.com/free-vector/minimalist-project-management-daily-checklist_742173-5121.jpg
 ---

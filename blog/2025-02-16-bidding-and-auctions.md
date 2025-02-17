@@ -1,7 +1,7 @@
 ---
 slug: bidding-and-auctions
 title: "Real-Time Bidding and Auctions: A Guide to Building a High-Performance Platform"
-authors: [manasa]
+authors: [rajesh]
 tags: [fintech]
 image: https://img.freepik.com/free-vector/judge-online-service-platform-court-worker-stand-justice-law-judge-traditional-black-robe-hearing-case-website-flat-vector-illustration_613284-1530.jpg
 ---
