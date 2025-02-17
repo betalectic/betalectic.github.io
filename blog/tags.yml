@@ -1,7 +1,7 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+fintech:
+  label: Fintech
+  permalink: /fintech
+  description: Fintech Apps
 
 hello:
   label: Hello

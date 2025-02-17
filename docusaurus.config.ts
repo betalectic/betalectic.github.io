@@ -146,6 +146,11 @@ const config: Config = {
           position: "right",
         },
         {
+          to: "/about-us",
+          label: "About us",
+          position: "right",
+        },
+        {
           to: "/contact",
           label: "Contact",
           position: "right",
