@@ -19,3 +19,13 @@ slorber:
   socials:
     x: sebastienlorber
     linkedin: sebastienlorber
+
+amir:
+  name: Md. Amir Sohail
+  title: Software Engineer, Betalectic
+  url: https://github.com/yangshun
+  image_url: https://github.com/yangshun.png
+  page: true
+  socials:
+    x: unknown
+    linkedin: unknown
