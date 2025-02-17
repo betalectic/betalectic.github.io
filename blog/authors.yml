@@ -18,3 +18,12 @@ shrey:
   socials:
     x: sebastienlorber
     linkedin: sebastienlorber
+
+amir:
+  name: Md. Amir Sohail
+  title: Software Engineer, Betalectic
+  image_url: https://avatars.githubusercontent.com/u/107391802?s=96&v=4
+  page: true
+  socials:
+    x: unkniwn
+    linkedin: unk

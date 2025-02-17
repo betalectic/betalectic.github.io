@@ -145,3 +145,26 @@ a:hover {
 .navbar__inner {
   @apply max-w-7xl mx-auto md:px-6 lg:px-8;
 } */
+
+
+/* Ensure unordered lists display bullet points */
+ul {
+  list-style-type: disc; /* Use disc as bullet points */
+  margin-left: 1.5em; /* Adjust indentation */
+}
+
+/* Style list items */
+ul li {
+  margin-bottom: 0.5em; /* Optional: Add space between items */
+}
+
+/* Optionally, style ordered lists */
+ol {
+  list-style-type: decimal; /* Use numbers for ordered lists */
+  margin-left: 1.5em; /* Adjust indentation */
+}
+
+/* Style ordered list items */
+ol li {
+  margin-bottom: 0.5em; 
+}
