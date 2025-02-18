@@ -9,10 +9,7 @@ image: https://img.freepik.com/free-vector/minimalist-project-management-daily-c
 
 ### **Introduction**
 
-In this post, I'll walk you through the development of a dynamic and highly customizable table component. The key idea behind this table is its configuration-driven nature—where all the features, 
-<!-- truncate -->
-
-such as column visibility, order, resizing, and more, are controlled by configurations fetched from a backend API. This allows for unparalleled flexibility and adaptability in building complex, data-heavy UIs.
+In this post, I'll walk you through the development of a dynamic and highly customizable table component. The key idea behind this table is its configuration-driven nature—where all the features, <!-- truncate --> such as column visibility, order, resizing, and more, are controlled by configurations fetched from a backend API. This allows for unparalleled flexibility and adaptability in building complex, data-heavy UIs.
 
 ### **Why a Configuration-Driven Table?**
 

@@ -21,7 +21,7 @@ export default function BlogPostItemHeaderTitle({
   const TitleHeading = isBlogPostPage ? "h1" : "h2";
   return (
     <TitleHeading className={clsx(className)}>
-      {isBlogPostPage ? title : <Link to={permalink}>{title}</Link>}
+      {isBlogPostPage ? title : <Link className={"text-gray-800 hover:text-gray-600"} to={permalink}>{title}</Link>}
     </TitleHeading>
 
     // <h1>{isBlogPostPage ? title : <Link to={permalink}>{title}</Link>}</h1>
