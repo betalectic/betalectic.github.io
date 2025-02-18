@@ -8,12 +8,57 @@
     <subtitle>Betalectic Blog</subtitle>
     <icon>https://betalectic.com/pr-preview/pr-26/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[Building Asset Monitoring System for Lending Apps]]></title>
+        <id>https://betalectic.com/pr-preview/pr-26/blog/asset-monitoring-system</id>
+        <link href="https://betalectic.com/pr-preview/pr-26/blog/asset-monitoring-system"/>
+        <updated>2025-02-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Lending technology has been making headlines for some time now. We have seen an influx of new players in the market offering innovative credit solutions, enabling users to spend cash  on credit or purchase goods using Buy Now, Pay Later (BNPL) services.The adoption of such financial products is widespread across various platforms—whether booking a flight through MakeMyTrip or purchasing goods on Amazon using Amazon Pay. With increasing demand and continuous innovation, the credit ecosystem is expanding rapidly, opening new opportunities in digital lending.]]></summary>
+        <content type="html"><![CDATA[<div class="flex gap-4"><div class="blog-content-wrapper"><p>Lending technology has been making headlines for some time now. We have seen an influx of new players in the market offering innovative credit solutions, enabling users to spend cash  on credit or purchase goods using Buy Now, Pay Later (BNPL) services.The adoption of such financial products is widespread across various platforms—whether booking a flight through MakeMyTrip or purchasing goods on Amazon using Amazon Pay. With increasing demand and continuous innovation, the credit ecosystem is expanding rapidly, opening new opportunities in digital lending.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="secured-lending-apps-lending-against-security">Secured Lending Apps: Lending Against Security<a href="https://betalectic.com/pr-preview/pr-26/blog/asset-monitoring-system#secured-lending-apps-lending-against-security" class="hash-link" aria-label="Direct link to Secured Lending Apps: Lending Against Security" title="Direct link to Secured Lending Apps: Lending Against Security">​</a></h2>
+<p>A new and promising avenue in the lending landscape is the rise of secured lending platforms that offer loans against pledged assets. Unlike traditional unsecured lending, where credit is extended based on income and creditworthiness, these platforms allow users to leverage financial assets such as stocks, mutual funds, or gold to secure loans. This approach ensures lower risk for lenders while offering borrowers relatively lower interest rates than unsecured loans.</p>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="how-secured-lending-works">How Secured Lending Works<a href="https://betalectic.com/pr-preview/pr-26/blog/asset-monitoring-system#how-secured-lending-works" class="hash-link" aria-label="Direct link to How Secured Lending Works" title="Direct link to How Secured Lending Works">​</a></h3>
+<ol>
+<li><strong>Asset Pledging</strong>: The borrower pledges a portion of their financial assets (e.g., stocks, mutual funds, gold) as collateral.</li>
+<li><strong>Loan to Value (LTV) Calculation</strong>: The lender determines the loan amount based on the value of the pledged asset. Typically, the LTV ratio ranges from 50% to 70%.</li>
+<li><strong>Loan Disbursal</strong>: Once the LTV is calculated, the loan amount is credited to the borrower's account.</li>
+<li><strong>Asset Monitoring</strong>: Since pledged assets are market-dependent, their value fluctuates, necessitating continuous monitoring.</li>
+<li><strong>Loan Repayment &amp; Asset Release</strong>: The borrower repays the loan, and upon successful repayment, the pledged asset is released back to the borrower.</li>
+</ol>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="challenges-in-building-secured-lending-apps">Challenges in Building Secured Lending Apps<a href="https://betalectic.com/pr-preview/pr-26/blog/asset-monitoring-system#challenges-in-building-secured-lending-apps" class="hash-link" aria-label="Direct link to Challenges in Building Secured Lending Apps" title="Direct link to Challenges in Building Secured Lending Apps">​</a></h3>
+<p>Building an application that facilitates loans against securities (LAS) presents unique technical and financial challenges. The primary concerns revolve around market fluctuations, risk mitigation, and seamless integration with financial data providers.</p>
+<h4 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="1-dynamic-nature-of-pledged-assets">1. Dynamic Nature of Pledged Assets<a href="https://betalectic.com/pr-preview/pr-26/blog/asset-monitoring-system#1-dynamic-nature-of-pledged-assets" class="hash-link" aria-label="Direct link to 1. Dynamic Nature of Pledged Assets" title="Direct link to 1. Dynamic Nature of Pledged Assets">​</a></h4>
+<p>Unlike fixed assets, financial securities such as stocks and mutual funds are subject to market volatility. This fluctuating nature poses a risk to lenders. If the asset’s value drops significantly below the LTV threshold, the lender could suffer financial losses.</p>
+<h4 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="2-continuous-asset-monitoring-system">2. Continuous Asset Monitoring System<a href="https://betalectic.com/pr-preview/pr-26/blog/asset-monitoring-system#2-continuous-asset-monitoring-system" class="hash-link" aria-label="Direct link to 2. Continuous Asset Monitoring System" title="Direct link to 2. Continuous Asset Monitoring System">​</a></h4>
+<p>To mitigate risks, we implemented a real-time monitoring system that tracks the value of pledged assets throughout the loan tenure. This system works as follows:</p>
+<ul>
+<li><strong>Data Collection</strong>: Asset prices are continuously fetched via market APIs.</li>
+<li><strong>Threshold Alerts</strong>: The system compares current asset values with the pledged value at loan initiation.</li>
+<li><strong>Risk Identification</strong>: If the LTV ratio crosses a predefined risk threshold, the loan is flagged as at-risk.</li>
+</ul>
+<h4 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="3-automated-risk-alert-system">3. Automated Risk Alert System<a href="https://betalectic.com/pr-preview/pr-26/blog/asset-monitoring-system#3-automated-risk-alert-system" class="hash-link" aria-label="Direct link to 3. Automated Risk Alert System" title="Direct link to 3. Automated Risk Alert System">​</a></h4>
+<p>Our alert mechanism ensures timely intervention in case of adverse market movements:</p>
+<ul>
+<li><strong>Danger Zone Detection:</strong> If the asset value declines beyond an acceptable limit, an alert is generated.</li>
+<li><strong>Customer Notification:</strong> The customer is informed about the shortfall, prompting them to either repay a portion of the loan or pledge additional assets.</li>
+<li><strong>Loan Management Actions:</strong> In case of prolonged devaluation, the lender can take appropriate action, such as liquidating part of the pledged asset to recover the outstanding loan.</li>
+</ul>
+<h4 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="4-third-party-data-integrations">4. Third-Party Data Integrations<a href="https://betalectic.com/pr-preview/pr-26/blog/asset-monitoring-system#4-third-party-data-integrations" class="hash-link" aria-label="Direct link to 4. Third-Party Data Integrations" title="Direct link to 4. Third-Party Data Integrations">​</a></h4>
+<p>Integrating third-party services is a crucial yet complex aspect of building secured lending applications. Financial data providers such as CAMS/Karvy for market and user holdings data, Razorpay for payment gateway processing, and Digio for autopay setup are essential in ensuring smooth operations.
+However, these integrations come with challenges, including maintaining data integrity, ensuring immutability, and managing historical records for auditing. To uphold reliability and compliance, it is necessary to implement robust mechanisms that store multiple data versions, allowing for accurate tracking, error resolution, and regulatory adherence. A well-architected integration strategy is vital for seamless loan processing and risk management in secured lending platforms.</p>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="conclusion">Conclusion<a href="https://betalectic.com/pr-preview/pr-26/blog/asset-monitoring-system#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h3>
+<p>Secured lending platforms represent a significant advancement in the digital lending space, offering a more stable and risk-mitigated approach compared to unsecured loans. However, building a reliable and efficient secured lending system requires robust asset monitoring, real-time alerts, and automated risk management to handle market volatility effectively.</p>
+<p>With more financial institutions adopting secured lending models, this sector is poised for significant growth in the coming years.</p></div></div>]]></content>
+        <author>
+            <name>Shubham Joshi</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[When to use Cloudflare worker]]></title>
         <id>https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker</id>
         <link href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker"/>
-        <updated>2025-02-17T00:00:00.000Z</updated>
+        <updated>2025-02-04T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[What is Serverless? Is There Really No Server?]]></summary>
-        <content type="html"><![CDATA[<div class="flex gap-4"><div><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-is-serverless-is-there-really-no-server">What is Serverless? Is There Really No Server?<a href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker#what-is-serverless-is-there-really-no-server" class="hash-link" aria-label="Direct link to What is Serverless? Is There Really No Server?" title="Direct link to What is Serverless? Is There Really No Server?">​</a></h2>
+        <content type="html"><![CDATA[<div class="flex gap-4"><div class="blog-content-wrapper"><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-is-serverless-is-there-really-no-server">What is Serverless? Is There Really No Server?<a href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker#what-is-serverless-is-there-really-no-server" class="hash-link" aria-label="Direct link to What is Serverless? Is There Really No Server?" title="Direct link to What is Serverless? Is There Really No Server?">​</a></h2>
 <p>Have you ever heard the term <strong>"serverless"</strong> and wondered what it actually means? Does it mean there’s no server at all? If there’s a server, why do we call it <strong>serverless</strong>? 🤔</p>
 <p>In this blog, we’ll break down the concept of <strong>serverless computing</strong>, how it works, and why it’s gaining popularity. We’ll also explore <strong>Cloudflare Workers</strong>, one of the most efficient serverless solutions, and when to use it for your applications.</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-does-serverless-actually-mean"><strong>What Does Serverless Actually Mean?</strong><a href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker#what-does-serverless-actually-mean" class="hash-link" aria-label="Direct link to what-does-serverless-actually-mean" title="Direct link to what-does-serverless-actually-mean">​</a></h2>
@@ -25,11 +70,23 @@
 <p>Imagine if your website could run super fast no matter where your users are in the world. That’s exactly what <strong>Cloudflare Workers</strong> do! They let you run code on Cloudflare’s massive network of <strong>300+ data centers worldwide</strong>, so instead of waiting for a request to travel across the internet to a faraway server, it gets processed <strong>closer to the user</strong>—making everything load <strong>much faster</strong>.</p>
 <p><strong>How Cloudflare Workers Work</strong></p>
 <p>Think of Cloudflare Workers as tiny, on-demand programs that run whenever someone visits your site or uses your API. Here’s what happens step by step:</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="1️⃣-a-user-makes-a-request"><strong>1️⃣ A User Makes a Request</strong><a href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker#1%EF%B8%8F%E2%83%A3-a-user-makes-a-request" class="hash-link" aria-label="Direct link to 1️⃣-a-user-makes-a-request" title="Direct link to 1️⃣-a-user-makes-a-request">​</a></h3>
+<ol>
+<li>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="a-user-makes-a-request">A User Makes a Request<a href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker#a-user-makes-a-request" class="hash-link" aria-label="Direct link to A User Makes a Request" title="Direct link to A User Makes a Request">​</a></h3>
+</li>
+</ol>
 <p>When someone visits your site or calls your API, instead of going to a traditional server, the request is sent to the <strong>nearest Cloudflare data center</strong>. This saves time by reducing how far the data has to travel.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="2️⃣-the-worker-runs-instantly"><strong>2️⃣ The Worker Runs Instantly</strong><a href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker#2%EF%B8%8F%E2%83%A3-the-worker-runs-instantly" class="hash-link" aria-label="Direct link to 2️⃣-the-worker-runs-instantly" title="Direct link to 2️⃣-the-worker-runs-instantly">​</a></h3>
+<ol start="2">
+<li>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="the-worker-runs-instantly">The Worker Runs Instantly<a href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker#the-worker-runs-instantly" class="hash-link" aria-label="Direct link to The Worker Runs Instantly" title="Direct link to The Worker Runs Instantly">​</a></h3>
+</li>
+</ol>
 <p>Once the request reaches Cloudflare, the Worker <strong>executes your code on demand</strong>. It runs in a super lightweight and isolated environment (powered by the same V8 engine as Chrome and Node.js).</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="3️⃣-a-response-is-sent-back--fast"><strong>3️⃣ A Response is Sent Back – Fast!</strong><a href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker#3%EF%B8%8F%E2%83%A3-a-response-is-sent-back--fast" class="hash-link" aria-label="Direct link to 3️⃣-a-response-is-sent-back--fast" title="Direct link to 3️⃣-a-response-is-sent-back--fast">​</a></h3>
+<ol start="3">
+<li>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="a-response-is-sent-back--fast">A Response is Sent Back – Fast!<a href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker#a-response-is-sent-back--fast" class="hash-link" aria-label="Direct link to A Response is Sent Back – Fast!" title="Direct link to A Response is Sent Back – Fast!">​</a></h3>
+</li>
+</ol>
 <p>The Worker can do all sorts of things—fetching data, modifying responses, checking authentication, caching content, and more. Once it’s done, the response <strong>goes back to the user from the closest edge server</strong>, making everything feel snappy.</p>
 <hr>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="why-use-cloudflare-workers"><strong>Why Use Cloudflare Workers?</strong><a href="https://betalectic.com/pr-preview/pr-26/blog/cloudflare-worker#why-use-cloudflare-workers" class="hash-link" aria-label="Direct link to why-use-cloudflare-workers" title="Direct link to why-use-cloudflare-workers">​</a></h2>
@@ -57,10 +114,9 @@
         <title type="html"><![CDATA[Real-Time Bidding and Auctions: A Guide to Building a High-Performance Platform]]></title>
         <id>https://betalectic.com/pr-preview/pr-26/blog/bidding-and-auctions</id>
         <link href="https://betalectic.com/pr-preview/pr-26/blog/bidding-and-auctions"/>
-        <updated>2025-02-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In the modern digital landscape, auctions have gone beyond the traditional auction houses and taken center stage online. Whether you’re building an e-commerce platform, a ticket resale marketplace, or a fundraising site,]]></summary>
-        <content type="html"><![CDATA[<div class="flex gap-4"><div><p>In the modern digital landscape, auctions have gone beyond the traditional auction houses and taken center stage online. Whether you’re building an e-commerce platform, a ticket resale marketplace, or a fundraising site,</p>
-<p>real-time bidding keeps your users engaged and ensures fair competition. This guide will walk you through the process of designing and implementing a high-performance real-time auction system using AWS services—specifically Amazon SQS FIFO queues, AWS Lambda, and Pusher.</p>
+        <updated>2024-12-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In the modern digital landscape, auctions have gone beyond the traditional auction houses and taken center stage online. Whether you’re building an e-commerce platform, a ticket resale marketplace, or a fundraising site,  real-time bidding keeps your users engaged and ensures fair competition. This guide will walk you through the process of designing and implementing a high-performance real-time auction system using AWS services—specifically Amazon SQS FIFO queues, AWS Lambda, and Pusher.]]></summary>
+        <content type="html"><![CDATA[<div class="flex gap-4"><div class="blog-content-wrapper"><p>In the modern digital landscape, auctions have gone beyond the traditional auction houses and taken center stage online. Whether you’re building an e-commerce platform, a ticket resale marketplace, or a fundraising site,  real-time bidding keeps your users engaged and ensures fair competition. This guide will walk you through the process of designing and implementing a high-performance real-time auction system using AWS services—specifically Amazon SQS FIFO queues, AWS Lambda, and Pusher.</p>
 <ol>
 <li>
 <p><a href="https://betalectic.com/pr-preview/pr-26/blog/bidding-and-auctions#1-introduction-to-real-time-bidding-and-auctions"> Introduction to Real-Time Bidding and Auctions</a></p>
@@ -167,8 +223,7 @@
 <p>This combination of services allows you to handle multiple auctions concurrently with <strong>confidence</strong> in the accuracy of each bid. With minimal infrastructure management (thanks to serverless components), your development team can focus on enhancing user experience, implementing new features, and ensuring the platform continues to run smoothly.</p>
 <p>If you’re looking to dive deeper, make sure to check out AWS’s official guide on <a href="https://aws.amazon.com/blogs/compute/solving-complex-ordering-challenges-with-amazon-sqs-fifo-queues/" target="_blank" rel="noopener noreferrer">Solving Complex Ordering Challenges with Amazon SQS FIFO Queues</a>. By following these best practices and leveraging the right AWS services, you can build an auction platform that is both <strong>powerful</strong> and <strong>reliable</strong>—ready for the demands of real-time bidding at any scale.</p></div></div>]]></content>
         <author>
-            <name>Manasa Madapu</name>
-            <uri>https://github.com/ManasaMadapu</uri>
+            <name>Rajesh Nautiyal</name>
         </author>
         <category label="Fintech" term="Fintech"/>
     </entry>
@@ -176,11 +231,10 @@
         <title type="html"><![CDATA[Building a Dynamic Table Component: Backend Config Driven]]></title>
         <id>https://betalectic.com/pr-preview/pr-26/blog/dynamic-table-component</id>
         <link href="https://betalectic.com/pr-preview/pr-26/blog/dynamic-table-component"/>
-        <updated>2025-02-15T00:00:00.000Z</updated>
+        <updated>2024-11-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Introduction]]></summary>
-        <content type="html"><![CDATA[<div class="flex gap-4"><div><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="introduction"><strong>Introduction</strong><a href="https://betalectic.com/pr-preview/pr-26/blog/dynamic-table-component#introduction" class="hash-link" aria-label="Direct link to introduction" title="Direct link to introduction">​</a></h3>
-<p>In this post, I'll walk you through the development of a dynamic and highly customizable table component. The key idea behind this table is its configuration-driven nature—where all the features,</p>
-<p>such as column visibility, order, resizing, and more, are controlled by configurations fetched from a backend API. This allows for unparalleled flexibility and adaptability in building complex, data-heavy UIs.</p>
+        <content type="html"><![CDATA[<div class="flex gap-4"><div class="blog-content-wrapper"><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="introduction"><strong>Introduction</strong><a href="https://betalectic.com/pr-preview/pr-26/blog/dynamic-table-component#introduction" class="hash-link" aria-label="Direct link to introduction" title="Direct link to introduction">​</a></h3>
+<p>In this post, I'll walk you through the development of a dynamic and highly customizable table component. The key idea behind this table is its configuration-driven nature—where all the features,  such as column visibility, order, resizing, and more, are controlled by configurations fetched from a backend API. This allows for unparalleled flexibility and adaptability in building complex, data-heavy UIs.</p>
 <h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="why-a-configuration-driven-table"><strong>Why a Configuration-Driven Table?</strong><a href="https://betalectic.com/pr-preview/pr-26/blog/dynamic-table-component#why-a-configuration-driven-table" class="hash-link" aria-label="Direct link to why-a-configuration-driven-table" title="Direct link to why-a-configuration-driven-table">​</a></h3>
 <p>Modern applications often need tables that can handle various data types, support user interactions, and fit into different use cases. While building such a table from scratch could be cumbersome, a configuration-driven approach allows:</p>
 <ul>
@@ -234,76 +288,9 @@ One of the key aspects of this table is that most of its features are enabled or
 <p>Building a configuration-driven table component has made managing data-rich interfaces easier, more flexible, and more powerful. By leveraging backend configurations, this approach decouples the frontend and backend, allowing for greater scalability, maintainability, and faster iteration times. Whether you're building dashboards, reports, or admin panels, this method ensures your tables are not just functional but also adaptive to changing business needs</p>
 <hr></div></div>]]></content>
         <author>
-            <name>Manasa Madapu</name>
-            <uri>https://github.com/ManasaMadapu</uri>
+            <name>Shrey Dhyani</name>
         </author>
         <category label="Fintech" term="Fintech"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Second Story Post]]></title>
-        <id>https://betalectic.com/pr-preview/pr-26/blog/second-story</id>
-        <link href="https://betalectic.com/pr-preview/pr-26/blog/second-story"/>
-        <updated>2024-12-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[My ideas for blog posts inevitably start to dry up after over two years at Apache APISIX. Hence, I did some triage on the APISIX repo. I stumbled upon this one question:]]></summary>
-        <content type="html"><![CDATA[<div class="flex gap-4"><div><p>My ideas for blog posts inevitably start to dry up after over two years at Apache APISIX. Hence, I did some triage on the APISIX repo. I stumbled upon this one question:</p>
-<p>We have a requirement to use a plugin, where we need to route the traffic on percentage basis. I'll give an example for better understanding.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-is-url">What is URL<a href="https://betalectic.com/pr-preview/pr-26/blog/second-story#what-is-url" class="hash-link" aria-label="Direct link to What is URL" title="Direct link to What is URL">​</a></h2>
-<p>We have an URL <a href="https://xyz.com/ca/fr/index.html" target="_blank" rel="noopener noreferrer">https://xyz.com/ca/fr/index.html</a> where ca is country (canada) and fr is french language. Now the traffic needs to routed 10% to <a href="https://xyz.com/ca/en/index.html" target="_blank" rel="noopener noreferrer">https://xyz.com/ca/en/index.html</a> and the remaining 90% to <a href="https://xyz.com/ca/fr/index.html" target="_blank" rel="noopener noreferrer">https://xyz.com/ca/fr/index.html</a>. And whenever we're routing the traffic to <a href="https://xyz.com/ca/en/index.html" target="_blank" rel="noopener noreferrer">https://xyz.com/ca/en/index.html</a> we need to set a cookie. So for next call, if the cookie is there, it should directly go to <a href="https://xyz.com/ca/en/index.html" target="_blank" rel="noopener noreferrer">https://xyz.com/ca/en/index.html</a> else it should go via a 10:90 traffic split. What is the best possible way to achieve this ??</p>
-<p>-- help request: Setting cookie based on a condition</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="use-case">Use case<a href="https://betalectic.com/pr-preview/pr-26/blog/second-story#use-case" class="hash-link" aria-label="Direct link to Use case" title="Direct link to Use case">​</a></h2>
-<p>The use case is interesting, and I decided to tackle it.</p>
-<p>I'll rephrase the requirements first:</p>
-<p>If no cookie is set, randomly forward the request to one of the upstreams
-If a cookie has been set, forward the request to the correct upstream.
-For easier testing:</p>
-<p>Software engineering is a field that always changes to keep up with innovation and client needs. As developers, we have a difficult job staying up to date with these swift changes. It is imperative that we approach our information sources selectively because it is so easy for anyone to create a blog and publish anything.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="change-of-odds">Change of odds<a href="https://betalectic.com/pr-preview/pr-26/blog/second-story#change-of-odds" class="hash-link" aria-label="Direct link to Change of odds" title="Direct link to Change of odds">​</a></h2>
-<p>I change the odds from 10:90 to 50:50
-I use the root instead of a host plus a path
-Finally, I assume that the upstream sets the cookie.</p>
-<p>Newcomers to Apache APISIX understand the matching algorithm very quickly: if a request matches a route's host, method, and path, forward it to the upstream set.</p>
-<p>Everything you need to know about CSS in blog and guide form. CSS Tricks is a top resource for developers who need to find out how anything in CSS works. I definitely use their site as a main resource for figuring out the best practices to meet the designs of designers on my products!</p></div></div>]]></content>
-        <author>
-            <name>Shrey Dhyani</name>
-        </author>
-        <category label="facebook" term="facebook"/>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First Amazing Featured Post]]></title>
-        <id>https://betalectic.com/pr-preview/pr-26/blog/2024/12/02/first-amazing-post copy</id>
-        <link href="https://betalectic.com/pr-preview/pr-26/blog/2024/12/02/first-amazing-post copy"/>
-        <updated>2024-12-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is a featured blog post.]]></summary>
-        <content type="html"><![CDATA[<div class="flex gap-4"><div><p>Content of the featured post goes here.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>]]></content>
-        <author>
-            <name>Manasa Madapu</name>
-            <uri>https://github.com/ManasaMadapu</uri>
-        </author>
-        <author>
-            <name>Shrey Dhyani</name>
-        </author>
-        <category label="Featured" term="Featured"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First Amazing Featured Post]]></title>
-        <id>https://betalectic.com/pr-preview/pr-26/blog/2024/12/02/first-amazing-post</id>
-        <link href="https://betalectic.com/pr-preview/pr-26/blog/2024/12/02/first-amazing-post"/>
-        <updated>2024-12-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is a featured blog post.]]></summary>
-        <content type="html"><![CDATA[<div class="flex gap-4"><div><p>Content of the featured post goes here.</p>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>]]></content>
-        <author>
-            <name>Manasa Madapu</name>
-            <uri>https://github.com/ManasaMadapu</uri>
-        </author>
-        <author>
-            <name>Shrey Dhyani</name>
-        </author>
-        <category label="Featured" term="Featured"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Building Scalable Mobile Apps for Financial Services - Key Features and Best Practices]]></title>
@@ -311,7 +298,7 @@ Finally, I assume that the upstream sets the cookie.</p>
         <link href="https://betalectic.com/pr-preview/pr-26/blog/user-story"/>
         <updated>2024-10-12T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[In today’s fast-paced digital landscape, mobile apps have become an essential tool for financial services to engage with customers and deliver value. With the rise of fintech innovations and the proliferation of smartphones, consumers now expect instant access to banking, investment, insurance, and payment services at their fingertips. This shift has driven financial institutions to prioritize mobile-first strategies to meet the demands of tech-savvy users.]]></summary>
-        <content type="html"><![CDATA[<div class="flex gap-4"><div><p>In today’s fast-paced digital landscape, mobile apps have become an essential tool for financial services to engage with customers and deliver value. With the rise of fintech innovations and the proliferation of smartphones, consumers now expect instant access to banking, investment, insurance, and payment services at their fingertips. This shift has driven financial institutions to prioritize mobile-first strategies to meet the demands of tech-savvy users.</p>
+        <content type="html"><![CDATA[<div class="flex gap-4"><div class="blog-content-wrapper"><p>In today’s fast-paced digital landscape, mobile apps have become an essential tool for financial services to engage with customers and deliver value. With the rise of fintech innovations and the proliferation of smartphones, consumers now expect instant access to banking, investment, insurance, and payment services at their fingertips. This shift has driven financial institutions to prioritize mobile-first strategies to meet the demands of tech-savvy users.</p>
 <p>From managing portfolios to making real-time payments, the convenience and accessibility offered by mobile apps have redefined the way financial services are consumed. As a result, the financial services sector is witnessing a growing demand for mobile apps that combine functionality, security, and personalization to create a superior user experience.</p>
 <p>However, meeting this demand isn’t without challenges. One critical aspect of mobile app development in the financial domain is scalability. Financial apps often face significant fluctuations in usage, particularly during market volatility, seasonal peaks, or promotional campaigns. Scalability ensures that an app can handle these surges in traffic and transactions without compromising on performance or user satisfaction. A scalable app not only provides a seamless experience during peak loads but also supports long-term growth as the user base expands.</p>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="key-features-of-scalable-financial-apps">Key Features of Scalable Financial Apps<a href="https://betalectic.com/pr-preview/pr-26/blog/user-story#key-features-of-scalable-financial-apps" class="hash-link" aria-label="Direct link to Key Features of Scalable Financial Apps" title="Direct link to Key Features of Scalable Financial Apps">​</a></h2>
