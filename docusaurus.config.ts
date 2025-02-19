@@ -46,7 +46,8 @@ const config: Config = {
       {
         docs: false,
         blog: {
-          showReadingTime: true,
+          blogSidebarCount: 0,
+          showReadingTime: false,
           feedOptions: {
             type: ["rss", "atom"],
             xslt: true,
@@ -145,6 +146,11 @@ const config: Config = {
           position: "right",
         },
         {
+          to: "/about-us",
+          label: "About us",
+          position: "right",
+        },
+        {
           to: "/contact",
           label: "Contact",
           position: "right",
@@ -189,6 +195,12 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+  
 };
 
 export default config;

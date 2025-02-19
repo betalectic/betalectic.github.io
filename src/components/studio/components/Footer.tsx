@@ -8,7 +8,7 @@ const navigation = [
   {
     title: <p className="text-neutral-950 dark:text-neutral-50">Company</p>,
     links: [
-      // { title: "Our Work", href: "/work" },
+      { title: "MF Stack", href: "https://mfstack.com/" },
       { title: "About us", href: "/about-us" },
       { title: "Contact", href: "/contact" },
     ],
@@ -67,9 +67,7 @@ export function Footer() {
                 <Logo className="h-8" fillOnHover />
               </span>
             </Link>
-            <p className="text-sm text-center">
-              © {new Date().getFullYear()} Betalectic
-            </p>
+            <p className="text-sm text-center">© 2025 Betalectic</p>
           </div>
         </div>
         <div className="mb-16 mt-24 flex flex-wrap items-end justify-center gap-x-6"></div>

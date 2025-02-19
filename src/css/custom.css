@@ -12,6 +12,23 @@
 @import "../styles/components.css";
 @import "../styles/utilities.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
+.tableOfContents_RLlU {
+  max-height: calc(
+    100vh - (var(--ifm-navbar-height) + 2rem)
+  ); /* Ensures it fits within the viewport */
+  top: calc(var(--ifm-navbar-height) + 1rem) !important; /* Sticky offset */
+  position: sticky !important; /* Enables sticky positioning */
+  overflow-y: auto; /* Allows scrolling within the element */
+}
+
+.avatar__photo {
+  border-radius: 8px;
+}
+
 /* body {
   font-family: "Inter", sans-serif;
 }
@@ -53,6 +70,8 @@ p {
   --ifm-font-family-base: "Inter";
   --ifm-link-color: #635bff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --background-fill-color: white;
+  --ifm-global-spacing: 0.5rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -79,6 +98,9 @@ p {
   --ifm-code-font-size: 95%;
   --ifm-heading-font-family: "Inter";
   --ifm-font-family-base: "Inter";
+  --background-fill-color: black;
+
+  --ifm-global-spacing: 0.5rem;
 
   /* Code highlighting background for dark mode */
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
@@ -108,6 +130,14 @@ a:hover {
   text-decoration: none;
 }
 
+.waves {
+  color: white;
+}
+
+[data-theme="dark"] .waves {
+  color: black;
+}
+
 /* .navbar {
   @apply md:shadow-none md:bg-transparent md:absolute md:left-0 md:right-0 md:top-2 md:z-40 md:pt-14;
 }
@@ -115,3 +145,15 @@ a:hover {
 .navbar__inner {
   @apply max-w-7xl mx-auto md:px-6 lg:px-8;
 } */
+
+.blog-content-wrapper ul {
+  list-style-type: disc;  /* Bullet points for unordered list */
+}
+
+.blog-content-wrapper ol {
+  list-style-type: decimal;  /* Numeric bullets for ordered list */
+}
+
+.blog-content-wrapper li {
+  margin-bottom: 5px;  /* Optional: Add spacing between list items */
+}

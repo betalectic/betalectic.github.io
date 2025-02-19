@@ -1,0 +1,47 @@
+manasa:
+  name: Manasa Madapu
+  title: Co-Founder, Betalectic
+  url: https://github.com/ManasaMadapu
+  image_url: https://pbs.twimg.com/profile_images/1854874782384201728/ad8jUVyx_400x400.jpg
+  page: true
+  socials:
+    x: https://x.com/ManasaMadapu
+    linkedin: https://www.linkedin.com/in/manasa-madapu/
+
+shrey:
+  name: Shrey Dhyani
+  title: Software Engineer & Avid Reader
+  image_url: https://media.licdn.com/dms/image/v2/C5103AQHtgCHMZRwvzw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1519234254632?e=1745452800&v=beta&t=KkKxD3O4YQ5_pyH-HAxyRI8PF4wRGCZ_QpBWFR5_dlo
+  page:
+    # customize the url of the author page at /blog/authors/<permalink>
+    permalink: "/all-sebastien-lorber-articles"
+  socials:
+    x: https://x.com/ShreyDhyani
+    linkedin: https://www.linkedin.com/in/shrey-dhyani-60a63b157/
+
+amir:
+  name: Md. Amir Sohail
+  title: Software Engineer, Betalectic
+  image_url: https://media.licdn.com/dms/image/v2/D5603AQEB9WTYEPHzLg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714193197370?e=1745452800&v=beta&t=OtwdkDGDpxBriXjcsD9JpkKvNuvFV2mYVfvsB9JuJgw
+  page: true
+  socials:
+    x: https://x.com/MMdamirsohail1
+    linkedin: https://www.linkedin.com/in/md-amir-sohail-86069b1aa/
+
+rajesh:
+  name: Rajesh Nautiyal
+  title: Software Engineer, Betalectic
+  image_url: https://media.licdn.com/dms/image/v2/D5603AQEIKaGPajQL8w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700601582406?e=1745452800&v=beta&t=mUhaJGqeKP5wuUlWEa5Xg2YetoB_R49CzKetQtcjixA
+  page: true
+  socials:
+    x: https://x.com/Rajssj4
+    linkedin: https://www.linkedin.com/in/rajesh-nautiyal/
+
+shubham:
+  name: Shubham Joshi
+  title: Software Engineer, Betalectic
+  image_url: https://media.licdn.com/dms/image/v2/C4E03AQGvswz6CjlGEA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1535488725345?e=1745452800&v=beta&t=E6f0K6jDa6KpgSm44gRR88mXmc5eolCiCixGv0rCY5g
+  page: true
+  socials:
+    x: https://x.com/joshiShubham23
+    linkedin: https://linkedin.com/in/shubham-joshi-696910118

@@ -187,10 +187,10 @@ function Navigation() {
         <NavigationItem href="/about-us">About Us</NavigationItem>
         <NavigationItem href="/contact">Contact Us</NavigationItem>
       </NavigationRow>
-      {/* <NavigationRow> */}
-      {/* <NavigationItem href="/work">Our Work</NavigationItem> */}
-      {/* <NavigationItem href="/blog">Blog</NavigationItem> */}
-      {/* </NavigationRow> */}
+      <NavigationRow>
+        <NavigationItem href="https://mfstack.com/">MF Stack</NavigationItem>
+        <NavigationItem href="/blog">Blog</NavigationItem>
+      </NavigationRow>
     </nav>
   );
 }
