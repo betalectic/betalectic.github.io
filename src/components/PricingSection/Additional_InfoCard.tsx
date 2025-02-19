@@ -11,7 +11,7 @@ const Additional_Info = ({ title, info }: Props) => {
       <span className="text-gray-900  dark:text-gray-50 font-inter text-xl font-semibold leading-6">
         {title}
       </span>
-      <span className="text-gray-600 dark:text-gray-300 font-inter text-base font-normal leading-6">
+      <span className="text-gray-600 dark:text-gray-400 font-inter text-base font-normal leading-6">
         {info}
       </span>
     </div>
