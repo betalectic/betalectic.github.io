@@ -2,29 +2,27 @@
 slug: bidding-and-auctions
 title: "Real-Time Bidding and Auctions: A Guide to Building a High-Performance Platform"
 authors: [rajesh]
-tags: [fintech]
+# tags: [fintech]
 image: https://img.freepik.com/free-vector/judge-online-service-platform-court-worker-stand-justice-law-judge-traditional-black-robe-hearing-case-website-flat-vector-illustration_613284-1530.jpg
 ---
 
 In the modern digital landscape, auctions have gone beyond the traditional auction houses and taken center stage online. Whether you’re building an e-commerce platform, a ticket resale marketplace, or a fundraising site, <!-- truncate --> real-time bidding keeps your users engaged and ensures fair competition. This guide will walk you through the process of designing and implementing a high-performance real-time auction system using AWS services—specifically Amazon SQS FIFO queues, AWS Lambda, and Pusher.
 
+1.  [ Introduction to Real-Time Bidding and Auctions](#1-introduction-to-real-time-bidding-and-auctions)
 
+2.  [ Core Architecture Overview](#2-core-architecture-overview)
 
- 1. [ Introduction to Real-Time Bidding and Auctions](#1-introduction-to-real-time-bidding-and-auctions)
+3.  [ Why Amazon SQS FIFO Queues?](#3-why-amazon-sqs-fifo-queues)
 
- 2. [ Core Architecture Overview](#2-core-architecture-overview)
+4.  [ Processing Bids with AWS Lambda](#4-processing-bids-with-aws-lambda)
 
- 3. [ Why Amazon SQS FIFO Queues?](#3-why-amazon-sqs-fifo-queues)
+5.  [ Ensuring Real-Time Updates with Pusher](#5-ensuring-real-time-updates-with-pusher)
 
- 4. [ Processing Bids with AWS Lambda](#4-processing-bids-with-aws-lambda)
+6.  [ Handling Multiple Auctions Concurrently](#6-handling-multiple-auctions-concurrently)
 
- 5. [ Ensuring Real-Time Updates with Pusher](#5-ensuring-real-time-updates-with-pusher)
+7.  [ Best Practices and Tips](#7-best-practices-and-tips)
 
- 6. [ Handling Multiple Auctions Concurrently](#6-handling-multiple-auctions-concurrently)
-
- 7. [ Best Practices and Tips](#7-best-practices-and-tips)
-
- 8. [ Conclusion](#8-conclusion)
+8.  [ Conclusion](#8-conclusion)
 
 ---
 
