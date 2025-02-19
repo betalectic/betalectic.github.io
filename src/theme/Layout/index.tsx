@@ -323,7 +323,8 @@ export default function Layout(props: Props): JSX.Element {
           borderTopLeftRadius: 40,
           borderTopRightRadius: 40,
         }}
-        className="relative flex flex-auto overflow-hidden bg-white dark:bg-neutral-950 pt-14 "
+        className="relative flex flex-auto  bg-white dark:bg-neutral-950 pt-14 "
+        // className="relative flex flex-auto overflow-hidden bg-white dark:bg-neutral-950 pt-14 "
       >
         <motion.div
           layout
