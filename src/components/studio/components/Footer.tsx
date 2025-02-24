@@ -11,6 +11,7 @@ const navigation = [
       { title: "MF Stack", href: "https://mfstack.com/" },
       { title: "About us", href: "/about-us" },
       { title: "Contact", href: "/contact" },
+      { title: "Blog", href: "/blog" },
     ],
   },
   {
