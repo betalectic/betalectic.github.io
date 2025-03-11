@@ -18,17 +18,20 @@ const faqs = [
 ];
 const BottomFaqSection = (props: Props) => {
   return (
-    <div className="flex flex-col p-8 max-w-7xl items-center gap-9 self-stretch">
+    <div className="flex flex-col py-8 lg:px-8 ml-1 mobile:ml-2 max-w-7xl items-center gap-9 self-stretch">
       <div className="flex flex-col items-center gap-0">
-        <h1 className="text-gray-900 dark:text-gray-50 text-center font-inter text-4xl font-semibold leading-[44px] tracking-[-0.72px]">
+        <span className="text-gray-900 dark:text-gray-50 text-center font-inter text-4xl font-semibold leading-[44px] tracking-[-0.72px] hidden mobile:block">
           Freuently asked questions
-        </h1>
+        </span>
+        <span className="text-gray-900 dark:text-gray-50 text-center font-inter text-4xl font-semibold leading-[44px] tracking-[-0.72px] mobile:hidden">
+          FAQs
+        </span>
         <span className="text-gray-600 dark:text-gray-400 text-center font-inter text-xl font-normal leading-[30px]">
           Everything you need to know about the product and billing.
         </span>
       </div>
-      <div className="">
-        {/* <div className="max-w-4xl"> */}
+      {/* <div className=""> */}
+      <div className="max-w-4xl">
         <Accordion items={faqs} />
       </div>
     </div>

@@ -24,12 +24,12 @@ const Header = ({ title, description, price, tag }: Props) => {
             {description}
           </span>
         </div>
-        <div className="PriceDiv flex items-end gap-[2px]">
-          <div className="flex items-center gap-2 ">
-            <span className="text-gray-900 dark:text-gray-50 text-4xl font-semibold tracking-[-0.72px]">
+        <div className="PriceDiv flex items-center gap-[2px]">
+          <div className="flex items-center gap-1 ">
+            <span className="text-gray-900 dark:text-gray-50 text-3xl font-medium tracking-[-0.72px]">
               $
             </span>
-            <span className="text-gray-900 dark:text-gray-50 font-inter text-[48px] font-semibold leading-[72px] tracking-[-0.96px]">
+            <span className="text-gray-900 dark:text-gray-50 font-inter text-4xl font-semibold tracking-[-0.96px]">
               {price}
             </span>
           </div>
