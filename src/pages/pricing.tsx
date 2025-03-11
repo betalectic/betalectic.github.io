@@ -9,6 +9,8 @@ import Additional_Info from "../components/PricingSection/Additional_InfoCard";
 import FaqCard from "../components/PricingSection/FaqCard";
 import FooterCard from "../components/PricingSection/FooterCard";
 import BottomFaqSection from "../components/PricingSection/BottomFaqSection";
+import { motion, MotionConfig, useReducedMotion } from "framer-motion";
+import { FadeIn } from "../components/studio/components/FadeIn";
 
 const PricingData = [
   {
@@ -48,7 +50,7 @@ const PricingData = [
       title: "Plans that fit your scale",
       details:
         "Simple, transparent pricing that grows with you. Try any plan free for 30 days.",
-      image_url: "/img/pricing_web_design.svg",
+      image_url: "/img/TableGirl.svg",
     },
   },
   {
@@ -83,7 +85,7 @@ const PricingData = [
       info: "Other additional custom features/Pages @ USD 50 per hour (Only development hours are billed)",
     },
     StickyContent: {
-      image_url: "/img/pricing_mobile_app.svg",
+      image_url: "/img/GearPc.svg",
     },
   },
   {
@@ -123,51 +125,80 @@ const PricingData = [
       },
     ],
     StickyContent: {
-      image_url: "/img/pricing_web_app.svg",
+      image_url: "/img/FinanceApp.svg",
     },
   },
 ];
 
 const Pricing = () => {
+  let shouldReduceMotion = useReducedMotion();
+
   return (
     <Layout
       title="Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps"
       description="Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster"
     >
-      <main className="w-full flex-auto">
-        <Container className="mt-12 lg:mt-28">
-          <div className="gap-20 flex flex-col">
-            <div className="flex flex-col gap-y-8 items-start">
-              {PricingData.map((item) => {
-                return (
-                  <div key={item.title} className=" ">
-                    <PricingSection stickyContent={item.StickyContent}>
-                      <Header
-                        title={item.title}
-                        description={item.description}
-                        price={item.price}
-                        tag={item.tag}
-                      />
-                      <Features
-                        title={item.features.title}
-                        features={item.features.featureList}
-                      />
-                      <Additional_Info
-                        title={item.additional_info.title}
-                        info={item.additional_info.info}
-                      />
-                      <FaqCard faqs={item.faqs} />
-                      <FooterCard />
-                    </PricingSection>
-                  </div>
-                );
-              })}
-            </div>
+      <MotionConfig
+        transition={shouldReduceMotion ? { duration: 0 } : undefined}
+      >
+        <motion.div className="w-full flex-auto">
+          <Container className="mt-12 lg:mt-28">
+            <div className=" flex flex-col gap-y-16">
+              <div className="relative">
+                <div className="lg:sticky mt-16 lg:mt-0 z-40 top-0 w-full mobile:ml-2">
+                  <div className="lg:w-[33.33%] lg:mb-[-15rem] lg2:mb-[-14rem] lg:pt-8 bg-white dark:bg-neutral-950">
+                    <div className="lg:pb-6">
+                      <h1 className="text-[#101828] dark:text-gray-100 font-inter text-5xl font-semibold leading-[45px] tracking-[-0.96px]">
+                        Plans that fit your scale
+                      </h1>
 
-            <BottomFaqSection />
-          </div>
-        </Container>
-      </main>
+                      <span className="text-[#475467] dark:text-gray-300 font-inter text-xl font-normal leading-[30px]">
+                        Simple, transparent pricing that grows with you. Try any
+                        plan free for 30 days.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* lower */}
+                <div className="flex flex-col lg:gap-y-8 items-start z-20">
+                  {PricingData.map((item, index) => {
+                    return (
+                      <FadeIn key={item.title} className="w-full ">
+                        <PricingSection
+                          stickyContent={item.StickyContent}
+                          index={index}
+                        >
+                          <Header
+                            title={item.title}
+                            description={item.description}
+                            price={item.price}
+                            tag={item.tag}
+                          />
+                          <Features
+                            title={item.features.title}
+                            features={item.features.featureList}
+                          />
+                          <Additional_Info
+                            title={item.additional_info.title}
+                            info={item.additional_info.info}
+                          />
+                          <FaqCard faqs={item.faqs} />
+                          <FooterCard />
+                        </PricingSection>
+                      </FadeIn>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <FadeIn className="w-full">
+                <BottomFaqSection />
+              </FadeIn>
+            </div>
+          </Container>
+        </motion.div>
+      </MotionConfig>
     </Layout>
   );
 };
