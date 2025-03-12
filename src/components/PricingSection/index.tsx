@@ -8,18 +8,7 @@ type Props = {
   children: React.ReactNode;
   stickyContent: StickyContent;
 };
-// const PricingSection = ({ children }) => {
-//   return (
-//     <div className="flex flex-col lg:flex-row py-8 mobile:ml-2 gap-6">
-//       {/* Main Content */}
-//       <div className="right flex flex-col items-start rounded-2xl border border-slate-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 w-full lg:w-[66.66%] shadow-lg">
-//         {children}
-//       </div>
-//     </div>
-//   );
-// };
-// export default PricingSection;
-
+import useBaseUrl from "@docusaurus/useBaseUrl";
 const PricingSection = ({ children, stickyContent, index = 0 }) => {
   return (
     <div className="flex flex-col lg:flex-row pt-0 lg:py-8 mobile:ml-2 gap-6">
@@ -45,7 +34,7 @@ const PricingSection = ({ children, stickyContent, index = 0 }) => {
             {/* static content ends */}
             <img
               className="max-w-80 hidden lg:block"
-              src={stickyContent.image_url}
+              src={useBaseUrl(stickyContent.image_url)}
               alt=""
             />
           </div>

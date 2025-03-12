@@ -50,7 +50,7 @@ const PricingData = [
       title: "Plans that fit your scale",
       details:
         "Simple, transparent pricing that grows with you. Try any plan free for 30 days.",
-      image_url: "/img/TableGirl.svg",
+      image_url: "/img/pricing/TableGirl.svg",
     },
   },
   {
@@ -85,7 +85,7 @@ const PricingData = [
       info: "Other additional custom features/Pages @ USD 50 per hour (Only development hours are billed)",
     },
     StickyContent: {
-      image_url: "/img/GearPc.svg",
+      image_url: "/img/pricing/GearPc.svg",
     },
   },
   {
@@ -125,7 +125,7 @@ const PricingData = [
       },
     ],
     StickyContent: {
-      image_url: "/img/FinanceApp.svg",
+      image_url: "/img/pricing/FinanceApp.svg",
     },
   },
 ];
@@ -146,22 +146,20 @@ const Pricing = () => {
             <div className=" flex flex-col gap-y-16">
               <div className="relative">
                 <div className="lg:sticky mt-16 lg:mt-0 z-40 top-0 w-full mobile:ml-2">
-                  <div className="lg:w-[33.33%] lg:mb-[-15rem] lg2:mb-[-14rem] lg:pt-8 bg-white dark:bg-neutral-950">
-                    <div className="lg:pb-6">
-                      <h1 className="text-[#101828] dark:text-gray-100 font-inter text-5xl font-semibold leading-[45px] tracking-[-0.96px]">
-                        Plans that fit your scale
-                      </h1>
+                  <div className="lg:w-[33.33%] lg:mb-[-15rem] lg2:mb-[-14rem] lg:pt-8 lg:pb-6 bg-white dark:bg-neutral-950">
+                    <h1 className="text-[#101828] dark:text-gray-100 font-inter text-5xl font-semibold leading-[45px] tracking-[-0.96px]">
+                      Plans that fit your scale
+                    </h1>
 
-                      <span className="text-[#475467] dark:text-gray-300 font-inter text-xl font-normal leading-[30px]">
-                        Simple, transparent pricing that grows with you. Try any
-                        plan free for 30 days.
-                      </span>
-                    </div>
+                    <span className="text-[#475467] dark:text-gray-300 font-inter text-xl font-normal leading-[30px]">
+                      Simple, transparent pricing that grows with you. Try any
+                      plan free for 30 days.
+                    </span>
                   </div>
                 </div>
 
                 {/* lower */}
-                <div className="flex flex-col lg:gap-y-8 items-start z-20">
+                <div className="flex flex-col gap-y-8 items-start z-20">
                   {PricingData.map((item, index) => {
                     return (
                       <FadeIn key={item.title} className="w-full ">
