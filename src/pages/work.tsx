@@ -211,8 +211,8 @@ function Clients() {
 export default function Work() {
   return (
     <Layout
-      title="Our Work"
-      description="We believe in efficiency and maximizing our resources to provide the best value to our clients."
+      title="Custom Software Development Projects by Betalectic"
+      description="Explore our custom software development projects at Betalectic. From web and mobile apps to AI solutions and DevOps, we deliver innovative, scalable, and efficient solutions for businesses across industries. See how we bring ideas to life."
     >
       <PageIntro
         eyebrow="Our work"
