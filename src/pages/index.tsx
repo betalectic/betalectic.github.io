@@ -201,8 +201,8 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout
-      title="Custom Software Development & UX/UI Design Services"
-      description="Software development company specializing in React, React Native & Node.js. Building custom web apps, mobile solutions, and UX/UI designs since 2015."
+      title="Custom Software Development for Web, Mobile, AI & DevOps"
+      description="Betalectic specializes in custom software development for web, mobile, AI, and DevOps. We build scalable applications, robust APIs, and generative AI solutions to help businesses launch digital products faster. Partner with us for secure, scalable, and innovative tech solutions."
     >
       <MotionConfig
         transition={shouldReduceMotion ? { duration: 0 } : undefined}
