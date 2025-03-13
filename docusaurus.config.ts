@@ -101,7 +101,7 @@ const config: Config = {
       },
       {
         property: "og:title",
-        content: "Custom Software Development & UX/UI Design Services",
+        content: "Custom Software Development for Web, Mobile, AI & DevOps",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://betalectic.github.io/" },
@@ -112,19 +112,19 @@ const config: Config = {
       {
         property: "og:description",
         content:
-          "Software development company specializing in React, React Native & Node.js. Building custom web apps, mobile solutions, and UX/UI designs since 2015.",
+          "Betalectic specializes in custom software development for web, mobile, AI, and DevOps. We build scalable applications, robust APIs, and generative AI solutions to help businesses launch digital products faster. Partner with us for secure, scalable, and innovative tech solutions.",
       },
       { property: "og:site_name", content: "Betalectic" },
       { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content: "Custom Software Development & UX/UI Design Services",
+        content: "Custom Software Development for Web, Mobile, AI & DevOps",
       },
       {
         name: "twitter:description",
         content:
-          "Software development company specializing in React, React Native & Node.js. Building custom web apps, mobile solutions, and UX/UI designs since 2015.",
+          "Betalectic specializes in custom software development for web, mobile, AI, and DevOps. We build scalable applications, robust APIs, and generative AI solutions to help businesses launch digital products faster. Partner with us for secure, scalable, and innovative tech solutions.",
       },
       {
         name: "twitter:image",
