@@ -46,6 +46,9 @@ const config: Config = {
       {
         docs: false,
         blog: {
+          blogTitle: "Software Development Resources & Guides",
+          blogDescription:
+            "Technical articles on React, Node.js, and software architecture. Code examples, tutorials and industry insights from our development team.",
           blogSidebarCount: 0,
           showReadingTime: false,
           feedOptions: {
