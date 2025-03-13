@@ -1181,8 +1181,8 @@ export default function About() {
 
   return (
     <Layout
-      title="Our Software Development Team & Approach"
-      description="Learn about our development process, technical expertise, and how we've helped clients across fintech, healthcare, and e-commerce sectors."
+      title="About Betalectic | Digital Transformation & Custom Software Solutions"
+      description="Betalectic delivers custom software solutions and digital transformation services for businesses. Specializing in web & mobile apps, AI, APIs, and DevOps, we drive growth and efficiency in industries like Banking, Financial Services, and Insurance. Partner with us to innovate and scale."
     >
       <MotionConfig
         transition={shouldReduceMotion ? { duration: 0 } : undefined}
