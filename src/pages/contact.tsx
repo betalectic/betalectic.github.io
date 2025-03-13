@@ -161,8 +161,8 @@ export default function Contact() {
 
   return (
     <Layout
-      title="Contact Betalectic for Your Technology Needs"
-      description="Connect with Betalectic for all your technology needs and digital transformation goals. We specialise in helping startups and businesses build Minimum Viable Products (MVPs) quickly and effectively, enabling faster market entry and growth. Reach out to learn how we can support your journey."
+      title="MVP Development Company | Digital Transformation Services for Startups & Businesses"
+      description="Betalectic is a leading MVP development company offering digital transformation services for startups & businesses. Build scalable, market-ready solutions faster. Contact us to accelerate your growth today!"
     >
       <MotionConfig
         transition={shouldReduceMotion ? { duration: 0 } : undefined}
