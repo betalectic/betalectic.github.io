@@ -98,8 +98,7 @@ const config: Config = {
       },
       {
         property: "og:title",
-        content:
-          "Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps",
+        content: "Custom Software Development & UX/UI Design Services",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://betalectic.github.io/" },
@@ -110,20 +109,19 @@ const config: Config = {
       {
         property: "og:description",
         content:
-          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster",
+          "Software development company specializing in React, React Native & Node.js. Building custom web apps, mobile solutions, and UX/UI designs since 2015.",
       },
       { property: "og:site_name", content: "Betalectic" },
       { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content:
-          "Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps",
+        content: "Custom Software Development & UX/UI Design Services",
       },
       {
         name: "twitter:description",
         content:
-          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster",
+          "Software development company specializing in React, React Native & Node.js. Building custom web apps, mobile solutions, and UX/UI designs since 2015.",
       },
       {
         name: "twitter:image",
@@ -199,8 +197,7 @@ const config: Config = {
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
-  
+  themes: ["@docusaurus/theme-mermaid"],
 };
 
 export default config;
