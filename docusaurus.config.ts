@@ -82,6 +82,14 @@ const config: Config = {
     ],
   ],
 
+  scripts: [
+    {
+      src: "//unpkg.com/meta-scan/dist/auto.global.js",
+      "data-auto-enable": "false",
+      crossorigin: "anonymous",
+    },
+  ],
+
   headTags: [
     {
       tagName: "link",
