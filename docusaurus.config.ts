@@ -84,7 +84,7 @@ const config: Config = {
 
   scripts: [
     {
-      src: "//unpkg.com/meta-scan/dist/auto.global.js",
+      src: "//cdn.jsdelivr.net/npm/meta-scan/dist/auto.global.js",
       "data-auto-enable": "false",
       crossorigin: "anonymous",
     },
