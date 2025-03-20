@@ -45,3 +45,23 @@ shubham:
   socials:
     x: https://x.com/joshiShubham23
     linkedin: https://linkedin.com/in/shubham-joshi-696910118
+
+Shreekant:
+  name: Shreekant totla
+  title: Full stack developer
+  url: https://github.com/Shreekant-totla
+  image_url: https://media.licdn.com/dms/image/v2/D5603AQH6ebikD7K9kw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1691139304171?e=1747872000&v=beta&t=F0ama3reXX1HM1c2TTelKFba4b6nlSEa2F-VX0WwHc4
+  page: true
+  socials:
+    x: https://x.com/shreekant_totla
+    linkedin: https://www.linkedin.com/in/shreekant-totla-9484811a7
+
+Rakshith:
+  name: Rakshith V S
+  title: Full stack web developer
+  url: https://github.com/RakshithBeta
+  image_url: https://media.licdn.com/dms/image/v2/D5603AQF0R5D1BSug0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731681562851?e=1747872000&v=beta&t=dmEjL5i8RgMLM4utikRk-TRTDXcW7rcelAv5c9I3-YU
+  page: true
+  socials:
+    x: https://x.com/im_Rakshith_
+    linkedin: https://www.linkedin.com/in/rakshith1999/
