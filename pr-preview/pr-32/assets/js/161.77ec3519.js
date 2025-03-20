@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbetalectic_website=self.webpackChunkbetalectic_website||[]).push([["161"],{5845:function(e,t,c){c.d(t,{createArchitectureServices:function(){return i.i}});var i=c(8693);c(5318)}}]);
