@@ -82,7 +82,7 @@ export default function BlogLayout(props: Props): JSX.Element {
                           )}
                         />
                         {featuredPost?.content.metadata.authors.length > 0 && (
-                          <div className="mt-4">
+                          <div className="mt-4 flex flex-wrap gap-4">
                             {featuredPost?.content.metadata.authors.map(
                               (author, index) => (
                                 <BlogAuthor key={index} author={author} />
