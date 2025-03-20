@@ -9,9 +9,7 @@ image: https://images.ctfassets.net/23aumh6u8s0i/502rnJxNrX6JVYCUa9wjOe/b853ef94
 
 ## Problem Statement
 
-In the fintech world, live currency rate streaming is a critical feature that ensures users receive real-time updates on exchange rates. Our challenge was to build a **continuous live rate streaming system** that updates **every second**
-
-<!-- truncate --> for multiple currency pairs and serves **multiple users concurrently**. Traditional database-driven approaches struggled with performance bottlenecks, latency, and scalability issues, prompting us to explore a more robust solution.
+In the fintech world, live currency rate streaming is a critical feature that ensures users receive real-time updates on exchange rates. Our challenge was to build a **continuous live rate streaming system** for Real-Time Currency Exchange Rates that updates **every second** <!-- truncate --> for multiple currency pairs and serves **multiple users concurrently**. Traditional database-driven approaches struggled with performance bottlenecks, latency, and scalability issues, prompting us to explore a more robust solution.
 
 ## Why Not a Normal PostgreSQL Database?
 
