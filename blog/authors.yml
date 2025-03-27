@@ -2,7 +2,7 @@ manasa:
   name: Manasa Madapu
   title: Co-Founder, Betalectic
   url: https://github.com/ManasaMadapu
-  image_url: https://pbs.twimg.com/profile_images/1854874782384201728/ad8jUVyx_400x400.jpg
+  image_url: /img/blogs/AuthorProfile/manasa.jpg
   page: true
   socials:
     x: https://x.com/ManasaMadapu
@@ -11,7 +11,7 @@ manasa:
 shrey:
   name: Shrey Dhyani
   title: Software Engineer & Avid Reader
-  image_url: https://media.licdn.com/dms/image/v2/C5103AQHtgCHMZRwvzw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1519234254632?e=1745452800&v=beta&t=KkKxD3O4YQ5_pyH-HAxyRI8PF4wRGCZ_QpBWFR5_dlo
+  image_url: /img/blogs/AuthorProfile/shrey.jpeg
   page:
     # customize the url of the author page at /blog/authors/<permalink>
     permalink: "/all-sebastien-lorber-articles"
@@ -22,7 +22,7 @@ shrey:
 amir:
   name: Md. Amir Sohail
   title: Software Engineer, Betalectic
-  image_url: https://media.licdn.com/dms/image/v2/D5603AQEB9WTYEPHzLg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714193197370?e=1745452800&v=beta&t=OtwdkDGDpxBriXjcsD9JpkKvNuvFV2mYVfvsB9JuJgw
+  image_url: /img/blogs/AuthorProfile/amir.jpeg
   page: true
   socials:
     x: https://x.com/MMdamirsohail1
@@ -31,7 +31,7 @@ amir:
 rajesh:
   name: Rajesh Nautiyal
   title: Software Engineer, Betalectic
-  image_url: https://media.licdn.com/dms/image/v2/D5603AQEIKaGPajQL8w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700601582406?e=1745452800&v=beta&t=mUhaJGqeKP5wuUlWEa5Xg2YetoB_R49CzKetQtcjixA
+  image_url: /img/blogs/AuthorProfile/rajesh.jpeg
   page: true
   socials:
     x: https://x.com/Rajssj4
@@ -40,7 +40,7 @@ rajesh:
 shubham:
   name: Shubham Joshi
   title: Software Engineer, Betalectic
-  image_url: https://media.licdn.com/dms/image/v2/C4E03AQGvswz6CjlGEA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1535488725345?e=1745452800&v=beta&t=E6f0K6jDa6KpgSm44gRR88mXmc5eolCiCixGv0rCY5g
+  image_url: /img/blogs/AuthorProfile/shubham.jpeg
   page: true
   socials:
     x: https://x.com/joshiShubham23
@@ -50,7 +50,7 @@ Shreekant:
   name: Shreekant totla
   title: Full stack developer
   url: https://github.com/Shreekant-totla
-  image_url: https://media.licdn.com/dms/image/v2/D5603AQH6ebikD7K9kw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1691139304171?e=1747872000&v=beta&t=F0ama3reXX1HM1c2TTelKFba4b6nlSEa2F-VX0WwHc4
+  image_url: /img/blogs/AuthorProfile/shreekant.jpeg
   page: true
   socials:
     x: https://x.com/shreekant_totla
@@ -60,8 +60,19 @@ Rakshith:
   name: Rakshith V S
   title: Full stack web developer
   url: https://github.com/RakshithBeta
-  image_url: https://media.licdn.com/dms/image/v2/D5603AQF0R5D1BSug0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731681562851?e=1747872000&v=beta&t=dmEjL5i8RgMLM4utikRk-TRTDXcW7rcelAv5c9I3-YU
+  image_url: /img/blogs/AuthorProfile/rakshith.jpeg
   page: true
   socials:
     x: https://x.com/im_Rakshith_
     linkedin: https://www.linkedin.com/in/rakshith1999/
+
+namrata:
+  name: Namrata Samad
+  title: UX Designer
+  url: https://github.com/RakshithBeta
+  image_url: /img/blogs/AuthorProfile/namrata.png
+  page: true
+  socials:
+    instagram: https://www.instagram.com/nmrata.jpeg?igsh=YWtvaXVhZ21lZGc=
+    x: https://x.com/namoxnama?t=UC_ur9cahT8KRJgmW7wkxA&s=09
+    linkedin: https://www.linkedin.com/in/namrata-samad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
