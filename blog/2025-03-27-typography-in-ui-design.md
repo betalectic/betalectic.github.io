@@ -2,7 +2,7 @@
 slug: typography-in-ui-design
 title: "Typography in UI Design: Points to consider while designing"
 authors: [namrata]
-image: /img/blogs/typography_design.png
+image: /img/blogs/typography.png
 ---
 
 # Typography in UI Design: Points to consider while designing
