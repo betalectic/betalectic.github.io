@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
+import { useColorMode } from '@docusaurus/theme-common';
 import {
   Cloud,
   fetchSimpleIcons,
@@ -65,7 +66,7 @@ type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>;
 
 export function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const [data, setData] = useState<IconData | null>(null);
-  const { theme } = useTheme();
+  const { colorMode } = useColorMode();
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
@@ -75,9 +76,10 @@ export function IconCloud({ iconSlugs }: DynamicCloudProps) {
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light")
+      renderCustomIcon(icon, colorMode||'dark') 
     );
-  }, [data, theme]);
+
+  }, [data,colorMode]);
 
   return (
     // @ts-ignore
