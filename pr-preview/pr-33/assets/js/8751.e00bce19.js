@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbetalectic_website=self.webpackChunkbetalectic_website||[]).push([["8751"],{7327:function(e,t,c){c.d(t,{createGitGraphServices:function(){return i.z}});var i=c(7820);c(5318)}}]);
