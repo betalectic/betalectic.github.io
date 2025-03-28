@@ -69,6 +69,10 @@ module.exports = {
           { fontVariationSettings: '"wdth" 125' },
         ],
       },
+      screens: {
+        mobile: "461px",
+        lg2: "1180px",
+      },
       // fontFamily: {
       //   sans: ["Mona Sans", ...defaultTheme.fontFamily.sans],
       //   display: [
