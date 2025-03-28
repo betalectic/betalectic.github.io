@@ -1,3 +1,5 @@
+"use client";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { Container } from "../studio/components/Container";
@@ -95,9 +97,12 @@ const data = [
 const Projects = (props: Props) => {
   let shouldReduceMotion = useReducedMotion();
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(null);
 
   useEffect(() => {
+    if (!isMobile) {
+      setIsMobile(window.innerWidth < 768);
+    }
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
