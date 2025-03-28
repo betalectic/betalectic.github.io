@@ -15,6 +15,7 @@ import { OrbitingCircles } from "../components/magicui/orbiting-circles";
 import { ShimmerButton } from "../components/magicui/shimmer-button";
 import { useState, useEffect } from "react";
 import Icons from "../lib/icons";
+import Projects from "../components/Projects";
 
 function CaseStudies({ caseStudies }: any) {
   return (
@@ -358,7 +359,9 @@ export default function Home(): JSX.Element {
                 ]}
               /> */}
 
-              <Testimonial className="mt-24 sm:mt-32 lg:mt-40">
+              <Projects />
+
+              <Testimonial className="">
                 We understand the challenges businesses face in today’s
                 competitive landscape. We’re here to guide you through every
                 stage - helping you shape your vision, overcome challenges, and
