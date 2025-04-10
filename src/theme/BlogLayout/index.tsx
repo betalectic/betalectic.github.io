@@ -62,10 +62,10 @@ export default function BlogLayout(props: Props): JSX.Element {
                     className="max-w-4xl mt-8 mx-auto pb-24 md:pb-40"
                   >
                     <div className="mt-2 mx-auto flex flex-col p-2 sm:flex-row gap-4 shadow-2xl bg-white dark:bg-neutral-900 rounded-lg">
-                      <div className="">
+                      <div className="flex">
                         <img
-                          className="object-cover h-full rounded-l-lg"
-                          src={featuredPost?.content.frontMatter.image}
+                          className="object-fit rounded-l-lg max-w-full"
+                          src={`${featuredPost?.content.frontMatter.image}`}
                           alt="Featured post image"
                         />
                       </div>
