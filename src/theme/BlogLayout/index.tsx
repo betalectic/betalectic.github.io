@@ -32,8 +32,6 @@ export default function BlogLayout(props: Props): JSX.Element {
   const isBlogPage =
     location.pathname.endsWith("/blog") || location.pathname.endsWith("/blog/");
 
-  console.log("isBlogPage", isBlogPage);
-
   const featuredPost = children[0].props?.items?.[0];
 
   const dateTimeFormat = useDateTimeFormat({
