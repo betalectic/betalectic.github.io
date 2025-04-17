@@ -40,21 +40,9 @@ const PricingData = [
     },
     additional_info: {
       title: "Additional Info",
-      info: "Other additional custom features/Pages @ USD 50 per hour (Only development hours are billed)",
+      info: "For any additional custom features or pages beyond the scope mentioned above, development will be billed at USD 50 per hour. Only actual development hours are charged, and we will provide an estimate in advance before starting any work.",
     },
-    faqs: [
-      {
-        title:
-          "What if my website requirements are not included in the pages listed above?",
-        content:
-          "The features listed above serve as a baseline for estimating effort and pricing. However, we understand that every product is unique, and your MVP may have different requirements. If the listed features/pages do not align with your product’s needs, we will replace them with your actual offerings, ensuring the scope remains relevant to your vision/MVP.",
-      },
-      {
-        title: "What if we need more pages to be developed for our website",
-        content:
-          "The features listed above serve as a baseline for estimating effort and pricing. ",
-      },
-    ],
+    
     StickyContent: {
       title: "Plans that fit your scale",
       details:
@@ -79,28 +67,18 @@ const PricingData = [
         "Core feature development (your Product USP)",
         "Explore Data/search, sort & filters",
         "CRUD forms (based on data model)",
+        "Account settings, Profile, Privacy & Terms, Delete account",
         "Notifications - Email/SMS/Push",
-        "III party integrations - Eg: Payment gateway integration; Algolia/Typesense/Firebase etc (Only 2  III-party integrations are covered at this price)",
+        "Third-party integrations – e.g., payment gateways, Algolia, Typesense, Firebase, etc. (This pricing includes up to 2 third-party integrations.)",
         "Infra setup & Deployments (UAT & Prod.)",
         "Publish Apps in both app store (iOS) & play store(Android)",
+        "Tech Stack: ReactNative, NodeJS, Postgres SQL",
+        "Also includes static website (5 pages)",
       ],
     },
-    faqs: [
-      {
-        title:
-          "What if my website requirements are not included in the pages listed above?",
-        content:
-          "The features listed above serve as a baseline for estimating effort and pricing. However, we understand that every product is unique, and your MVP may have different requirements. If the listed features/pages do not align with your product’s needs, we will replace them with your actual offerings, ensuring the scope remains relevant to your vision/MVP.",
-      },
-      {
-        title: "What if we need more pages to be developed for our website",
-        content:
-          "The features listed above serve as a baseline for estimating effort and pricing. ",
-      },
-    ],
     additional_info: {
       title: "Additional Info",
-      info: "Other additional custom features/Pages @ USD 50 per hour (Only development hours are billed)",
+      info: "We aim to include all your product features within the quoted cost. However, if you require any additional custom mobile app features beyond those listed above, development will be charged at USD 50 per hour. We’ll begin by gathering your requirements, conducting domain modeling, and preparing a Product Requirement Document (PRD), followed by a detailed estimate before starting development",
     },
     StickyContent: {
       image_url: "/img/pricing/GearPc.svg",
@@ -127,31 +105,13 @@ const PricingData = [
         "Infra setup & Deployments (UAT & Prod.)",
         "App will be hosted in vercel",
         "Tech Stack: ReactJS, NodeJS or Laravel, Postgres SQL",
-        "Includes static website, User Web App, Admin Web app",
+        "Includes static website (5 -7 pages), User Web App, Admin Web app",
       ],
     },
     additional_info: {
       title: "Additional Info",
-      info: "Other additional custom features/Pages @ USD 50 per hour (Only development hours are billed)",
+      info: "We aim to include all your product features within the quoted cost. However, if you require any additional custom web app features beyond those listed above, development will be charged at USD 50 per hour. We’ll begin by gathering your requirements, conducting domain modeling, and preparing a Product Requirement Document (PRD), followed by a detailed estimate before starting development",
     },
-    faqs: [
-      {
-        title:
-          "What if my website requirements are not included in the pages listed above?",
-        content:
-          "The features listed above serve as a baseline for estimating effort and pricing. However, we understand that every product is unique, and your MVP may have different requirements. If the listed features/pages do not align with your product’s needs, we will replace them with your actual offerings, ensuring the scope remains relevant to your vision/MVP.",
-      },
-      {
-        title: "What if we need more pages to be developed for our website",
-        content:
-          "The features listed above serve as a baseline for estimating effort and pricing. ",
-      },
-      {
-        title: "What if we need more pages to be developed for our website",
-        content:
-          "The features listed above serve as a baseline for estimating effort and pricing. ",
-      },
-    ],
     StickyContent: {
       image_url: "/img/pricing/FinanceApp.svg",
     },
@@ -180,8 +140,7 @@ const Pricing = () => {
                     </h1>
 
                     <span className="text-[#475467] dark:text-gray-300 font-inter text-xl font-normal leading-[30px]">
-                      Simple, transparent pricing that grows with you. Try any
-                      plan free for 30 days.
+                      Simple, transparent pricing that grows with you.
                     </span>
                   </div>
                 </div>
