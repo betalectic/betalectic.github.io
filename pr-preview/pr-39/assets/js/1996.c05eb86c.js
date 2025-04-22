@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbetalectic_website=self.webpackChunkbetalectic_website||[]).push([["1996"],{9455:function(e,t,c){c.d(t,{createPacketServices:function(){return i.g}});var i=c(6100);c(5318)}}]);
