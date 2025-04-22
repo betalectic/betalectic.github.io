@@ -15,7 +15,7 @@ import { FadeIn } from "../components/studio/components/FadeIn";
 const PricingData = [
   {
     title: "Website Deign & Development",
-    description: "Advanced features and reporting",
+    description: "Design, Development & Deployment of Website",
     price: "5000",
 
     features: {
@@ -52,7 +52,7 @@ const PricingData = [
   },
   {
     title: "Mobile App Development",
-    description: "Advanced features and reporting",
+    description: "Design, Development & Deployment of Mobile Applications",
     price: "15,000",
     tag: "Popular",
     features: {
@@ -69,11 +69,12 @@ const PricingData = [
         "CRUD forms (based on data model)",
         "Account settings, Profile, Privacy & Terms, Delete account",
         "Notifications - Email/SMS/Push",
-        "Third-party integrations – e.g., payment gateways, Algolia, Typesense, Firebase, etc. (This pricing includes up to 2 third-party integrations.)",
-        "Infra setup & Deployments (UAT & Prod.)",
+        "III party integrations – e.g., payment gateways, Algolia, Typesense, Firebase, etc. (This pricing includes up to 3 third-party integrations.)",
+        "Infra setup & Deployments (UAT & Production)",
         "Publish Apps in both app store (iOS) & play store(Android)",
         "Tech Stack: ReactNative, NodeJS, Postgres SQL",
-        "Also includes static website (5 pages)",
+        "You own the code from day 1 (Pushed to your Github)",
+        "Also includes static website (5-7 pages)",
       ],
     },
     additional_info: {
@@ -86,7 +87,7 @@ const PricingData = [
   },
   {
     title: "Web App Development",
-    description: "Advanced features and reporting",
+    description: "Design, Development & Deployment of Web Applications",
     price: "12,000",
     features: {
       title: "Deliverables",
@@ -102,10 +103,11 @@ const PricingData = [
         "CRUD forms (based on data model)",
         "Notifications - Email/SMS/Web",
         "III party integrations - Eg: Payment gateway integration; Algolia/Typesense/Firebase etc (Only 2  III-party integrations are covered at this price)",
-        "Infra setup & Deployments (UAT & Prod.)",
-        "App will be hosted in vercel",
+        "Infra setup & Deployments (UAT & Production)",
+        "Hosted on modern cloud providers of your choice like Vercel, Netlify etc.,",
         "Tech Stack: ReactJS, NodeJS or Laravel, Postgres SQL",
-        "Includes static website (5 -7 pages), User Web App, Admin Web app",
+        "You own the code from day 1 (Pushed to your Github)",
+        "Includes static website (5-7 pages), User Web App, Admin Web app",
       ],
     },
     additional_info: {
