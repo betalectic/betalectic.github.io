@@ -14,7 +14,7 @@ import { FadeIn } from "../components/studio/components/FadeIn";
 
 const PricingData = [
   {
-    title: "Website Deign & Development",
+    title: "Website Design & Development",
     description: "Design, Development & Deployment of Website",
     price: "5000",
 
