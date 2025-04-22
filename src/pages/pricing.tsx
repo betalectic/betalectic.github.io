@@ -82,7 +82,7 @@ const PricingData = [
       info: "We aim to include all your product features within the quoted cost. However, if you require any additional custom mobile app features beyond those listed above, development will be charged at USD 50 per hour. We’ll begin by gathering your requirements, conducting domain modeling, and preparing a Product Requirement Document (PRD), followed by a detailed estimate before starting development",
     },
     StickyContent: {
-      image_url: "/img/pricing/GearPc.svg",
+      image_url: "/img/pricing/FinanceApp.svg",
     },
   },
   {
@@ -115,7 +115,7 @@ const PricingData = [
       info: "We aim to include all your product features within the quoted cost. However, if you require any additional custom web app features beyond those listed above, development will be charged at USD 50 per hour. We’ll begin by gathering your requirements, conducting domain modeling, and preparing a Product Requirement Document (PRD), followed by a detailed estimate before starting development",
     },
     StickyContent: {
-      image_url: "/img/pricing/FinanceApp.svg",
+      image_url: "/img/pricing/GearPc.svg",
     },
   },
 ];
