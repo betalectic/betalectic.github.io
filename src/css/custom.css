@@ -147,13 +147,49 @@ a:hover {
 } */
 
 .blog-content-wrapper ul {
-  list-style-type: disc;  /* Bullet points for unordered list */
+  list-style-type: disc; /* Bullet points for unordered list */
 }
 
 .blog-content-wrapper ol {
-  list-style-type: decimal;  /* Numeric bullets for ordered list */
+  list-style-type: decimal; /* Numeric bullets for ordered list */
 }
 
 .blog-content-wrapper li {
-  margin-bottom: 5px;  /* Optional: Add spacing between list items */
+  margin-bottom: 5px; /* Optional: Add spacing between list items */
+}
+
+/* Carousel navigation buttons */
+
+.swiper-button-prev {
+  background-image: url(/static/img/left-arrow.png) !important;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  padding: 3rem 1.5rem;
+  left: 0 !important;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.3;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-position: center;
+}
+.swiper-button-next {
+  background-image: url(/static/img/right-arrow.png) !important;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  padding: 3rem 1.5rem;
+  right: 0 !important;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.3;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-position: center;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 0.7;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
 }

@@ -68,7 +68,7 @@ export function Footer() {
                 <Logo className="h-8" fillOnHover />
               </span>
             </Link>
-            <p className="text-sm text-center">© 2025 Betalectic</p>
+            <p className="text-sm text-center">© 2016-2025 Betalectic</p>
           </div>
         </div>
         <div className="mb-16 mt-24 flex flex-wrap items-end justify-center gap-x-6"></div>
