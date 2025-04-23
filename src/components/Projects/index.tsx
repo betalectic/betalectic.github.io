@@ -122,10 +122,10 @@ const Projects = (props: Props) => {
               <FadeIn className="w-full">
                 <div className="mx-auto max-w-2xl lg:mx-0 mb-24">
                   <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
-                    Explore our projects
+                    Notable Work
                   </h2>
                   <p className=" text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-                    Anim aute id magna aliqua ad ad non deserunt sunt.
+                  Design. Develop. Deploy. We Handle It All
                   </p>
                 </div>
               </FadeIn>

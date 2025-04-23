@@ -1173,7 +1173,7 @@ export default function About() {
 
   function IconCloudDemo() {
     return (
-      <div className="relative flex w-[300px] md:w-[800px] max-w-xl items-center justify-center overflow-hidden rounded-lg bg-background md:px-20  ">
+      <div className="relative flex w-[300px] md:w-[800px] max-w-xl items-center justify-center overflow-hidden rounded-lg bg-white md:px-20  ">
         <IconCloud iconSlugs={slugs} />
       </div>
     );
