@@ -69,7 +69,6 @@ Rakshith:
 namrata:
   name: Namrata Samad
   title: UX Designer
-  url: https://github.com/RakshithBeta
   image_url: /img/blogs/AuthorProfile/namrata.png
   page: true
   socials:
@@ -79,9 +78,24 @@ namrata:
 varsha:
   name: Varsha Pius
   title: Business Development Executive
-  url: https://github.com/RakshithBeta
   image_url: /img/blogs/AuthorProfile/varsha.jpeg
   page: true
   socials:
     x: https://x.com/VarshaPius43834
     linkedin: https://www.linkedin.com/in/varsha-5a8426272/
+arihant:
+  name: Arihant Jain
+  title: Software Engineer
+  image_url: /img/blogs/AuthorProfile/arihant.jpg
+  page: true
+  socials:
+    x: https://x.com/Arihant58198590
+    linkedin: https://www.linkedin.com/in/arihant-jain-2a465b201/
+param:
+  name: Paramveer Singh
+  title: Software Engineer
+  image_url: /img/blogs/AuthorProfile/param.jpg
+  page: true
+  socials:
+    x: https://x.com/param11650
+    linkedin: https://www.linkedin.com/in/paramveer-singh-943a1a200/
