@@ -99,3 +99,11 @@ param:
   socials:
     x: https://x.com/param11650
     linkedin: https://www.linkedin.com/in/paramveer-singh-943a1a200/
+avir:
+  name: Avi Rajput
+  title: Software Engineer
+  image_url: /img/blogs/AuthorProfile/avi.jpg
+  page: true
+  socials:
+    x: https://x.com/y2j_avi
+    linkedin: https://www.linkedin.com/in/avi-rajput-a07a54221/
