@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbetalectic_website=self.webpackChunkbetalectic_website||[]).push([["7627"],{7548:function(e){e.exports=JSON.parse('{"blogBasePath":"/pr-preview/pr-41/blog","blogTitle":"Software Development Resources & Guides","authorsListPath":"/pr-preview/pr-41/blog/authors"}')}}]);
