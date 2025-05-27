@@ -1,4 +1,7 @@
 "use client";
+import { cn } from "../../lib/utils";
+import Link from "@docusaurus/Link";
+import { image } from "framer-motion/client";
 import { ArrowRight } from "lucide-react";
 
 type companyDetailsProps = {
@@ -17,21 +20,36 @@ type Props = {
   image_link: string;
   live_link?: string;
   blog_link?: string;
+  image_classes?: string;
+  [key: string]: any;
 };
 
 export default function ProjectCard({
   company_details,
   feature_details,
   image_link,
+  image_classes,
   live_link,
   blog_link,
+  ...props
 }: Props) {
+  const isMFStack = props.showCustom;
   return (
-    <div className="bg-white dark:bg-neutral-800 p-12 rounded-3xl">
-      <div className="container mx-auto">
+    <div
+      className="relative bg-white dark:bg-neutral-800 p-12 rounded-3xl w-full bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: props.bg_image ? `url(${props.bg_image})` : "none",
+        backgroundPosition: "center",
+        backgroundSize: "calc(100% - 140px)",
+      }}
+    >
+      <div className={cn("container mx-auto", isMFStack ? "opacity-0" : "")}>
         <div className="items-center lg:flex">
-          <div className="w-full lg:w-1/2">
-            <div className="py-8 flex flex-col ">
+          <div className="w-full lg:w-1/2 z-10">
+            <span className=" text-3xl lg:text-4xl flex text-left font-bold dark:text-white">
+              {company_details.company_name}
+            </span>
+            <div className="py-2 flex flex-col ">
               <img
                 src={company_details.logo_url}
                 className="max-w-32"
@@ -42,7 +60,7 @@ export default function ProjectCard({
                     : {}
                 }
               />
-              <span className="text-gray-400 px-2 text-sm flex text-left">
+              <span className="text-gray-400  text-sm flex text-left">
                 {company_details.details}
               </span>
             </div>
@@ -65,21 +83,20 @@ export default function ProjectCard({
               </div>
 
               <div className="flex items-center space-x-2">
-                <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white transition-colors duration-300 transform bg-indigo-600 rounded-lg lg:w-auto  focus:outline-none ">
+                <Link className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white transition-colors duration-300 transform bg-indigo-600 rounded-lg lg:w-auto  focus:outline-none">
                   Visit Live
-                </button>
-                <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-gray-700 dark:text-gray-300 transition-colors duration-300 transform  rounded-lg lg:w-auto  focus:outline-none flex items-center whitespace-nowrap">
-                  Read more <ArrowRight className="w-4" />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
 
           <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
             <img
-              className="w-full h-full lg:max-w-3xl"
+              className={cn("w-full lg:max-w-3xl", image_classes)}
+              width={400}
+              height={400}
               src={image_link}
-              alt="Catalogue-pana.svg"
+              alt={`${company_details.company_name}`}
             />
           </div>
         </div>
