@@ -41,7 +41,6 @@ const data = [
       ],
     },
     image_link: mf_stack_image,
-    bg_image: mf_stack_image,
     image_classes: "lg:absolute object-cover opacity-0",
     live_link: "",
     blog_link: "",
