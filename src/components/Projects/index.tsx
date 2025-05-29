@@ -19,6 +19,9 @@ import { image } from "framer-motion/client";
 type Props = {};
 
 const mf_stack_image = require("../../images/mf_stack.png").default;
+const mf_stack_web = require("../../images/mf_stack_web.png").default;
+const mf_stack_mobile = require("../../images/mf_stack_mobile.png").default;
+
 const collab = require("../../images/collab.png").default;
 const auction_bazzar = require("../../images/auction_bazzar.png").default;
 const wired_up = require("../../images/wired_up.png").default;
@@ -41,6 +44,8 @@ const data = [
       ],
     },
     image_link: mf_stack_image,
+    web_image: mf_stack_web,
+    mobile_image: mf_stack_mobile,
     image_classes: "lg:absolute object-cover opacity-0",
     live_link: "",
     blog_link: "",

@@ -34,14 +34,30 @@ export default function ProjectCard({
   ...props
 }: Props) {
   const isMFStack = props.showCustom;
+
   return (
-    <div className="relative bg-white dark:bg-neutral-800 p-12 rounded-3xl w-full bg-cover bg-no-repeat">
+    <div
+      className={cn(
+        "relative bg-white dark:bg-neutral-800 p-12 rounded-3xl w-full bg-cover bg-no-repeat",
+        isMFStack ? "p-4" : ""
+      )}
+    >
       {isMFStack ? (
-        <img
-          className={cn("inset-0 w-[425px] h-[725px] lg:h-[400px] lg:w-full")}
-          src={image_link}
-          alt={`${company_details.company_name}`}
-        />
+        <div className="relative w-full h-full">
+          {/* Mobile image */}
+          <img
+            className="block lg:hidden w-full h-full object-cover"
+            src={props.mobile_image}
+            alt={company_details.company_name}
+          />
+
+          {/* Desktop image */}
+          <img
+            className="hidden lg:block w-full h-full object-cover"
+            src={props.web_image}
+            alt={company_details.company_name}
+          />
+        </div>
       ) : (
         <div className={cn("container mx-auto", isMFStack ? "opacity-0" : "")}>
           <div className="items-center lg:flex">
