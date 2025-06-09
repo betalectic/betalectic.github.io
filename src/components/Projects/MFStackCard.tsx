@@ -21,8 +21,9 @@ export default function MFStackCard() {
       imgLink: mf_stack_image1,
       mobileImgLink: mf_stack_mobile_image1,
       cardHeading: "Paperless Onboarding/ KYC",
-      headingWrapperClass: "absolute top-14 left-8 max-w-[200px]",
-      headingClass: "font-extrabold text-3 mb-0",
+      headingWrapperClass: "absolute top-14 left-4 lg:left-8 max-w-[200px]",
+      headingClass:
+        "lg:font-extrabold font-semibold text-[10px] lg:text-xs mb-1",
       subItems: ["Pan verification", "Aadhar base KYC"],
       subItemsClass: "",
     },
@@ -30,8 +31,9 @@ export default function MFStackCard() {
       imgLink: mf_stack_image3,
       mobileImgLink: mf_stack_mobile_image3,
       cardHeading: "Transaction/Explore Fund",
-      headingWrapperClass: "absolute bottom-4 left-4",
-      headingClass: "font-extrabold text-3 mb-0",
+      headingWrapperClass: "absolute top-5 lg:top-auto lg:bottom-8 left-4",
+      headingClass:
+        "lg:font-extrabold font-semibold text-[10px] lg:text-xs mb-1",
       subItems: ["SIP", "Lump Sum", "Easy Redemption", "Switch/STP"],
       subItemsClass: "",
     },
@@ -39,8 +41,10 @@ export default function MFStackCard() {
       imgLink: mf_stack_image2,
       mobileImgLink: mf_stack_mobile_image2,
       cardHeading: "Create mandate",
-      headingWrapperClass: "absolute top-5 left-8",
-      headingClass: "font-extrabold text-3 mb-0",
+      headingWrapperClass:
+        "absolute right-12 bottom-12 bg-transparent lg:top-5 lg:left-8",
+      headingClass:
+        "lg:font-extrabold font-semibold text-[10px] lg:text-xs mb-1",
       subItems: ["Add upto 5 banks", "Auto Pay"],
       subItemsClass: "",
     },
@@ -48,8 +52,9 @@ export default function MFStackCard() {
       imgLink: mf_stack_image4,
       mobileImgLink: mf_stack_mobile_image4,
       cardHeading: "Reports",
-      headingWrapperClass: "absolute top-28 left-8",
-      headingClass: "font-extrabold text-3 mb-0",
+      headingWrapperClass: "absolute bottom-12 right-12 lg:top-28 lg:left-8",
+      headingClass:
+        "lg:font-extrabold font-semibold text-[10px] lg:text-xs mb-1",
       subItems: ["Capital gain", "Holdings Report", "Transaction Report"],
       subItemsClass: "",
     },
@@ -76,10 +81,14 @@ export default function MFStackCard() {
             {item?.subItems?.length > 0 &&
               item.subItems.map((listItem) => (
                 <div
-                  className={` flex items-center space-x-2 ${item?.subItemsClass}`}
+                  className={` flex items-center space-x-1 lg:space-x-2 ${item?.subItemsClass}`}
                 >
                   <StarListIcon />
-                  <p className={`m-0`}>{listItem}</p>
+                  <p
+                    className={`m-0 text-[8px] lg:text-[10px] lg:font-semibold`}
+                  >
+                    {listItem}
+                  </p>
                 </div>
               ))}
           </div>
