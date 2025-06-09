@@ -38,7 +38,7 @@ export default function ProjectCard({
   return (
     <div
       className={cn(
-        "relative bg-white dark:bg-neutral-800 p-12 rounded-3xl w-full bg-cover bg-no-repeat",
+        "relative bg-white dark:bg-neutral-800 p-12 rounded-3xl w-full h-full min-h-[850px] lg:min-h-0 max-h-[850px] lg:max-h-[500px] bg-cover bg-no-repeat",
         isMFStack ? "p-4" : ""
       )}
     >

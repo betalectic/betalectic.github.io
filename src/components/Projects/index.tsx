@@ -16,6 +16,7 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { motion, MotionConfig, useReducedMotion } from "framer-motion";
 import { FadeIn } from "../studio/components/FadeIn";
 import { image } from "framer-motion/client";
+import MFStackCard from "./MFStackCard";
 type Props = {};
 
 const mf_stack_image = require("../../images/mf_stack.png").default;
@@ -183,13 +184,17 @@ const Projects = (props: Props) => {
                   {data?.map((item, index) => {
                     return (
                       <SwiperSlide key={index} className="w-full h-full">
-                        <ProjectCard
-                          company_details={item.company_details}
-                          feature_details={item.feature_details}
-                          image_link={item.image_link}
-                          image_classes={item?.image_classes ?? ""}
-                          {...item}
-                        />
+                        {item?.company_details?.company_name === "MF Stack" ? (
+                          <MFStackCard />
+                        ) : (
+                          <ProjectCard
+                            company_details={item.company_details}
+                            feature_details={item.feature_details}
+                            image_link={item.image_link}
+                            image_classes={item?.image_classes ?? ""}
+                            {...item}
+                          />
+                        )}
                       </SwiperSlide>
                     );
                   })}
