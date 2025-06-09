@@ -62,13 +62,13 @@ export default function ProjectCard({
         <div className={cn("container mx-auto", isMFStack ? "opacity-0" : "")}>
           <div className="items-center lg:flex">
             <div className="w-full lg:w-1/2 z-10">
-              <span className=" text-3xl lg:text-4xl flex text-left font-bold dark:text-white">
+              {/* <span className=" text-3xl lg:text-4xl flex text-left font-bold dark:text-white">
                 {company_details.company_name}
-              </span>
-              <div className="py-2 flex flex-col ">
+              </span> */}
+              <div className=" flex flex-col ">
                 <img
                   src={company_details.logo_url}
-                  className="max-w-32"
+                  className="max-w-40 h-16"
                   alt=""
                   style={
                     company_details.logo_width

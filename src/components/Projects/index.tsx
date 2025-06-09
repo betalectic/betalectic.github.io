@@ -28,6 +28,13 @@ const auction_bazzar = require("../../images/auction_bazzar.png").default;
 const wired_up = require("../../images/wired_up.png").default;
 const principal_india = require("../../images/principal_india.png").default;
 
+const auction_bazaar_logo =
+  require("../../images/projectLogos/auction_bazaar.png").default;
+const wiredup_logo = require("../../images/projectLogos/wiredup.png").default;
+const collab_logo = require("../../images/projectLogos/collab.png").default;
+const principal_mf_logo =
+  require("../../images/projectLogos/logo_principal.png").default;
+
 const data = [
   {
     showCustom: true,
@@ -53,7 +60,7 @@ const data = [
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: wiredup_logo,
       logo_width: "",
       details: "Mumbai, India",
       company_name: "Wiredup",
@@ -72,7 +79,7 @@ const data = [
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: collab_logo,
       logo_width: "",
       details: "Mumbai, India",
       company_name: "Collab",
@@ -91,7 +98,7 @@ const data = [
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: auction_bazaar_logo,
       logo_width: "",
       details: "Mumbai, India",
       company_name: "Auction bazaar",
@@ -111,7 +118,7 @@ const data = [
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: principal_mf_logo,
       logo_width: "",
       details: "Mumbai, India",
       company_name: "Principal MF",
