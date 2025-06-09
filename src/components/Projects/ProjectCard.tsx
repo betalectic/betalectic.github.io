@@ -99,8 +99,9 @@ export default function ProjectCard({
                 </div>
 
                 <div className="flex items-center space-x-2">
-                  <Link className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white transition-colors duration-300 transform bg-indigo-600 rounded-lg lg:w-auto  focus:outline-none">
-                    Visit Live
+                  <Link className="w-full flex px-5 space-x-1 hover:cursor-pointer py-1 mt-6 text-sm tracking-wider text-white transition-colors duration-300 transform bg-indigo-600 rounded-lg lg:w-auto  focus:outline-none">
+                    <p className="mb-0">Know More</p>
+                    <ArrowRight />
                   </Link>
                 </div>
               </div>
