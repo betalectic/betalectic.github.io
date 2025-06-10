@@ -9,6 +9,7 @@ type companyDetailsProps = {
   logo_width?: string;
   company_name: string;
   details: string;
+  logo_svg?: React.ReactNode;
 };
 type featureDetailsProps = {
   title: string;
@@ -66,22 +67,26 @@ export default function ProjectCard({
                 {company_details.company_name}
               </span> */}
               <div className=" flex flex-col ">
-                <img
-                  src={company_details.logo_url}
-                  className="max-w-40 h-16"
-                  alt=""
-                  style={
-                    company_details.logo_width
-                      ? { maxWidth: company_details.logo_width }
-                      : {}
-                  }
-                />
+                {company_details?.logo_svg ? (
+                  company_details?.logo_svg
+                ) : (
+                  <img
+                    src={company_details.logo_url}
+                    className="max-w-[240px] w-full h-[70px]"
+                    alt=""
+                    style={
+                      company_details.logo_width
+                        ? { maxWidth: company_details.logo_width }
+                        : {}
+                    }
+                  />
+                )}
                 <span className="text-gray-400  text-sm flex text-left">
                   {company_details.details}
                 </span>
               </div>
-              <div className="lg:max-w-lg flex flex-col items-start">
-                <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl text-left">
+              <div className="lg:max-w-lg mt-2 flex flex-col items-start">
+                <h1 className="text-3xl font-semibold mb-0 text-gray-800 dark:text-white lg:text-4xl text-left">
                   {feature_details.title}
                 </h1>
 
