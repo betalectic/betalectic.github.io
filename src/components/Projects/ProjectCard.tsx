@@ -9,6 +9,7 @@ type companyDetailsProps = {
   logo_width?: string;
   company_name: string;
   details: string;
+  logo_svg?: React.ReactNode;
 };
 type featureDetailsProps = {
   title: string;
@@ -38,7 +39,7 @@ export default function ProjectCard({
   return (
     <div
       className={cn(
-        "relative bg-white dark:bg-neutral-800 p-12 rounded-3xl w-full bg-cover bg-no-repeat",
+        "relative bg-white dark:bg-neutral-800 p-12 rounded-3xl w-full h-full min-h-[850px] lg:min-h-0 max-h-[850px] lg:max-h-[500px] bg-cover bg-no-repeat",
         isMFStack ? "p-4" : ""
       )}
     >
@@ -62,26 +63,30 @@ export default function ProjectCard({
         <div className={cn("container mx-auto", isMFStack ? "opacity-0" : "")}>
           <div className="items-center lg:flex">
             <div className="w-full lg:w-1/2 z-10">
-              <span className=" text-3xl lg:text-4xl flex text-left font-bold dark:text-white">
+              {/* <span className=" text-3xl lg:text-4xl flex text-left font-bold dark:text-white">
                 {company_details.company_name}
-              </span>
-              <div className="py-2 flex flex-col ">
-                <img
-                  src={company_details.logo_url}
-                  className="max-w-32"
-                  alt=""
-                  style={
-                    company_details.logo_width
-                      ? { maxWidth: company_details.logo_width }
-                      : {}
-                  }
-                />
+              </span> */}
+              <div className=" flex flex-col ">
+                {company_details?.logo_svg ? (
+                  company_details?.logo_svg
+                ) : (
+                  <img
+                    src={company_details.logo_url}
+                    className="max-w-[240px] w-full h-[70px]"
+                    alt=""
+                    style={
+                      company_details.logo_width
+                        ? { maxWidth: company_details.logo_width }
+                        : {}
+                    }
+                  />
+                )}
                 <span className="text-gray-400  text-sm flex text-left">
                   {company_details.details}
                 </span>
               </div>
-              <div className="lg:max-w-lg flex flex-col items-start">
-                <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl text-left">
+              <div className="lg:max-w-lg mt-2 flex flex-col items-start">
+                <h1 className="text-3xl font-semibold mb-0 text-gray-800 dark:text-white lg:text-4xl text-left">
                   {feature_details.title}
                 </h1>
 
@@ -99,8 +104,9 @@ export default function ProjectCard({
                 </div>
 
                 <div className="flex items-center space-x-2">
-                  <Link className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white transition-colors duration-300 transform bg-indigo-600 rounded-lg lg:w-auto  focus:outline-none">
-                    Visit Live
+                  <Link className="w-full flex items-center px-5 space-x-2 hover:cursor-pointer py-1 mt-6 text-sm tracking-wider text-white transition-colors duration-300 transform bg-indigo-600 rounded-lg lg:w-auto hover:text-white hover:bg-indigo-700  focus:outline-none">
+                    <p className="mb-0">Know More</p>
+                    <ArrowRight size={18} />
                   </Link>
                 </div>
               </div>

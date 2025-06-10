@@ -336,7 +336,7 @@ export default function Layout(props: Props): JSX.Element {
               ThemeClassNames.wrapper.main,
               styles.mainWrapper,
               wrapperClassName,
-              `${isBlogPath ? "max-w-7xl mx-auto px-6 lg:px-8 mt-8" : ""}`
+              `${isBlogPath ? "w-full mx-auto px-6 lg:px-8 mt-8" : ""}`
             )}
           >
             <ErrorBoundary

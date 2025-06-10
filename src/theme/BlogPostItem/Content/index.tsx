@@ -24,7 +24,7 @@ export default function BlogPostItemContent({
       className={clsx("markdown", className)}
     >
       <div className="flex gap-4">
-        <div className="blog-content-wrapper">
+        <div className="blog-content-wrapper my-8 max-w-full">
           <MDXContent>{children}</MDXContent>
         </div>
       </div>

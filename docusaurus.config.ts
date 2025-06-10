@@ -46,6 +46,9 @@ const config: Config = {
       {
         docs: false,
         blog: {
+          blogTitle: "Software Development Resources & Guides",
+          blogDescription:
+            "Technical articles on React, Node.js, and software architecture. Code examples, tutorials and industry insights from our development team.",
           blogSidebarCount: 0,
           showReadingTime: false,
           feedOptions: {
@@ -79,6 +82,14 @@ const config: Config = {
     ],
   ],
 
+  scripts: [
+    {
+      src: "//cdn.jsdelivr.net/npm/meta-scan@0.15.0/dist/auto.global.js",
+      "data-auto-enable": "false",
+      crossorigin: "anonymous",
+    },
+  ],
+
   headTags: [
     {
       tagName: "link",
@@ -98,8 +109,7 @@ const config: Config = {
       },
       {
         property: "og:title",
-        content:
-          "Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps",
+        content: "Custom Software Development for Web, Mobile, AI & DevOps",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://betalectic.github.io/" },
@@ -110,20 +120,19 @@ const config: Config = {
       {
         property: "og:description",
         content:
-          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster",
+          "Betalectic specializes in custom software development for web, mobile, AI, and DevOps. We build scalable applications, robust APIs, and generative AI solutions to help businesses launch digital products faster. Partner with us for secure, scalable, and innovative tech solutions.",
       },
       { property: "og:site_name", content: "Betalectic" },
       { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content:
-          "Betalectic: We build Web Apps, Mobile Apps, UI, UX designs, APIs, Generative AI solutions & DevOps",
+        content: "Custom Software Development for Web, Mobile, AI & DevOps",
       },
       {
         name: "twitter:description",
         content:
-          "Betalectic is a custom software development company specialising in building scalable web and mobile applications, robust APIs, and generative AI solutions. With expertise in DevOps, secure deployments, and scalable tech architecture, we support businesses across industries to bring their digital products to market faster",
+          "Betalectic specializes in custom software development for web, mobile, AI, and DevOps. We build scalable applications, robust APIs, and generative AI solutions to help businesses launch digital products faster. Partner with us for secure, scalable, and innovative tech solutions.",
       },
       {
         name: "twitter:image",
@@ -199,8 +208,7 @@ const config: Config = {
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
-  
+  themes: ["@docusaurus/theme-mermaid"],
 };
 
 export default config;

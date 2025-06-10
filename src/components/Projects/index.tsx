@@ -16,6 +16,10 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { motion, MotionConfig, useReducedMotion } from "framer-motion";
 import { FadeIn } from "../studio/components/FadeIn";
 import { image } from "framer-motion/client";
+import MFStackCard from "./MFStackCard";
+import AuctionBazaarSvg from "../../images/projectLogos/AuctionBazaarSvg";
+import CollabSvg from "../../images/projectLogos/CollabSvg";
+import WiredUpSvg from "../../images/projectLogos/WiredUpSvg";
 type Props = {};
 
 const mf_stack_image = require("../../images/mf_stack.png").default;
@@ -26,6 +30,35 @@ const collab = require("../../images/collab.png").default;
 const auction_bazzar = require("../../images/auction_bazzar.png").default;
 const wired_up = require("../../images/wired_up.png").default;
 const principal_india = require("../../images/principal_india.png").default;
+
+const auction_bazaar_logo =
+  require("../../images/projectLogos/auction_bazaar.png").default;
+const wiredup_logo = require("../../images/projectLogos/wiredup.png").default;
+const collab_logo = require("../../images/projectLogos/collab.png").default;
+const principal_mf_logo =
+  require("../../images/projectLogos/logo_principal.png").default;
+
+const CollabLogo = () => {
+  return (
+    <div className="flex items-end space-x-3">
+      <CollabSvg width={70} height={70} />
+      <p className="mb-0 text-5xl lg:text-6xl  font-extrabold">Collab</p>
+    </div>
+  );
+};
+
+const WiredUpLogo = () => {
+  return (
+    <div className="flex items-center space-x-3">
+      <WiredUpSvg width={70} height={70} />
+      <p className="mb-0 text-5xl lg:text-6xl  font-extrabold">WiredUp</p>
+    </div>
+  );
+};
+
+const ABLogo = () => {
+  return <AuctionBazaarSvg width={175} height={70} />;
+};
 
 const data = [
   {
@@ -52,8 +85,9 @@ const data = [
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: wiredup_logo,
       logo_width: "",
+      logo_svg: <WiredUpLogo />,
       details: "Mumbai, India",
       company_name: "Wiredup",
     },
@@ -71,8 +105,9 @@ const data = [
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: collab_logo,
       logo_width: "",
+      logo_svg: <CollabLogo />,
       details: "Mumbai, India",
       company_name: "Collab",
     },
@@ -90,7 +125,8 @@ const data = [
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: auction_bazaar_logo,
+      logo_svg: <ABLogo />,
       logo_width: "",
       details: "Mumbai, India",
       company_name: "Auction bazaar",
@@ -110,7 +146,7 @@ const data = [
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: principal_mf_logo,
       logo_width: "",
       details: "Mumbai, India",
       company_name: "Principal MF",
@@ -183,13 +219,17 @@ const Projects = (props: Props) => {
                   {data?.map((item, index) => {
                     return (
                       <SwiperSlide key={index} className="w-full h-full">
-                        <ProjectCard
-                          company_details={item.company_details}
-                          feature_details={item.feature_details}
-                          image_link={item.image_link}
-                          image_classes={item?.image_classes ?? ""}
-                          {...item}
-                        />
+                        {item?.company_details?.company_name === "MF Stack" ? (
+                          <MFStackCard />
+                        ) : (
+                          <ProjectCard
+                            company_details={item.company_details}
+                            feature_details={item.feature_details}
+                            image_link={item.image_link}
+                            image_classes={item?.image_classes ?? ""}
+                            {...item}
+                          />
+                        )}
                       </SwiperSlide>
                     );
                   })}
