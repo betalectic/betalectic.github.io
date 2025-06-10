@@ -9,19 +9,65 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // Import Swiper styles
 import "swiper/css";
+import "./styles.css";
+
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 import { motion, MotionConfig, useReducedMotion } from "framer-motion";
 import { FadeIn } from "../studio/components/FadeIn";
+import { image } from "framer-motion/client";
+import MFStackCard from "./MFStackCard";
+import AuctionBazaarSvg from "../../images/projectLogos/AuctionBazaarSvg";
+import CollabSvg from "../../images/projectLogos/CollabSvg";
+import WiredUpSvg from "../../images/projectLogos/WiredUpSvg";
 type Props = {};
+
+const mf_stack_image = require("../../images/mf_stack.png").default;
+const mf_stack_web = require("../../images/mf_stack_web.png").default;
+const mf_stack_mobile = require("../../images/mf_stack_mobile.png").default;
+
+const collab = require("../../images/collab.png").default;
+const auction_bazzar = require("../../images/auction_bazzar.png").default;
+const wired_up = require("../../images/wired_up.png").default;
+const principal_india = require("../../images/principal_india.png").default;
+
+const auction_bazaar_logo =
+  require("../../images/projectLogos/auction_bazaar.png").default;
+const wiredup_logo = require("../../images/projectLogos/wiredup.png").default;
+const collab_logo = require("../../images/projectLogos/collab.png").default;
+const principal_mf_logo =
+  require("../../images/projectLogos/logo_principal.png").default;
+
+const CollabLogo = () => {
+  return (
+    <div className="flex items-end space-x-3">
+      <CollabSvg width={70} height={70} />
+      <p className="mb-0 text-5xl lg:text-6xl  font-extrabold">Collab</p>
+    </div>
+  );
+};
+
+const WiredUpLogo = () => {
+  return (
+    <div className="flex items-center space-x-3">
+      <WiredUpSvg width={70} height={70} />
+      <p className="mb-0 text-5xl lg:text-6xl  font-extrabold">WiredUp</p>
+    </div>
+  );
+};
+
+const ABLogo = () => {
+  return <AuctionBazaarSvg width={175} height={70} />;
+};
 
 const data = [
   {
+    showCustom: true,
     company_details: {
       logo_url: "https://www.heritagefoods.in/static/images/logo.png",
       logo_width: "",
       details: "Mumbai, India",
-      company_name: "",
+      company_name: "MF Stack",
     },
     feature_details: {
       title: " Trusted Marketplace for Property Needs",
@@ -30,17 +76,20 @@ const data = [
         " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       ],
     },
-    image_link:
-      "https://blackhattechnologies.com/assets/media/others/mobile-application-development.png",
+    image_link: mf_stack_image,
+    web_image: mf_stack_web,
+    mobile_image: mf_stack_mobile,
+    image_classes: "lg:absolute object-cover opacity-0",
     live_link: "",
     blog_link: "",
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: wiredup_logo,
       logo_width: "",
+      logo_svg: <WiredUpLogo />,
       details: "Mumbai, India",
-      company_name: "",
+      company_name: "Wiredup",
     },
     feature_details: {
       title: " Lorem ipsum dolor sit amet, consectetur ",
@@ -49,17 +98,18 @@ const data = [
         " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       ],
     },
-    image_link:
-      "https://freepngimg.com/thumb/web_development/3-2-web-development-png-hd.png",
+    image_link: wired_up,
+    image_classes: "lg:absolute bottom-0 right-0 w-[450px]",
     live_link: "",
     blog_link: "",
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: collab_logo,
       logo_width: "",
+      logo_svg: <CollabLogo />,
       details: "Mumbai, India",
-      company_name: "",
+      company_name: "Collab",
     },
     feature_details: {
       title: " This is the header for Some Heading",
@@ -68,17 +118,18 @@ const data = [
         " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       ],
     },
-    image_link:
-      "https://freepngimg.com/thumb/web_design/2-2-web-design-png-image.png",
+    image_link: collab,
+    image_classes: "lg:absolute -bottom-4 -right-2 w-[550px]",
     live_link: "",
     blog_link: "",
   },
   {
     company_details: {
-      logo_url: "https://www.heritagefoods.in/static/images/logo.png",
+      logo_url: auction_bazaar_logo,
+      logo_svg: <ABLogo />,
       logo_width: "",
       details: "Mumbai, India",
-      company_name: "",
+      company_name: "Auction bazaar",
     },
     feature_details: {
       title: " Lorem ipsum dolor sit amet, consectetur ",
@@ -87,8 +138,28 @@ const data = [
         " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       ],
     },
-    image_link:
-      "https://freepngimg.com/thumb/web_development/3-2-web-development-png-hd.png",
+    image_link: auction_bazzar,
+    image_classes: "lg:absolute bottom-0 right-0 w-[500px]",
+    // "https://freepngimg.com/thumb/web_development/3-2-web-development-png-hd.png",
+    live_link: "",
+    blog_link: "",
+  },
+  {
+    company_details: {
+      logo_url: principal_mf_logo,
+      logo_width: "",
+      details: "Mumbai, India",
+      company_name: "Principal MF",
+    },
+    feature_details: {
+      title: " Lorem ipsum dolor sit amet, consectetur ",
+      features: [
+        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. beatae error laborum ab amet sunt recusandae? Reiciendisnatus perspiciatis optio.",
+        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      ],
+    },
+    image_link: principal_india,
+    image_classes: "lg:absolute bottom-0 right-0 w-[500px]",
     live_link: "",
     blog_link: "",
   },
@@ -125,12 +196,12 @@ const Projects = (props: Props) => {
                     Notable Work
                   </h2>
                   <p className=" text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-                  Design. Develop. Deploy. We Handle It All
+                    Design. Develop. Deploy. We Handle It All
                   </p>
                 </div>
               </FadeIn>
             </Container>
-            <div className=" overflow-hidden">
+            <div className="overflow-hidden">
               <FadeIn className="w-full">
                 <Swiper
                   slidesPerView={isMobile ? 1 : 1.3}
@@ -140,19 +211,25 @@ const Projects = (props: Props) => {
                   navigation={true}
                   modules={[Navigation, Autoplay]}
                   autoplay={{
-                    delay: 5000,
+                    delay: 15000,
                     disableOnInteraction: false,
                   }}
-                  className="mySwiper"
+                  className="mySwiper w-full h-full"
                 >
                   {data?.map((item, index) => {
                     return (
-                      <SwiperSlide key={index}>
-                        <ProjectCard
-                          company_details={item.company_details}
-                          feature_details={item.feature_details}
-                          image_link={item.image_link}
-                        />
+                      <SwiperSlide key={index} className="w-full h-full">
+                        {item?.company_details?.company_name === "MF Stack" ? (
+                          <MFStackCard />
+                        ) : (
+                          <ProjectCard
+                            company_details={item.company_details}
+                            feature_details={item.feature_details}
+                            image_link={item.image_link}
+                            image_classes={item?.image_classes ?? ""}
+                            {...item}
+                          />
+                        )}
                       </SwiperSlide>
                     );
                   })}
