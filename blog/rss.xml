@@ -4,10 +4,152 @@
         <title>Betalectic Blog</title>
         <link>https://betalectic.com/blog</link>
         <description>Betalectic Blog</description>
-        <lastBuildDate>Wed, 28 May 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Jun 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[From Shared Offices to Skyscrapers: Explaining SaaS Multi-Tenancy Models]]></title>
+            <link>https://betalectic.com/blog/multi-tenancy-models</link>
+            <guid>https://betalectic.com/blog/multi-tenancy-models</guid>
+            <pubDate>Fri, 27 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Introduction]]></description>
+            <content:encoded><![CDATA[<div class="flex gap-4"><div class="blog-content-wrapper my-8 max-w-full"><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="introduction">Introduction<a href="https://betalectic.com/blog/multi-tenancy-models#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h3>
+<p>In a SaaS (Software as a Service) environment, tenant isolation, scalability, cost-efficiency, and security are key architectural concerns. Here are three common approaches  to architecting multi-tenant SaaS applications using AWS infrastructure:</p>
+<hr>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="same-aws-account-multi-tenancy"><strong>Same AWS Account Multi-Tenancy</strong><a href="https://betalectic.com/blog/multi-tenancy-models#same-aws-account-multi-tenancy" class="hash-link" aria-label="Direct link to same-aws-account-multi-tenancy" title="Direct link to same-aws-account-multi-tenancy">​</a></h2>
+<p>This model consolidates all tenant data and infrastructure into a <strong>single AWS account</strong>. It can further be broken down into two tenancy models:</p>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="single-database-tenancy"><strong>Single-Database Tenancy</strong><a href="https://betalectic.com/blog/multi-tenancy-models#single-database-tenancy" class="hash-link" aria-label="Direct link to single-database-tenancy" title="Direct link to single-database-tenancy">​</a></h3>
+<p><strong>Overview:</strong></p>
+<p>All tenants share the same database and schema. Tenant data is typically separated using a <code>tenant_id</code> column.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li><strong>Simpler to manage</strong> and cost-effective.</li>
+<li>Easier to implement analytics across tenants.</li>
+<li>High resource utilization efficiency.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Weaker <strong>data isolation</strong>—harder to meet compliance or security requirements.</li>
+<li>Risk of <strong>noisy neighbor</strong> issues (one tenant’s activity affects others).</li>
+<li>Complex data access controls.</li>
+</ul>
+<p><strong>Best for:</strong></p>
+<p>Startups, low-complexity SaaS products, or internal tools with limited tenant-specific customization needs.</p>
+<p><strong>Tenancy Diagram:</strong></p>
+<p><img decoding="async" loading="lazy" alt="Screenshot 2025-05-26 at 3.00.53 PM.png" src="https://betalectic.com/assets/images/multi_tenancy_1-cba806e5f51b28353923d16ee2f170c5.png" width="1424" height="934" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="multi-database-tenancy"><strong>Multi-Database Tenancy</strong><a href="https://betalectic.com/blog/multi-tenancy-models#multi-database-tenancy" class="hash-link" aria-label="Direct link to multi-database-tenancy" title="Direct link to multi-database-tenancy">​</a></h3>
+<p><strong>Overview:</strong></p>
+<p>All tenants are in the same AWS account, but each has their own dedicated database instance or schema.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li><strong>Better isolation</strong> of tenant data than single-database tenancy.</li>
+<li>Easier to handle <strong>data migrations or customisations</strong> per tenant.</li>
+<li>Safer for GDPR/data localisation requirements.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Still shares the same infrastructure limits of a single AWS account.</li>
+<li>Harder to <strong>scale operationally</strong> as tenant count grows.</li>
+<li>Resource constraints or failures can still impact multiple tenants.</li>
+</ul>
+<p><strong>Best for:</strong></p>
+<p>SaaS offerings with moderate isolation requirements or mid-sized tenants.</p>
+<p><strong>Tenancy Diagram:</strong></p>
+<p><img decoding="async" loading="lazy" alt="Screenshot 2025-05-26 at 3.09.35 PM.png" src="https://betalectic.com/assets/images/multi_tenancy_2-c6b3fa304ea5c3fe7627eb722d893d59.png" width="1736" height="1330" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="same-aws-account-with-multiple-aws-sub-accounts"><strong>Same AWS Account with Multiple AWS Sub-Accounts</strong><a href="https://betalectic.com/blog/multi-tenancy-models#same-aws-account-with-multiple-aws-sub-accounts" class="hash-link" aria-label="Direct link to same-aws-account-with-multiple-aws-sub-accounts" title="Direct link to same-aws-account-with-multiple-aws-sub-accounts">​</a></h2>
+<p><strong>Overview:</strong></p>
+<p>This architecture uses a <strong>central AWS account</strong> for core services (e.g., control plane, shared services, global management) and creates <strong>dedicated AWS sub-accounts</strong> for each tenant. Each sub-account encapsulates a tenant's infrastructure and resources.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Strong <strong>tenant isolation</strong> for security and compliance.</li>
+<li>Easier to apply <strong>resource quotas</strong>, billing tracking, and monitoring per tenant.</li>
+<li>Better <strong>blast radius control</strong>—failures in one tenant’s environment do not impact others.</li>
+<li>Clear <strong>cost attribution</strong> per tenant.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Slightly higher <strong>operational complexity</strong> (account provisioning, cross-account access).</li>
+<li><strong>Increased cost</strong> for control infrastructure replication.</li>
+<li>Requires <strong>centralised orchestration</strong> and tooling for deployments, logging, etc.</li>
+</ul>
+<p><strong>Best for:</strong></p>
+<p>Enterprise SaaS platforms that require strong isolation, customisations per tenant, or compliance with strict regulatory frameworks.</p>
+<p><strong>Tenancy Diagram:</strong></p>
+<p><img decoding="async" loading="lazy" alt="Screenshot 2025-05-26 at 2.56.01 PM.png" src="https://betalectic.com/assets/images/multi_tenancy_3-47cb46a2cd601c0aab2b4d21c82902ba.png" width="654" height="1182" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="individual-aws-account-per-tenant"><strong>Individual AWS Account per Tenant</strong><a href="https://betalectic.com/blog/multi-tenancy-models#individual-aws-account-per-tenant" class="hash-link" aria-label="Direct link to individual-aws-account-per-tenant" title="Direct link to individual-aws-account-per-tenant">​</a></h2>
+<p><strong>Overview:</strong></p>
+<p>Each tenant gets a <strong>completely separate AWS account</strong>, with fully isolated infrastructure and services. Often paired with AWS Organizations and Control Tower.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li><strong>Maximum isolation</strong> and security.</li>
+<li>Independent scaling and cost tracking per tenant.</li>
+<li>Ideal for <strong>white-label solutions</strong> or tenants needing full customization.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li><strong>High overhead</strong> for account creation, management, and automation.</li>
+<li>Harder to implement centralized monitoring and control.</li>
+<li>Costly for small-scale tenants.</li>
+</ul>
+<p><strong>Best for:</strong></p>
+<p>High-paying enterprise customers needing full-stack control or regulatory-driven segmentation.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="real-world-analogy-for-multi-tenant-saas-architectures">Real-World Analogy for Multi-Tenant SaaS Architectures<a href="https://betalectic.com/blog/multi-tenancy-models#real-world-analogy-for-multi-tenant-saas-architectures" class="hash-link" aria-label="Direct link to Real-World Analogy for Multi-Tenant SaaS Architectures" title="Direct link to Real-World Analogy for Multi-Tenant SaaS Architectures">​</a></h2>
+<p>To simplify and communicate different <strong>SaaS multi-tenancy deployment models</strong>, we can use a relatable analogy of <strong>office buildings and workplace setups</strong>.</p>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="shared-aws-account-single-database-tenancy">Shared AWS Account, <strong>Single-Database Tenancy</strong><a href="https://betalectic.com/blog/multi-tenancy-models#shared-aws-account-single-database-tenancy" class="hash-link" aria-label="Direct link to shared-aws-account-single-database-tenancy" title="Direct link to shared-aws-account-single-database-tenancy">​</a></h3>
+<blockquote>
+<p>Shared Office Space with One Big Room and One Entrance</p>
+</blockquote>
+<ul>
+<li><strong>All tenants (clients)</strong> share the same application infrastructure and <strong>a single database</strong>.</li>
+<li>Data separation is enforced <strong>logically</strong> (e.g., using tenant IDs in rows).</li>
+<li>Minimal overhead, easy to manage, <strong>but least isolated</strong>.</li>
+</ul>
+<p><strong>Analogy</strong>:</p>
+<p>Multiple companies operate in a <strong>shared coworking space</strong> on one floor, using the <strong>same reception, same desks, and same conference rooms</strong>. Everyone enters through the <strong>same front door</strong>. Privacy is limited to desk partitions.</p>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="shared-aws-account-multi-database-tenancy">Shared AWS Account, <strong>Multi-Database Tenancy</strong><a href="https://betalectic.com/blog/multi-tenancy-models#shared-aws-account-multi-database-tenancy" class="hash-link" aria-label="Direct link to shared-aws-account-multi-database-tenancy" title="Direct link to shared-aws-account-multi-database-tenancy">​</a></h3>
+<blockquote>
+<p>Shared Office Space with Separate Entrances and Individual Rooms</p>
+</blockquote>
+<ul>
+<li>All tenants use <strong>the same application infrastructure</strong>, but each tenant has <strong>its own database</strong> (or schema).</li>
+<li>Offers better <strong>data isolation</strong> while still sharing operational resources.</li>
+<li>Still a <strong>single AWS account</strong>, so resources like ECS/S3 may be reused.</li>
+</ul>
+<p><strong>Analogy</strong>:</p>
+<p>Companies still share a <strong>building floor</strong>, but now <strong>each company has its own locked room</strong>. They can enter via <strong>different doors</strong>, though the floor’s utilities (like electricity, internet, etc.) are shared. More secure and better privacy than a single room.</p>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="single-aws-account-with-multiple-sub-accounts-per-tenant">Single AWS Account with <strong>Multiple Sub-Accounts per Tenant</strong><a href="https://betalectic.com/blog/multi-tenancy-models#single-aws-account-with-multiple-sub-accounts-per-tenant" class="hash-link" aria-label="Direct link to single-aws-account-with-multiple-sub-accounts-per-tenant" title="Direct link to single-aws-account-with-multiple-sub-accounts-per-tenant">​</a></h3>
+<blockquote>
+<p>Same Building, Different Floors, with Separate Lifts</p>
+</blockquote>
+<ul>
+<li>Centralized <strong>root or management account</strong> with <strong>dedicated sub-accounts</strong> per tenant.</li>
+<li>Central services (like CI/CD or image repo) reside in the management account.</li>
+<li>Tenants operate in their own <strong>isolated AWS environments</strong> with independent IAM, billing, and network scopes.</li>
+</ul>
+<p><strong>Analogy</strong>:</p>
+<p>The business now owns a <strong>multi-storey building</strong>. Each tenant occupies <strong>a separate floor</strong>, with their <strong>own private lift</strong> and office design. While the building is the same, they never interfere with one another and have a good level of operational independence.</p>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="fully-isolated-aws-account-per-tenant">Fully Isolated AWS Account per Tenant<a href="https://betalectic.com/blog/multi-tenancy-models#fully-isolated-aws-account-per-tenant" class="hash-link" aria-label="Direct link to Fully Isolated AWS Account per Tenant" title="Direct link to Fully Isolated AWS Account per Tenant">​</a></h3>
+<blockquote>
+<p>Each Company Has Its Own Building</p>
+</blockquote>
+<ul>
+<li>Every tenant has <strong>its own AWS account</strong>, with full resource and network isolation.</li>
+<li><strong>Most secure and compliant model</strong>, often used in enterprise-grade SaaS or regulated industries (e.g., healthcare, finance).</li>
+<li>Slightly higher operational complexity and cost, but enables the most flexibility.</li>
+</ul>
+<p><strong>Analogy</strong>:</p>
+<p>Each company owns and operates in <strong>a separate building entirely</strong>—with <strong>its own reception, security, power, and IT systems</strong>. No shared walls, no shared infrastructure. The <strong>highest level of control, security, and customization</strong> is possible.</p>
+<hr>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="summary-table">Summary Table<a href="https://betalectic.com/blog/multi-tenancy-models#summary-table" class="hash-link" aria-label="Direct link to Summary Table" title="Direct link to Summary Table">​</a></h2>
+<table><thead><tr><th>Model</th><th>Analogy Description</th><th>Isolation Level</th><th>Operational Cost</th></tr></thead><tbody><tr><td>Shared Account, Single DB</td><td>Shared room in coworking space</td><td>🔴 Low</td><td>🟢 Low</td></tr><tr><td>Shared Account, Multi DB</td><td>Shared office floor with separate rooms</td><td>🟠 Medium</td><td>🟢 Low-Medium</td></tr><tr><td>Same Account with Sub-Accounts</td><td>Multi-floor building with private lifts</td><td>🟡 Medium-High</td><td>🟡 Medium</td></tr><tr><td>Fully Isolated AWS Account</td><td>Separate buildings per tenant</td><td>🟢 Very High</td><td>🔴 High</td></tr></tbody></table></div></div>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Monitoring Laravel Queued Jobs with Lifecycle Events]]></title>
             <link>https://betalectic.com/blog/monitoring-laravel-queued-jobs</link>
