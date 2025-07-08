@@ -47,7 +47,7 @@ export function Offices({
       </li>
       <li className="list-none">
         <Office name="USA" invert={invert}>
-          651 N Broad St, Suite 206, Middletown, Delaware, 19709
+        16192 Coastal Highway, Lewes, Delaware, 19958
         </Office>
       </li>
     </ul>
