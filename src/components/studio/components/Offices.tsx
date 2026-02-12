@@ -47,7 +47,7 @@ export function Offices({
       </li>
       <li className="list-none">
         <Office name="USA" invert={invert}>
-        16192 Coastal Highway, Lewes, Delaware, 19958
+          4633 Old Ironsides Drive, Suite 210, Santa Clara, California
         </Office>
       </li>
     </ul>
