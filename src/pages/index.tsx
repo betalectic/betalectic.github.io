@@ -359,7 +359,7 @@ export default function Home(): JSX.Element {
                 ]}
               /> */}
 
-              {/* <Projects /> */}
+              <Projects />
 
               <Testimonial className="">
                 We understand the challenges businesses face in today’s
