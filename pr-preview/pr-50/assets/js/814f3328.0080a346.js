@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbetalectic_website=self.webpackChunkbetalectic_website||[]).push([["106"],{4200:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[]}')}}]);
